@@ -16,8 +16,25 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: "rukolaregular";
+  src: url("../assets/fonts/rukola-webfont.woff2") format("woff2"),
+    url("../assets/fonts/rukola-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "festivo";
+  src: url("../assets/fonts/festivolettersno.6-webfont.woff2") format("woff2"),
+    url("../assets/fonts/festivolettersno.6-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Proxima Nova Bold", sans-serif;
   font-size: 18px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -28,66 +45,40 @@ html {
 }
 
 body {
-  background-color: #fff;
+  background: url("../assets/images/body-bg.png");
+  background-size: 300px;
 }
 
-h1,
-h2,
-h3 {
-  font-family: "Alata", serif;
-  font-weight: normal;
+/* .page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+  transform: translateY(10px);
 }
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+} */
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
+.bounce-enter-active {
+  animation: bounce-in 0.8s;
 }
-
-.individual h3 {
-  margin: 2em 0 25px;
+.bounce-leave-active {
+  animation: bounce-out 0.3s;
 }
-
-h1 {
-  margin-bottom: 30px;
-  text-align: center;
+@keyframes bounce-in {
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
-
-img {
-  width: 100%;
-}
-
-video {
-  width: 100%;
-  margin: 25px 0;
-}
-
-small {
-  color: #9d5615;
-}
-
-pre,
-code {
-  white-space: pre-wrap; /* css-3 */
-  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
-  white-space: -pre-wrap; /* Opera 4-6 */
-  white-space: -o-pre-wrap; /* Opera 7 */
-  word-wrap: break-word; /* Internet Explorer 5.5+ */
-  background: #eee;
-  border-radius: 4px;
-}
-
-pre {
-  padding: 8px 10px;
-}
-
-code {
-  padding: 2px 0;
-  line-height: 1.5;
-}
-
-p {
-  margin: 15px 0 20px;
+@keyframes bounce-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 </style>

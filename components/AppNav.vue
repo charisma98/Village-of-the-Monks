@@ -1,56 +1,43 @@
 <template>
-  <div class="nav">
-    <ul>
-      <li>
-        <nuxt-link exact to="/">
-          <app-icon></app-icon>BlogName
-        </nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="/about">About</nuxt-link>
-      </li>
-    </ul>
+  <div class="absolute w-full p-8">
+    <div class="container flex justify-between items-end">
+      <nuxt-link class="logo w-8 flex justify-between items-end" exact to="/">
+        <img src="~/assets/images/logo.min.png" />
+        <span>Village of the Monks</span>
+      </nuxt-link>
+      <nav class="leading-tight tracking-tight text-gray-900 font-medium">
+        <nuxt-link to="/">Brandon Hill</nuxt-link>
+        <nuxt-link to="/">Duiske Abbey</nuxt-link>
+        <nuxt-link to="/">Tinnahinch Castle</nuxt-link>
+        <nuxt-link to="/">River Barrow</nuxt-link>
+      </nav>
+    </div>
   </div>
 </template>
 
-<script>
-import AppIcon from "@/components/AppIcon.vue";
-
-export default {
-  components: {
-    AppIcon
+<style lang="scss">
+.logo {
+  img {
+    width: 30px;
+    height: 60px;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
   }
-};
-</script>
-
-<style lang="scss" scoped>
-.nav {
-  background: #000;
-  color: #fff;
-  padding: 1em 100px;
-
-  a {
+  span {
     color: #fff;
-    opacity: 0.8;
-    &:hover {
-      opacity: 1;
-    }
+    font-size: 14px;
+    line-height: 1;
+    padding: 8px 0 0 8px;
+    font-weight: 600;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   }
 }
-
-div {
-  align-items: center;
+nav {
+  background: url("../assets/images/nav-bg.png");
+  background-size: 100% 100%;
+  padding: 10px 0 12px 56px;
+  min-width: 600px;
   display: flex;
-  height: 100%;
-  width: 100%;
-}
-
-ul {
-  padding-left: 0;
-
-  li {
-    display: inline-block;
-    margin-right: 30px;
-  }
+  justify-content: space-evenly;
+  font-size: 16px;
 }
 </style>

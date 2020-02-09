@@ -56,7 +56,16 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [],
+  buildModules: [
+    "@nuxtjs/tailwindcss"
+  ],
+  pageTransition: {
+    name: 'bounce',
+    mode: 'out-in',
+    beforeEnter (el) {
+      console.log('Before enter...');
+    }
+  },
   /*
    ** Build configuration
    */

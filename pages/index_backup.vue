@@ -134,7 +134,6 @@ a.readmore {
   position: relative;
   color: #000;
   font-weight: 700;
-  font-family: "Open Sans", serif;
   border: 1px solid #ccc;
   background: #fff;
 }

@@ -15,7 +15,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || "Graiguenamanagh | Village of the Monks",
+    title: "Graiguenamanagh | Village of the Monks",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -60,11 +60,8 @@ export default {
     "@nuxtjs/tailwindcss"
   ],
   pageTransition: {
-    name: 'bounce',
-    mode: 'out-in',
-    beforeEnter (el) {
-      console.log('Before enter...');
-    }
+    name: 'fade',
+    mode: 'out-in'
   },
   /*
    ** Build configuration

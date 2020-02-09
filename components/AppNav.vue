@@ -1,15 +1,15 @@
 <template>
-  <div class="absolute w-full p-8">
+  <div class="absolute w-full p-8 z-50">
     <div class="container flex justify-between items-end">
       <nuxt-link class="logo w-8 flex justify-between items-end" exact to="/">
         <img src="~/assets/images/logo.min.png" />
         <span>Village of the Monks</span>
       </nuxt-link>
       <nav class="leading-tight tracking-tight text-gray-900 font-medium">
-        <nuxt-link to="/">Brandon Hill</nuxt-link>
-        <nuxt-link to="/">Duiske Abbey</nuxt-link>
-        <nuxt-link to="/">Tinnahinch Castle</nuxt-link>
-        <nuxt-link to="/">River Barrow</nuxt-link>
+        <nuxt-link to="/brandon_hill">Brandon Hill</nuxt-link>
+        <nuxt-link to="/duiske_abbey">Duiske Abbey</nuxt-link>
+        <nuxt-link to="/tinnahinch_castle">Tinnahinch Castle</nuxt-link>
+        <nuxt-link to="/river_barrow">River Barrow</nuxt-link>
       </nav>
     </div>
   </div>

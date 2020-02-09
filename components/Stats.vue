@@ -4,24 +4,16 @@
   >
     <div class="flex items-center h-24">
       <div class="w-1/4 text-center">
-        <img
-          class="stat-icon mx-auto"
-          src="~/assets/images/cloudy-outline.svg"
-        />
+        <img class="stat-icon mx-auto" src="~/assets/images/cloudy-outline.svg" />
       </div>
       <div>
         <p class="text-xl stat-info tracking-wide">{{ tempature }}°C</p>
-        <p class="text-xs text-yellow-800 uppercase">
-          {{ description }}
-        </p>
+        <p class="text-xs text-yellow-800 uppercase">{{ description }}</p>
       </div>
     </div>
     <div class="flex items-center h-24">
       <div class="w-1/4 text-center">
-        <img
-          class="stat-icon mx-auto"
-          src="~/assets/images/people-outline.svg"
-        />
+        <img class="stat-icon mx-auto" src="~/assets/images/people-outline.svg" />
       </div>
       <div>
         <p class="text-xl stat-info tracking-wide">1,543</p>
@@ -30,10 +22,7 @@
     </div>
     <div class="flex items-center h-24">
       <div class="w-1/4 text-center">
-        <img
-          class="stat-icon mx-auto"
-          src="~/assets/images/locate-outline.svg"
-        />
+        <img class="stat-icon mx-auto" src="~/assets/images/locate-outline.svg" />
       </div>
       <div>
         <p class="text-xl stat-info tracking-wide">52.543925 -6.957807</p>
@@ -73,8 +62,8 @@ export default {
 }
 .stat-info {
   color: #fff;
-  text-shadow: 0 1px 2px rgba(181, 129, 41, 0.5),
-    0 1px 0 rgb(144, 106, 30, 0.25);
+  text-shadow: 0 1px 1px rgba(181, 129, 41, 0.75),
+    0 1px 0 rgb(144, 106, 30, 0.1);
   line-height: 1.25;
 }
 </style>

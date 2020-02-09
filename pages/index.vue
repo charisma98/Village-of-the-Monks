@@ -1,51 +1,53 @@
 <template>
-  <div>
-    <app-masthead class="graiguenamanagh"></app-masthead>
-    <div class="container">
-      <div class="flex justify-between">
-        <div class="w-1/2 text-gray-600 tracking-tight">
-          <div class="title">
-            <small>Gráig na Manach</small>
-            Graiguenamanagh
+  <transition name="layout" mode="out-in">
+    <div>
+      <app-masthead class="graiguenamanagh"></app-masthead>
+      <div class="container">
+        <div class="flex justify-between">
+          <div class="w-1/2 text-gray-600 tracking-tight">
+            <div class="title">
+              <small>Gráig na Manach</small>
+              Graiguenamanagh
+            </div>
+            <p>
+              Gráig na Manach, meaning "Village of the Monks" is considered to be
+              one of the most beautiful areas in the southeast of Ireland. It is
+              located on the River Barrow at the foot of Brandon Hill. It is home
+              to Duiske Abbey, the largest and perhaps the finest of the
+              thirty-four medieval Cistercian abbeys in Ireland.
+            </p>
+            <p>
+              With its remarkable combination of mountain views, lush rolling
+              hills, forest and river valleys, Graignamanagh offers nature lovers
+              a plentiful feast as well as countless amenities for those keen on
+              outdoor activities. Add to these the rich heritage of historical
+              monuments and an abundance of leisure facilities and Graiguenamanagh
+              presents itself as an enormously attractive venue for tourists.
+            </p>
           </div>
-          <p>
-            Gráig na Manach, meaning "Village of the Monks" is considered to be
-            one of the most beautiful areas in the southeast of Ireland. It is
-            located on the River Barrow at the foot of Brandon Hill. It is home
-            to Duiske Abbey, the largest and perhaps the finest of the
-            thirty-four medieval Cistercian abbeys in Ireland.
-          </p>
-          <p>
-            With its remarkable combination of mountain views, lush rolling
-            hills, forest and river valleys, Graignamanagh offers nature lovers
-            a plentiful feast as well as countless amenities for those keen on
-            outdoor activities. Add to these the rich heritage of historical
-            monuments and an abundance of leisure facilities and Graiguenamanagh
-            presents itself as an enormously attractive venue for tourists.
-          </p>
+          <div class="w-5/12 -mt-32">
+            <img src="~/assets/images/graig-air_x2.jpg" alt />
+          </div>
         </div>
-        <div class="w-5/12 -mt-32">
-          <img src="~/assets/images/graig-air_x2.jpg" alt />
-        </div>
-      </div>
-      <div class="flex justify-between mt-16">
-        <div class="w-5/12">
-          <!-- Stats -->
-          <stats />
-        </div>
-        <div class="w-1/2 text-gray-600 tracking-tight mt-8">
-          <p>
-            Graignamanagh expanded beyond the Abbey as a market town, aided by
-            the development of the Grand Canal and the navigation of the River
-            Barrow, which ultimately connected the town with Dublin, New Ross,
-            Waterford and Carlow. The production of wool was historically
-            important to the town’s economy and sheep rearing remains a
-            predominant agricultural activity in the hinterland.
-          </p>
+        <div class="flex justify-between mt-16">
+          <div class="w-5/12">
+            <!-- Stats -->
+            <stats />
+          </div>
+          <div class="w-1/2 text-gray-600 tracking-tight mt-8">
+            <p>
+              Graignamanagh expanded beyond the Abbey as a market town, aided by
+              the development of the Grand Canal and the navigation of the River
+              Barrow, which ultimately connected the town with Dublin, New Ross,
+              Waterford and Carlow. The production of wool was historically
+              important to the town’s economy and sheep rearing remains a
+              predominant agricultural activity in the hinterland.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </transition>
 </template>
 
 <script>

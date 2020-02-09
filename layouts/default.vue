@@ -1,7 +1,9 @@
 <template>
   <div>
     <app-nav />
+    <!-- <transition name="scott" mode> -->
     <nuxt />
+    <!-- </transition> -->
   </div>
 </template>
 
@@ -49,36 +51,31 @@ body {
   background-size: 300px;
 }
 
-/* .page-enter-active,
-.page-leave-active {
-  transition: opacity 0.5s;
-  transform: translateY(10px);
+.fade-leave-active {
+  animation: fadeout 600ms ease-in-out;
 }
-.page-enter,
-.page-leave-active {
-  opacity: 0;
-} */
+.fade-enter-active {
+  animation: fadein 600ms ease-in-out;
+}
 
-.bounce-enter-active {
-  animation: bounce-in 0.8s;
-}
-.bounce-leave-active {
-  animation: bounce-out 0.3s;
-}
-@keyframes bounce-in {
-  0% {
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@keyframes bounce-out {
+@keyframes fadeout {
   0% {
     opacity: 1;
+    transform: scale(1);
   }
   100% {
     opacity: 0;
+    transform: scale(1.01);
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: scale(1.01);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 </style>

@@ -46,6 +46,7 @@
           </div>
         </div>
       </div>
+      <insta-feed hashtag="graiguenamanagh" numberOfImages="32" />
     </div>
   </transition>
 </template>
@@ -53,11 +54,13 @@
 <script>
 import AppMasthead from "@/components/AppMasthead.vue";
 import Stats from "@/components/Stats.vue";
+import InstaFeed from "@/components/InstaFeed.vue";
 
 export default {
   components: {
     AppMasthead,
-    Stats
+    Stats,
+    InstaFeed
   },
   data() {
     return {};

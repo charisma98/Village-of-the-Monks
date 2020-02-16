@@ -45,17 +45,23 @@
         </div>
       </div>
     </div>
+    <insta-feed hashtag="duiskeabbey" numberOfImages="32" />
   </div>
 </template>
 
 <script>
 import AppMasthead from "@/components/AppMasthead.vue";
 import Stats from "@/components/Stats.vue";
+import InstaFeed from "@/components/InstaFeed.vue";
 
 export default {
+  head: {
+    title: "Duiske Abbey"
+  },
   components: {
     AppMasthead,
-    Stats
+    Stats,
+    InstaFeed
   },
   data() {
     return {};

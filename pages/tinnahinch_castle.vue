@@ -45,78 +45,23 @@
         </div>
       </div>
     </div>
-    <ul class="instagram-feed flex flex-wrap">
-      <li
-        class="absolute"
-        :style="{ animation: media.animation, top: media.top+'%' }"
-        v-for="media in instaImages"
-        v-bind:key="media.node.id"
-      >
-        <img
-          :class="media.shadow"
-          :style="{ width: media.size+'px' }"
-          :src="media.node.display_url"
-          alt
-        />
-      </li>
-    </ul>
+    <insta-feed hashtag="tinnahinch" numberOfImages="32" />
   </div>
 </template>
 
 <script>
 import AppMasthead from "@/components/AppMasthead.vue";
 import Stats from "@/components/Stats.vue";
-import axios from "axios";
-
-function minMax(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-// Instagram Settings
-const hashtagToSearch = "tinnahinch";
-const maxNumberOfImages = 50;
+import InstaFeed from "@/components/InstaFeed.vue";
 
 export default {
+  head: {
+    title: "Tinnahinch"
+  },
   components: {
     AppMasthead,
-    Stats
-  },
-  data() {
-    return {
-      insta: "",
-      instaImages: [],
-      shadows: ["shadow", "shadow-md", "shadow-lg", "shadow-xl"]
-    };
-  },
-  methods: {
-    startedAdding() {
-      var i = 0;
-      var interval = setInterval(() => {
-        this.instaImages.push({
-          node: this.insta[i].node,
-          animation: `move ${minMax(15, 85)}s normal infinite ${minMax(
-            5,
-            20
-          )}s`,
-          size: minMax(50, 250),
-          top: minMax(0, 80),
-          shadow: this.shadows[Math.floor(Math.random() * this.shadows.length)]
-        });
-        i++;
-        if (i === maxNumberOfImages) clearInterval(interval);
-      }, 2750);
-    }
-  },
-  mounted() {
-    axios
-      .get(`https://www.instagram.com/explore/tags/${hashtagToSearch}/?__a=1`)
-      .then(res => {
-        this.insta = res.data.graphql.hashtag.edge_hashtag_to_media.edges.slice(
-          0,
-          maxNumberOfImages
-        );
-        this.startedAdding();
-      });
+    Stats,
+    InstaFeed
   }
 };
 </script>
@@ -146,31 +91,6 @@ export default {
     right: 0;
     line-height: 1;
     color: rgba(51, 153, 51, 0.75);
-  }
-}
-
-.instagram-feed {
-  position: relative;
-  z-index: 10;
-  min-height: 600px;
-
-  li {
-    transform: translatex(-20vw);
-    animation-play-state: running;
-  }
-  li:hover {
-    animation-play-state: paused !important;
-    cursor: pointer;
-  }
-}
-
-@keyframes move {
-  0% {
-    transform: translatex(-20vw);
-  }
-
-  100% {
-    transform: translatex(120vw);
   }
 }
 </style>

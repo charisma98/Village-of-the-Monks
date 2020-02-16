@@ -1,5 +1,8 @@
 <template>
   <ul class="instagram-feed flex flex-wrap">
+    <div class="background-text">
+      <small>#{{hashtag}}</small>Instagram Feed
+    </div>
     <li
       class="absolute"
       :style="{ animation: media.animation, top: media.top+'%' }"
@@ -75,7 +78,7 @@ export default {
               0,
               2000
             )}ms`,
-            size: minMax(100, 250),
+            size: minMax(100, 200),
             top: minMax(0, 80),
             shadow: this.shadows[
               Math.floor(Math.random() * this.shadows.length)
@@ -104,8 +107,30 @@ export default {
   z-index: 10;
   min-height: 600px;
 
+  .background-text {
+    font-family: "rukolaregular";
+    font-size: 150px;
+    color: #344c5e;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1;
+    opacity: 0.15;
+    small {
+      font-size: 40px;
+      color: #6db369;
+    }
+  }
+
   li {
-    transform: translatex(0px) scale(0);
+    transform: translatex(-250px) scale(0);
     opacity: 0;
     animation-play-state: running;
     transition: all 600ms ease, box-shadow 400ms ease 200ms;
@@ -157,7 +182,7 @@ export default {
   1% {
     // transform: translatex(-250px);
     opacity: 1;
-    transform: translatex(0px) scale(1);
+    transform: translatex(-250px) scale(1);
   }
 
   100% {

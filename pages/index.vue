@@ -25,8 +25,11 @@
               presents itself as an enormously attractive venue for tourists.
             </p>
           </div>
-          <div class="w-5/12 -mt-32">
-            <img src="~/assets/images/graig-air_x2.jpg" alt />
+          <div
+            class="w-5/12 -mt-32 transition-all duration-150 ease"
+            :style="{ transform: `translateY(${scrollPos * 0.05}px)` }"
+          >
+            <img class="shadow-lg" src="~/assets/images/graig-air_x2.jpg" alt />
           </div>
         </div>
         <div class="flex justify-between mt-16">
@@ -63,7 +66,14 @@ export default {
     InstaFeed
   },
   data() {
-    return {};
+    return {
+      scrollPos: 0
+    };
+  },
+  mounted() {
+    window.addEventListener("scroll", () => {
+      this.scrollPos = window.scrollY;
+    });
   }
 };
 </script>

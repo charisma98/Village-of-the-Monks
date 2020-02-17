@@ -13,7 +13,7 @@
         <img :style="{ width: media.size+'px' }" :src="media.node.thumbnail_src" alt />
       </a>
       <div class="details flex justify-between leading-tight text-gray-600 text-xs tracking-tight">
-        <span>{{media.node.accessibility_caption}}</span>
+        <span>{{media.node.edge_media_to_caption.edges[0].node.text}}</span>
         <!-- <span>15 links</span>
         <span>1 comment</span>-->
       </div>
@@ -67,8 +67,6 @@ export default {
         }
 
         // Check and Skip user if they are on the Banned list
-        console.log(shuffedInstaAPI[i].node.accessibility_caption);
-
         if (bannedUsers.indexOf(shuffedInstaAPI[i].node.owner.id) > -1) {
           console.log("Banned user found.");
         } else {
@@ -121,11 +119,13 @@ export default {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    line-height: 1;
+    line-height: 1.25;
     opacity: 0.15;
     small {
       font-size: 40px;
       color: #6db369;
+      font-family: festivo;
+      letter-spacing: -1px;
     }
   }
 

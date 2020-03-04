@@ -10,30 +10,34 @@
               Graiguenamanagh
             </div>
             <p>
-              Gráig na Manach, meaning "Village of the Monks" is considered to be
-              one of the most beautiful areas in the southeast of Ireland. It is
-              located on the River Barrow at the foot of Brandon Hill. It is home
-              to Duiske Abbey, the largest and perhaps the finest of the
+              Gráig na Manach, meaning "Village of the Monks" is considered to
+              be one of the most beautiful areas in the southeast of Ireland. It
+              is located on the River Barrow at the foot of Brandon Hill. It is
+              home to Duiske Abbey, the largest and perhaps the finest of the
               thirty-four medieval Cistercian abbeys in Ireland.
             </p>
-            <p>
+            <p class="mt-4">
               With its remarkable combination of mountain views, lush rolling
-              hills, forest and river valleys, Graignamanagh offers nature lovers
-              a plentiful feast as well as countless amenities for those keen on
-              outdoor activities. Add to these the rich heritage of historical
-              monuments and an abundance of leisure facilities and Graiguenamanagh
-              presents itself as an enormously attractive venue for tourists.
+              hills, forest and river valleys, Graignamanagh offers nature
+              lovers a plentiful feast as well as countless amenities for those
+              keen on outdoor activities. Add to these the rich heritage of
+              historical monuments and an abundance of leisure facilities and
+              Graiguenamanagh presents itself as an enormously attractive venue
+              for tourists.
             </p>
           </div>
           <div
             class="w-5/12 -mt-32 transition-all duration-150 ease"
-            :style="{ transform: `translateY(${scrollPos * 0.05}px)` }"
+            :style="{ transform: `translate3D(0, ${scrollPos * 0.05}px, 0)` }"
           >
             <img class="shadow-lg" src="~/assets/images/graig-air_x2.jpg" alt />
           </div>
         </div>
         <div class="flex justify-between mt-16">
-          <div class="w-5/12">
+          <div
+            class="w-5/12 transition-all duration-150 ease"
+            :style="{ transform: `translate3D(0, ${scrollPos * 0.05}px, 0)` }"
+          >
             <!-- Stats -->
             <stats />
           </div>
@@ -49,6 +53,116 @@
           </div>
         </div>
       </div>
+
+      <div id="green-river" class="text-white py-24 -mt-24">
+        <div class="w-1/2 ml-auto">
+          <p
+            class="text-shadow-green max-w-md font-secondary text-center text-xl text-white"
+          >
+            It has been called Ireland's best kept secret and is a veritable
+            treasure trove of varied scenery, ancient buildings, canal boating,
+            river and hill walks, crafts, traditional pubs and much more.
+          </p>
+        </div>
+      </div>
+
+      <!-- Brandon Hill  -->
+      <div class="container my-20 flex py-16" id="brandon-splash">
+        <div class="w-5/12 ml-auto">
+          <div class="bg-white shadow-md rounded p-12 text-center">
+            <div class="title">
+              <small>Cnoc Bhréanail</small>
+              Brandon Hill
+            </div>
+            <p class="text-sm">
+              Brandon Hill is the highest mountain in County Kilkenny. It has an
+              elevation of 515 m (1,690 ft). It is situated 4 kilometers
+              South-South West of Graignamanagh, 7 kilometers east of Inistioge
+              and 11 kilometers east of Thomastown, in the south of County
+              Kilkenny.
+            </p>
+            <nuxt-link
+              class="bg-yellow-500 mt-4 text-sm text-yellow-900 py-1 px-3 rounded mt-4 block"
+              to="/brandon_hill"
+              >Find out more</nuxt-link
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Duiske Abbey -->
+      <div class="container my-20 flex py-16" id="duiske-splash">
+        <div class="w-5/12">
+          <div class="bg-white shadow-md rounded p-12 text-center">
+            <nuxt-link class="text-gray-400 text-sm" to="/duiske_abbey">
+              <div class="title">
+                <small>Mainistir Dhubhiske</small>
+                Duiske Abbey
+              </div>
+            </nuxt-link>
+            <p class="text-sm">
+              Duiske Abbey was founded by William Marshall in 1204 and is one of
+              the first, largest and perhaps the finest of the thirty-four
+              medieval Cistercian monasteries in Ireland. The Abbey is the
+              parish church of Graignamanagh town and beautifully dominates the
+              town centre.
+            </p>
+            <nuxt-link
+              class="bg-yellow-500 mt-4 text-sm text-yellow-900 py-1 px-3 rounded mt-4 block"
+              to="/duiske_abbey"
+              >Find out more</nuxt-link
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Tinnahinch Castle  -->
+      <div class="container my-20 flex py-16" id="tinnahinch-castle-splash">
+        <div class="w-5/12 ml-auto">
+          <div class="bg-white shadow-md rounded p-12 text-center">
+            <div class="title">
+              <small>Caisleán Tigh na hInse</small>
+              Tinnahinch Castle
+            </div>
+            <p class="text-sm">
+              Tinnahinch Castle was constructed in 1615 by the Duke of Ormonde.
+              It was built to control a crossing where a wooden bridge once
+              spanned the Barrow. The bridge linking the two settlements was
+              originally constructed in 1797. The castle was burnt around the
+              year 1700 and has lain that way ever since.
+            </p>
+            <nuxt-link
+              class="bg-yellow-500 mt-4 text-sm text-yellow-900 py-1 px-3 rounded mt-4 block"
+              to="/tinnahinch_castle"
+              >Find out more</nuxt-link
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- River Barrow -->
+      <div class="container my-20 flex py-16" id="river-barrow-splash">
+        <div class="w-5/12">
+          <div class="bg-white shadow-md rounded p-12 text-center">
+            <div class="title">
+              <small>An Bhearú</small>
+              River Barrow
+            </div>
+            <p class="text-sm">
+              The River Barrow, historically a significant highway, was
+              developed as a commercial navigation in the mid seventeen hundreds
+              and Graiguenamanagh served as the main base for commercial barges
+              operating on the river until barge traffic ceased in 1959.
+            </p>
+            <nuxt-link
+              class="bg-yellow-500 mt-4 text-sm text-yellow-900 py-1 px-3 rounded mt-4 block"
+              to="/river_barrow"
+              >Find out more</nuxt-link
+            >
+          </div>
+        </div>
+      </div>
+
       <insta-feed hashtag="graiguenamanagh" numberOfImages="32" />
     </div>
   </transition>
@@ -78,7 +192,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="postcss">
 .graiguenamanagh {
   background: url("../assets/images/brush-strokes2.png") center bottom no-repeat,
     url("../assets/images/main-header-large.jpg") center;
@@ -94,7 +208,7 @@ export default {
   padding: 30px 10px 10px;
   font-family: "rukolaregular";
   color: #354c5f;
-  small {
+  & small {
     font-family: "festivo";
     font-size: 1rem;
     position: absolute;
@@ -104,5 +218,37 @@ export default {
     line-height: 1;
     color: rgba(51, 153, 51, 0.75);
   }
+}
+p {
+  @apply text-gray-600;
+}
+#green-river {
+  background: url("../assets/images/green-river.png") center;
+  background-size: 100% 100%;
+}
+#brandon-splash {
+  background: url("../assets/images/brandon-splash_x2.png") no-repeat;
+  background-size: contain;
+}
+#duiske-splash {
+  background: url("../assets/images/duiske-splash_x2.png") no-repeat right;
+  background-size: contain;
+}
+#tinnahinch-castle-splash {
+  background: url("../assets/images/tinnahinch-castle-splash_x2.png") no-repeat;
+  background-size: contain;
+}
+#river-barrow-splash {
+  background: url("../assets/images/river-splash_x2.png") no-repeat right;
+  background-size: contain;
+}
+.font-primary {
+  font-family: "rukolaregular";
+}
+.font-secondary {
+  font-family: festivo;
+}
+.text-shadow-green {
+  text-shadow: 0 1px 3px rgba(39, 97, 39, 0.5);
 }
 </style>

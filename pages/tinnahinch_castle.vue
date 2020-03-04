@@ -5,27 +5,27 @@
       <div class="flex justify-between">
         <div class="w-1/2 text-gray-600 tracking-tight">
           <div class="title">
-            <small>Gráig na Manach</small>
-            Graiguenamanagh
+            <small>Caisleán Tigh na hInse</small>
+            Tinnahinch Castle
           </div>
-          <p>
-            Gráig na Manach, meaning "Village of the Monks" is considered to be
-            one of the most beautiful areas in the southeast of Ireland. It is
-            located on the River Barrow at the foot of Brandon Hill. It is home
-            to Duiske Abbey, the largest and perhaps the finest of the
-            thirty-four medieval Cistercian abbeys in Ireland.
+          <p class="mb-4">
+            Tinnahinch Castle was constructed in 1615 by James Butler the Duke
+            of Ormonde. It was built to control a crossing where a wooden bridge
+            once spanned the Barrow. The bridge linking the two settlements was
+            originally constructed in 1797. The castle was burnt around the year
+            1700 and has lain that way ever since.
           </p>
           <p>
-            With its remarkable combination of mountain views, lush rolling
-            hills, forest and river valleys, Graignamanagh offers nature lovers
-            a plentiful feast as well as countless amenities for those keen on
-            outdoor activities. Add to these the rich heritage of historical
-            monuments and an abundance of leisure facilities and Graiguenamanagh
-            presents itself as an enormously attractive venue for tourists.
+            Tinnahinch Castle, beside the lock, was a Butler castle built to
+            defend the ford. In the 1540s a wooden bridge was built across the
+            river here and the castle was an important defensive position in the
+            prolonged struggle between the Butlers and the Kavanaghs. The castle
+            was further strengthened in the seventeenth century and was held by
+            the Confederates in the Cromwellian wars
           </p>
         </div>
         <div class="w-5/12 -mt-32">
-          <img src="~/assets/images/graig-air_x2.jpg" alt />
+          <img src="~/assets/images/tinnahinch-castle-sketch_x2.jpg" alt />
         </div>
       </div>
       <div class="flex justify-between mt-16">

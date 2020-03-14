@@ -53,7 +53,7 @@ export default {
   buildModules: [
     "@nuxtjs/tailwindcss"
   ],
-  modules: ['nuxt-responsive-loader'],
+  // modules: ['nuxt-responsive-loader'],
   pageTransition: {
     name: 'fade',
     mode: 'out-in'

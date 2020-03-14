@@ -132,17 +132,12 @@
 </template>
 
 <script>
-import AppMasthead from "@/components/AppMasthead.vue";
-import Stats from "@/components/Stats.vue";
-import InstaFeed from "@/components/InstaFeed.vue";
-import PageCard from "@/components/PageCard.vue";
-
 export default {
   components: {
-    AppMasthead,
-    Stats,
-    InstaFeed,
-    PageCard
+    AppMasthead: () => import("@/components/AppMasthead.vue"),
+    Stats: () => import("@/components/Stats.vue"),
+    InstaFeed: () => import("@/components/InstaFeed.vue"),
+    PageCard: () => import("@/components/PageCard.vue")
   },
   data() {
     return {

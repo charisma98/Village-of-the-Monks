@@ -1,5 +1,5 @@
 <template>
-  <div class="md:my-20 flex py-16 bg-contain" :id="cardId">
+  <div class="md:my-20 flex py-16" :id="cardId">
     <div
       class="w-full md:w-6/12"
       :class="{ 'ml-auto': cardPosition === 'right' }"
@@ -31,15 +31,19 @@ export default {
 <style>
 #brandon-splash {
   background: url("../assets/images/brandon-splash_x2.png") no-repeat left top;
+  background-size: contain;
 }
 #duiske-splash {
   background: url("../assets/images/duiske-splash_x2.png") no-repeat right top;
+  background-size: contain;
 }
 #tinnahinch-castle-splash {
   background: url("../assets/images/tinnahinch-castle-splash_x2.png") no-repeat
     left top;
+  background-size: contain;
 }
 #river-barrow-splash {
   background: url("../assets/images/river-splash_x2.png") no-repeat right top;
+  background-size: contain;
 }
 </style>

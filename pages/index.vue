@@ -73,110 +73,60 @@
 
       <div class="container">
         <!-- Brandon Hill  -->
-        <div class=" md:my-20 flex py-16" id="brandon-splash">
-          <div class="w-full md:w-6/12 ml-auto">
-            <div
-              class="bg-white mt-32 md:mt-0 shadow-md rounded p-8 text-center"
-            >
-              <div class="title">
-                <small>Cnoc Bhréanail</small>
-                Brandon Hill
-              </div>
-              <p class="text-sm">
-                Brandon Hill is the highest mountain in County Kilkenny. It has
+        <page-card
+          cardId="brandon-splash"
+          irishTitle="Cnoc Bhréanail"
+          title="Brandon Hill"
+          content="Brandon Hill is the highest mountain in County Kilkenny. It has
                 an elevation of 515 m (1,690 ft). It is situated 4 kilometers
                 South-South West of Graignamanagh, 7 kilometers east of
                 Inistioge and 11 kilometers east of Thomastown, in the south of
-                County Kilkenny.
-              </p>
-              <nuxt-link
-                class="bg-yellow-500 mt-4 text-sm text-yellow-900 py-1 px-3 rounded mt-4 block"
-                to="/brandon_hill"
-                >Find out more</nuxt-link
-              >
-            </div>
-          </div>
-        </div>
+                County Kilkenny."
+          link="/brandon_hill"
+          cardPosition="right"
+        />
 
         <!-- Duiske Abbey -->
-        <div class=" md:my-20 flex py-16" id="duiske-splash">
-          <div class="w-full md:w-6/12">
-            <div
-              class="bg-white mt-32 md:mt-0 shadow-md rounded p-8 text-center"
-            >
-              <nuxt-link class="text-gray-400 text-sm" to="/duiske_abbey">
-                <div class="title">
-                  <small>Mainistir Dhubhiske</small>
-                  Duiske Abbey
-                </div>
-              </nuxt-link>
-              <p class="text-sm">
-                Duiske Abbey was founded by William Marshall in 1204 and is one
+        <page-card
+          cardId="duiske-splash"
+          irishTitle="Mainistir Dhubhiske"
+          title="Duiske Abbey"
+          content="Duiske Abbey was founded by William Marshall in 1204 and is one
                 of the first, largest and perhaps the finest of the thirty-four
                 medieval Cistercian monasteries in Ireland. The Abbey is the
                 parish church of Graignamanagh town and beautifully dominates
-                the town centre.
-              </p>
-              <nuxt-link
-                class="bg-yellow-500 mt-4 text-sm text-yellow-900 py-1 px-3 rounded mt-4 block"
-                to="/duiske_abbey"
-                >Find out more</nuxt-link
-              >
-            </div>
-          </div>
-        </div>
+                the town centre."
+          link="/duiske_abbey"
+          cardPosition="left"
+        />
 
         <!-- Tinnahinch Castle  -->
-        <div class=" md:my-20 flex py-16" id="tinnahinch-castle-splash">
-          <div class="w-full md:w-6/12 ml-auto">
-            <div
-              class="bg-white mt-32 md:mt-0 shadow-md rounded p-8 text-center"
-            >
-              <div class="title">
-                <small>Caisleán Tigh na hInse</small>
-                Tinnahinch Castle
-              </div>
-              <p class="text-sm">
-                Tinnahinch Castle was constructed in 1615 by the Duke of
-                Ormonde. It was built to control a crossing where a wooden
-                bridge once spanned the Barrow. The bridge linking the two
-                settlements was originally constructed in 1797. The castle was
-                burnt around the year 1700 and has lain that way ever since.
-              </p>
-              <nuxt-link
-                class="bg-yellow-500 mt-4 text-sm text-yellow-900 py-1 px-3 rounded mt-4 block"
-                to="/tinnahinch_castle"
-                >Find out more</nuxt-link
-              >
-            </div>
-          </div>
-        </div>
+        <page-card
+          cardId="tinnahinch-castle-splash"
+          irishTitle="Caisleán Tigh na hInse"
+          title="Tinnahinch Castle"
+          content="Tinnahinch Castle was constructed in 1615 by the Duke of Ormonde. It
+          was built to control a crossing where a wooden bridge once spanned the
+          Barrow. The bridge linking the two settlements was originally
+          constructed in 1797. The castle was burnt around the year 1700 and has
+          lain that way ever since."
+          link="/tinnahinch_castle"
+          cardPosition="right"
+        />
 
         <!-- River Barrow -->
-        <div class=" md:my-20 flex py-16" id="river-barrow-splash">
-          <div class="w-full md:w-6/12">
-            <div
-              class="bg-white mt-32 md:mt-0 shadow-md rounded p-8 text-center"
-            >
-              <div class="title">
-                <small>An Bhearú</small>
-                River Barrow
-              </div>
-              <p class="text-sm">
-                The River Barrow, historically a significant highway, was
+        <page-card
+          cardId="river-barrow-splash"
+          irishTitle="An Bhearú"
+          title="River Barrow"
+          content="The River Barrow, historically a significant highway, was
                 developed as a commercial navigation in the mid seventeen
                 hundreds and Graiguenamanagh served as the main base for
                 commercial barges operating on the river until barge traffic
-                ceased in 1959.
-              </p>
-              <nuxt-link
-                class="bg-yellow-500 mt-4 text-sm text-yellow-900 py-1 px-3 rounded mt-4 block"
-                to="/river_barrow"
-                >Find out more</nuxt-link
-              >
-            </div>
-          </div>
-        </div>
+                ceased in 1959."
+          link="/river_barrow"
+          cardPosition="left"
+        />
       </div>
 
       <insta-feed hashtag="graiguenamanagh" numberOfImages="32" />
@@ -188,12 +138,14 @@
 import AppMasthead from "@/components/AppMasthead.vue";
 import Stats from "@/components/Stats.vue";
 import InstaFeed from "@/components/InstaFeed.vue";
+import PageCard from "@/components/PageCard.vue";
 
 export default {
   components: {
     AppMasthead,
     Stats,
-    InstaFeed
+    InstaFeed,
+    PageCard
   },
   data() {
     return {
@@ -241,23 +193,6 @@ p {
 #green-river {
   background: url("../assets/images/green-river.png") center top;
   background-size: 100% 100%;
-}
-#brandon-splash {
-  background: url("../assets/images/brandon-splash_x2.png") no-repeat left top;
-  background-size: contain;
-}
-#duiske-splash {
-  background: url("../assets/images/duiske-splash_x2.png") no-repeat right top;
-  background-size: contain;
-}
-#tinnahinch-castle-splash {
-  background: url("../assets/images/tinnahinch-castle-splash_x2.png") no-repeat
-    left top;
-  background-size: contain;
-}
-#river-barrow-splash {
-  background: url("../assets/images/river-splash_x2.png") no-repeat right top;
-  background-size: contain;
 }
 .font-primary {
   font-family: "rukolaregular";

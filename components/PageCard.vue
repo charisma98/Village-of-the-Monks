@@ -1,0 +1,45 @@
+<template>
+  <div class="md:my-20 flex py-16 bg-contain" :id="cardId">
+    <div
+      class="w-full md:w-6/12"
+      :class="{ 'ml-auto': cardPosition === 'right' }"
+    >
+      <div class="bg-white mt-32 md:mt-0 shadow-md rounded p-8 text-center">
+        <div class="title">
+          <small>{{ irishTitle }}</small>
+          {{ title }}
+        </div>
+        <p class="text-sm">
+          {{ content }}
+        </p>
+        <nuxt-link
+          class="bg-yellow-500 mt-4 text-sm text-yellow-900 py-1 px-3 rounded mt-4 block"
+          :to="link"
+          >Find out more</nuxt-link
+        >
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  props: ["cardId", "title", "irishTitle", "content", "link", "cardPosition"]
+};
+</script>
+
+<style>
+#brandon-splash {
+  background: url("../assets/images/brandon-splash_x2.png") no-repeat left top;
+}
+#duiske-splash {
+  background: url("../assets/images/duiske-splash_x2.png") no-repeat right top;
+}
+#tinnahinch-castle-splash {
+  background: url("../assets/images/tinnahinch-castle-splash_x2.png") no-repeat
+    left top;
+}
+#river-barrow-splash {
+  background: url("../assets/images/river-splash_x2.png") no-repeat right top;
+}
+</style>

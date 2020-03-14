@@ -3,8 +3,8 @@
     <div>
       <app-masthead class="graiguenamanagh"></app-masthead>
       <div class="container">
-        <div class="flex justify-between">
-          <div class="w-1/2 text-gray-600 tracking-tight">
+        <div class="flex flex-wrap justify-between">
+          <div class="w-full md:w-1/2 text-gray-600 tracking-tight">
             <div class="title">
               <small>Gráig na Manach</small>
               Graiguenamanagh
@@ -27,21 +27,23 @@
             </p>
           </div>
           <div
-            class="w-5/12 -mt-32 transition-all duration-150 ease"
+            class="mobile-dont-move w-full md:w-5/12 mt-8 md:-mt-32 transition-all duration-150 ease"
             :style="{ transform: `translate3D(0, ${scrollPos * 0.05}px, 0)` }"
           >
             <img class="shadow-lg" src="~/assets/images/graig-air_x2.jpg" alt />
           </div>
         </div>
-        <div class="flex justify-between mt-16">
+        <div
+          class="flex flex-wrap flex-col-reverse md:flex-row justify-between md:mt-16"
+        >
           <div
-            class="w-5/12 transition-all duration-150 ease"
+            class="mobile-dont-move w-full md:w-5/12 transition-all duration-150 ease"
             :style="{ transform: `translate3D(0, ${scrollPos * 0.05}px, 0)` }"
           >
             <!-- Stats -->
             <stats />
           </div>
-          <div class="w-1/2 text-gray-600 tracking-tight mt-8">
+          <div class="w-full md:w-1/2 text-gray-600 tracking-tight mt-8">
             <p>
               Graignamanagh expanded beyond the Abbey as a market town, aided by
               the development of the Grand Canal and the navigation of the River
@@ -55,7 +57,7 @@
       </div>
 
       <div id="green-river" class="text-white py-24 -mt-24">
-        <div class="w-1/2 ml-auto">
+        <div class="w-full p-8 mt-16 md:w-1/2 md:ml-auto md:mt-0 md:p-0">
           <p
             class="text-shadow-green max-w-md font-secondary text-center text-xl text-white"
           >
@@ -66,99 +68,113 @@
         </div>
       </div>
 
-      <!-- Brandon Hill  -->
-      <div class="container my-20 flex py-16" id="brandon-splash">
-        <div class="w-5/12 ml-auto">
-          <div class="bg-white shadow-md rounded p-12 text-center">
-            <div class="title">
-              <small>Cnoc Bhréanail</small>
-              Brandon Hill
-            </div>
-            <p class="text-sm">
-              Brandon Hill is the highest mountain in County Kilkenny. It has an
-              elevation of 515 m (1,690 ft). It is situated 4 kilometers
-              South-South West of Graignamanagh, 7 kilometers east of Inistioge
-              and 11 kilometers east of Thomastown, in the south of County
-              Kilkenny.
-            </p>
-            <nuxt-link
-              class="bg-yellow-500 mt-4 text-sm text-yellow-900 py-1 px-3 rounded mt-4 block"
-              to="/brandon_hill"
-              >Find out more</nuxt-link
+      <div class="container">
+        <!-- Brandon Hill  -->
+        <div class="container md:my-20 flex py-16" id="brandon-splash">
+          <div class="w-full md:w-6/12 ml-auto">
+            <div
+              class="bg-white mt-32 md:mt-0 shadow-md rounded p-8 text-center"
             >
-          </div>
-        </div>
-      </div>
-
-      <!-- Duiske Abbey -->
-      <div class="container my-20 flex py-16" id="duiske-splash">
-        <div class="w-5/12">
-          <div class="bg-white shadow-md rounded p-12 text-center">
-            <nuxt-link class="text-gray-400 text-sm" to="/duiske_abbey">
               <div class="title">
-                <small>Mainistir Dhubhiske</small>
-                Duiske Abbey
+                <small>Cnoc Bhréanail</small>
+                Brandon Hill
               </div>
-            </nuxt-link>
-            <p class="text-sm">
-              Duiske Abbey was founded by William Marshall in 1204 and is one of
-              the first, largest and perhaps the finest of the thirty-four
-              medieval Cistercian monasteries in Ireland. The Abbey is the
-              parish church of Graignamanagh town and beautifully dominates the
-              town centre.
-            </p>
-            <nuxt-link
-              class="bg-yellow-500 mt-4 text-sm text-yellow-900 py-1 px-3 rounded mt-4 block"
-              to="/duiske_abbey"
-              >Find out more</nuxt-link
-            >
+              <p class="text-sm">
+                Brandon Hill is the highest mountain in County Kilkenny. It has
+                an elevation of 515 m (1,690 ft). It is situated 4 kilometers
+                South-South West of Graignamanagh, 7 kilometers east of
+                Inistioge and 11 kilometers east of Thomastown, in the south of
+                County Kilkenny.
+              </p>
+              <nuxt-link
+                class="bg-yellow-500 mt-4 text-sm text-yellow-900 py-1 px-3 rounded mt-4 block"
+                to="/brandon_hill"
+                >Find out more</nuxt-link
+              >
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Tinnahinch Castle  -->
-      <div class="container my-20 flex py-16" id="tinnahinch-castle-splash">
-        <div class="w-5/12 ml-auto">
-          <div class="bg-white shadow-md rounded p-12 text-center">
-            <div class="title">
-              <small>Caisleán Tigh na hInse</small>
-              Tinnahinch Castle
-            </div>
-            <p class="text-sm">
-              Tinnahinch Castle was constructed in 1615 by the Duke of Ormonde.
-              It was built to control a crossing where a wooden bridge once
-              spanned the Barrow. The bridge linking the two settlements was
-              originally constructed in 1797. The castle was burnt around the
-              year 1700 and has lain that way ever since.
-            </p>
-            <nuxt-link
-              class="bg-yellow-500 mt-4 text-sm text-yellow-900 py-1 px-3 rounded mt-4 block"
-              to="/tinnahinch_castle"
-              >Find out more</nuxt-link
+        <!-- Duiske Abbey -->
+        <div class="container md:my-20 flex py-16" id="duiske-splash">
+          <div class="w-full md:w-6/12">
+            <div
+              class="bg-white mt-32 md:mt-0 shadow-md rounded p-8 text-center"
             >
+              <nuxt-link class="text-gray-400 text-sm" to="/duiske_abbey">
+                <div class="title">
+                  <small>Mainistir Dhubhiske</small>
+                  Duiske Abbey
+                </div>
+              </nuxt-link>
+              <p class="text-sm">
+                Duiske Abbey was founded by William Marshall in 1204 and is one
+                of the first, largest and perhaps the finest of the thirty-four
+                medieval Cistercian monasteries in Ireland. The Abbey is the
+                parish church of Graignamanagh town and beautifully dominates
+                the town centre.
+              </p>
+              <nuxt-link
+                class="bg-yellow-500 mt-4 text-sm text-yellow-900 py-1 px-3 rounded mt-4 block"
+                to="/duiske_abbey"
+                >Find out more</nuxt-link
+              >
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- River Barrow -->
-      <div class="container my-20 flex py-16" id="river-barrow-splash">
-        <div class="w-5/12">
-          <div class="bg-white shadow-md rounded p-12 text-center">
-            <div class="title">
-              <small>An Bhearú</small>
-              River Barrow
-            </div>
-            <p class="text-sm">
-              The River Barrow, historically a significant highway, was
-              developed as a commercial navigation in the mid seventeen hundreds
-              and Graiguenamanagh served as the main base for commercial barges
-              operating on the river until barge traffic ceased in 1959.
-            </p>
-            <nuxt-link
-              class="bg-yellow-500 mt-4 text-sm text-yellow-900 py-1 px-3 rounded mt-4 block"
-              to="/river_barrow"
-              >Find out more</nuxt-link
+        <!-- Tinnahinch Castle  -->
+        <div
+          class="container md:my-20 flex py-16"
+          id="tinnahinch-castle-splash"
+        >
+          <div class="w-full md:w-6/12 ml-auto">
+            <div
+              class="bg-white mt-32 md:mt-0 shadow-md rounded p-8 text-center"
             >
+              <div class="title">
+                <small>Caisleán Tigh na hInse</small>
+                Tinnahinch Castle
+              </div>
+              <p class="text-sm">
+                Tinnahinch Castle was constructed in 1615 by the Duke of
+                Ormonde. It was built to control a crossing where a wooden
+                bridge once spanned the Barrow. The bridge linking the two
+                settlements was originally constructed in 1797. The castle was
+                burnt around the year 1700 and has lain that way ever since.
+              </p>
+              <nuxt-link
+                class="bg-yellow-500 mt-4 text-sm text-yellow-900 py-1 px-3 rounded mt-4 block"
+                to="/tinnahinch_castle"
+                >Find out more</nuxt-link
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- River Barrow -->
+        <div class="container md:my-20 flex py-16" id="river-barrow-splash">
+          <div class="w-full md:w-6/12">
+            <div
+              class="bg-white mt-32 md:mt-0 shadow-md rounded p-8 text-center"
+            >
+              <div class="title">
+                <small>An Bhearú</small>
+                River Barrow
+              </div>
+              <p class="text-sm">
+                The River Barrow, historically a significant highway, was
+                developed as a commercial navigation in the mid seventeen
+                hundreds and Graiguenamanagh served as the main base for
+                commercial barges operating on the river until barge traffic
+                ceased in 1959.
+              </p>
+              <nuxt-link
+                class="bg-yellow-500 mt-4 text-sm text-yellow-900 py-1 px-3 rounded mt-4 block"
+                to="/river_barrow"
+                >Find out more</nuxt-link
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -250,5 +266,10 @@ p {
 }
 .text-shadow-green {
   text-shadow: 0 1px 3px rgba(39, 97, 39, 0.5);
+}
+@media screen and (max-width: 768px) {
+  .mobile-dont-move {
+    transform: translate3D(0, 0, 0) !important;
+  }
 }
 </style>

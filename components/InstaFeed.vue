@@ -1,19 +1,29 @@
 <template>
   <ul class="instagram-feed flex flex-wrap">
     <div class="background-text">
-      <small>#{{hashtag}}</small>Instagram Feed
+      <small>#{{ hashtag }}</small
+      >Instagram Feed
     </div>
     <li
       class="absolute"
-      :style="{ animation: media.animation, top: media.top+'%' }"
+      :style="{ animation: media.animation, top: media.top + '%' }"
       v-for="media in instaImages"
       v-bind:key="media.node.id"
     >
-      <a :href="'https://www.instagram.com/p/' + media.node.shortcode" target="_blank">
-        <img :style="{ width: media.size+'px' }" :src="media.node.thumbnail_src" alt />
+      <a
+        :href="'https://www.instagram.com/p/' + media.node.shortcode"
+        target="_blank"
+      >
+        <img
+          :style="{ width: media.size + 'px' }"
+          :src="media.node.thumbnail_src"
+          alt
+        />
       </a>
-      <div class="details flex justify-between leading-tight text-gray-600 text-xs tracking-tight">
-        <span>{{media.node.edge_media_to_caption.edges[0].node.text}}</span>
+      <div
+        class="details flex justify-between leading-tight text-gray-600 text-xs tracking-tight"
+      >
+        <span>{{ media.node.edge_media_to_caption.edges[0].node.text }}</span>
         <!-- <span>15 links</span>
         <span>1 comment</span>-->
       </div>
@@ -107,7 +117,7 @@ export default {
 
   .background-text {
     font-family: "rukolaregular";
-    font-size: 150px;
+    font-size: 80px;
     color: #344c5e;
     top: 0;
     bottom: 0;
@@ -122,7 +132,7 @@ export default {
     line-height: 1.25;
     opacity: 0.15;
     small {
-      font-size: 40px;
+      font-size: 32px;
       color: #6db369;
       font-family: festivo;
       letter-spacing: -1px;

@@ -33,6 +33,7 @@
               class=" absolute right-0 top-0 m-4"
             />
             <div @click="mobileMenuIsOpen = false" class="flex flex-col">
+              <nuxt-link class="p-2" to="/">Home</nuxt-link>
               <nuxt-link class="p-2" to="/brandon_hill">Brandon Hill</nuxt-link>
               <nuxt-link class="p-2" to="/duiske_abbey">Duiske Abbey</nuxt-link>
               <nuxt-link class="p-2" to="/tinnahinch_castle"

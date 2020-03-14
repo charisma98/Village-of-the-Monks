@@ -52,6 +52,8 @@ html {
 body {
   background: url("../assets/images/body-bg.png");
   background-size: 300px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .fade-leave-active {

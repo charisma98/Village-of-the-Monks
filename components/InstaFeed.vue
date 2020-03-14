@@ -114,6 +114,8 @@ export default {
   position: relative;
   z-index: 10;
   min-height: 600px;
+  max-width: 100%;
+  overflow-x: hidden;
 
   .background-text {
     font-family: "rukolaregular";

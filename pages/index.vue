@@ -70,7 +70,7 @@
 
       <div class="container">
         <!-- Brandon Hill  -->
-        <div class="container md:my-20 flex py-16" id="brandon-splash">
+        <div class=" md:my-20 flex py-16" id="brandon-splash">
           <div class="w-full md:w-6/12 ml-auto">
             <div
               class="bg-white mt-32 md:mt-0 shadow-md rounded p-8 text-center"
@@ -96,7 +96,7 @@
         </div>
 
         <!-- Duiske Abbey -->
-        <div class="container md:my-20 flex py-16" id="duiske-splash">
+        <div class=" md:my-20 flex py-16" id="duiske-splash">
           <div class="w-full md:w-6/12">
             <div
               class="bg-white mt-32 md:mt-0 shadow-md rounded p-8 text-center"
@@ -124,10 +124,7 @@
         </div>
 
         <!-- Tinnahinch Castle  -->
-        <div
-          class="container md:my-20 flex py-16"
-          id="tinnahinch-castle-splash"
-        >
+        <div class=" md:my-20 flex py-16" id="tinnahinch-castle-splash">
           <div class="w-full md:w-6/12 ml-auto">
             <div
               class="bg-white mt-32 md:mt-0 shadow-md rounded p-8 text-center"
@@ -153,7 +150,7 @@
         </div>
 
         <!-- River Barrow -->
-        <div class="container md:my-20 flex py-16" id="river-barrow-splash">
+        <div class=" md:my-20 flex py-16" id="river-barrow-splash">
           <div class="w-full md:w-6/12">
             <div
               class="bg-white mt-32 md:mt-0 shadow-md rounded p-8 text-center"
@@ -239,23 +236,24 @@ p {
   @apply text-gray-600;
 }
 #green-river {
-  background: url("../assets/images/green-river.png") center;
+  background: url("../assets/images/green-river.png") center top;
   background-size: 100% 100%;
 }
 #brandon-splash {
-  background: url("../assets/images/brandon-splash_x2.png") no-repeat;
+  background: url("../assets/images/brandon-splash_x2.png") no-repeat left top;
   background-size: contain;
 }
 #duiske-splash {
-  background: url("../assets/images/duiske-splash_x2.png") no-repeat right;
+  background: url("../assets/images/duiske-splash_x2.png") no-repeat right top;
   background-size: contain;
 }
 #tinnahinch-castle-splash {
-  background: url("../assets/images/tinnahinch-castle-splash_x2.png") no-repeat;
+  background: url("../assets/images/tinnahinch-castle-splash_x2.png") no-repeat
+    left top;
   background-size: contain;
 }
 #river-barrow-splash {
-  background: url("../assets/images/river-splash_x2.png") no-repeat right;
+  background: url("../assets/images/river-splash_x2.png") no-repeat right top;
   background-size: contain;
 }
 .font-primary {

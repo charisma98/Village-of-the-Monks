@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute w-full p-8 z-50">
+  <div class="absolute w-full py-8 z-50">
     <div class="container flex justify-between items-end">
       <nuxt-link class="logo w-8 flex justify-between items-end" exact to="/">
         <img src="~/assets/images/logo.min.png" />
@@ -22,12 +22,9 @@
         />
       </div>
       <transition name="bounce">
-        <div
-          v-if="mobileMenuIsOpen"
-          class="fixed left-0 top-0 w-full py-6 px-12"
-        >
+        <div v-if="mobileMenuIsOpen" class="fixed left-0 top-0 w-full p-6">
           <div
-            class="flex items-center bg-white rounded-md shadow-md p-4 relative"
+            class=" flex items-center bg-white rounded-md shadow-md p-4 relative"
           >
             <img
               @click="mobileMenuIsOpen = false"

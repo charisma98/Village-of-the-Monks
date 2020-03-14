@@ -30,14 +30,17 @@
             class="mobile-dont-move w-full md:w-5/12 mt-8 md:-mt-32 transition-all duration-150 ease"
             :style="{ transform: `translate3D(0, ${scrollPos * 0.05}px, 0)` }"
           >
-            <img class="shadow-lg" src="~/assets/images/graig-air_x2.jpg" alt />
+            <img
+              class="shadow-lg"
+              :srcset="require('~/assets/images/graig-air_x2.jpg').srcSet"
+            />
           </div>
         </div>
         <div
           class="flex flex-wrap flex-col-reverse md:flex-row justify-between md:mt-16"
         >
           <div
-            class="mobile-dont-move w-full md:w-5/12 transition-all duration-150 ease"
+            class="mobile-dont-move w-full mt-8 md:mt-0 md:w-5/12 transition-all duration-150 ease"
             :style="{ transform: `translate3D(0, ${scrollPos * 0.05}px, 0)` }"
           >
             <!-- Stats -->

@@ -84,8 +84,9 @@
 
 <style lang="postcss">
 #footer {
-  background: url("../assets/images/brush-strokes-dark.png") no-repeat,
-    url("../assets/images/pattern-dark-bg.png");
+  background: url("https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304560/brush-strokes-dark.png")
+      no-repeat,
+    url("https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304562/pattern-dark-bg.png");
   background-size: 100% auto, 50%;
 
   & a {

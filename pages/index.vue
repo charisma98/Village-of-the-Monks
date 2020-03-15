@@ -154,13 +154,16 @@ export default {
 
 <style lang="postcss">
 .graiguenamanagh {
-  background: url("../assets/images/brush-strokes2.png") center bottom no-repeat,
-    url("../assets/images/main-header-large.jpg") center;
+  background: url("https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304562/brush-strokes2.png")
+      center bottom no-repeat,
+    url("https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304561/main-header-large.jpg")
+      center;
   background-size: contain, cover;
 }
 .title {
   text-align: center;
-  background: url("../assets/images/section-title-brush-4.png") no-repeat center;
+  background: url("https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304564/section-title-brush-4.png")
+    no-repeat center;
   background-size: contain;
   font-size: 2.5rem;
   line-height: 1;
@@ -183,7 +186,8 @@ p {
   @apply text-gray-600;
 }
 #green-river {
-  background: url("../assets/images/green-river.png") center top;
+  background: url("https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304557/green-river_x2.png")
+    center top;
   background-size: 100% 100%;
 }
 .font-primary {

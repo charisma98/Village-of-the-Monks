@@ -4,7 +4,13 @@
       class="container pt-48 pb-16 flex justify-end flex-wrap flex-col md:flex-row"
     >
       <div class="flex-1">
-        <img width="50" class="opacity-75" src="~/assets/images/logo.png" alt />
+        <img
+          width="50"
+          loading="lazy"
+          class="opacity-75"
+          src="https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304558/logo.png"
+          alt
+        />
       </div>
 
       <div class="flex flex-col mr-10 mt-8 md:mt-0">

@@ -9,13 +9,10 @@
 </template>
 
 <script>
-import AppNav from "~/components/AppNav.vue";
-import AppFooter from "~/components/AppFooter.vue";
-
 export default {
   components: {
-    AppNav,
-    AppFooter
+    AppNav: () => import("@/components/AppNav.vue"),
+    AppFooter: () => import("@/components/AppFooter.vue")
   }
 };
 </script>

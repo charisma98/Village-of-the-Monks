@@ -30,7 +30,11 @@
             class="mobile-dont-move w-full md:w-5/12 mt-8 md:-mt-32 transition-all duration-150 ease"
             :style="{ transform: `translate3D(0, ${scrollPos * 0.05}px, 0)` }"
           >
-            <img class="shadow-lg" src="~/assets/images/graig-air_x2.jpg" />
+            <img
+              class="shadow-lg"
+              loading="lazy"
+              src="~/assets/images/graig-air_x2.jpg"
+            />
           </div>
         </div>
         <div

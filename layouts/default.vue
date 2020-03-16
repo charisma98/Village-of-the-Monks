@@ -48,7 +48,7 @@ html {
 
 body {
   background: url("https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304546/body-bg.png");
-  background-size: 300px;
+  background-size: 600px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

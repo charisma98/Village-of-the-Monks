@@ -2,46 +2,88 @@
   <div>
     <app-masthead class="duiske-abbey"></app-masthead>
     <div class="container">
-      <div class="flex justify-between">
-        <div class="w-1/2 text-gray-600 tracking-tight">
-          <div class="title">
-            <small>Gráig na Manach</small>
-            Graiguenamanagh
+      <div class="flex flex-wrap justify-between">
+        <div class="w-full md:w-5/12 text-gray-600 tracking-tight">
+          <h2 class="title">
+            <small>Est. 1204</small>
+            Duiske Abbey
+          </h2>
+          <p>
+            A National Monument, Duiske Abbey originated in the 13th century as
+            the church of a Cistercian monastery, but today it is a Catholic
+            parish church in the town of Graignamanagh, County Kilkenny. The
+            abbey began to deteriorate in 1536 as it was suppressed, and it
+            gradually fell into ruin. The last tragedy occurred in 1744 when the
+            tower collapsed into the nave. It later underwent some renovations
+            while serving as a place of worship for the Protestant Church of
+            Ireland, returned to the Catholic community in 1812. Duiske Abbey
+            was fully restored in the 1980s.
+          </p>
+          <p>
+            The abbey’s simple exterior contrasts with its elaborate interior,
+            where visitors can see the ancient stone and high clerestory windows
+            of the nave as well as an effigy of a 13th-century knight at the
+            entrance. The processional door of the 13th century and early
+            medieval floor tiles are visible and can be seen in the sunken floor
+            to the right of the main entrance. Additionally, the churchyard is
+            home to the Aghakiltawn and Ballyogen Crosses, dating from the 8th
+            and 9th centuries. Built into the wall of the Abbey is a Cross Slab,
+            also in the abbey grounds is the base of a third cross.
+          </p>
+          <img
+            class="hidden md:block"
+            src="https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304556/duiske-abbey-bell.png"
+            alt="Drawing of the clock and bell of the Duskie Abbey"
+          />
+        </div>
+        <div class="w-full md:w-1/2 md:-mt-32 text-gray-600 tracking-tight">
+          <img
+            src="https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304548/duiske-abbey-inside_x2.jpg"
+            class=" mobile-dont-move my-4 md:my-0"
+            alt="The roof of Duiske Abbey from the inside"
+            :style="{ transform: `translate3D(0, ${scrollPos * 0.05}px, 0)` }"
+          />
+          <h2 class="title md:mt-24">A Breif History</h2>
+          <p>
+            The Abbey was founded in 1204 by William Marshall the elder, earl of
+            Pembroke, and was colonized with monks from Stanley in Wiltshire.
+            The monks may not have arrived at Graiguenamanagh until 1207, but it
+            seems that building may have begun in 1204 when the cemetery at
+            Duiske was consecrated. In 1228 the religious community was fixed at
+            thirty-six monks and fifty lay-brothers which were almost as large
+            as Mellifont Abbey. The abbot of Duiske sat as a peer in parliament
+            at that time.
+          </p>
+          <p>
+            The Abbey was suppressed under Henry VIII in 1536 and the last
+            abbot, Charles O'Cavanagh, resigned his title. Monks continued to
+            occupy it but it began to fall into ruin. Following the dissolution,
+            the lands were awarded to James Butler of Duiske. The abbey church
+            continued to be used as a local place of worship. The Church of
+            Ireland re-roofed the West end after the tower collapsed into the
+            nave in 1744. The church was returned to the Roman Catholic
+            community in 1812 and restoration was completed in the 1980s.
+            Currently, it is used as a parish church and music events are held
+            there.
+          </p>
+          <div class="info mt-12 mb-24">
+            <h3 class="font-secondary text-lg mt-4 text-green-600">
+              Mass Times
+            </h3>
+            <div class="flex justify-between">
+              <span>Monday - Friday</span><span>10am</span>
+            </div>
+            <div class="flex justify-between">
+              <span>Saturday</span><span>11am, 7.30pm (Winter 7pm)</span>
+            </div>
+            <div class="flex justify-between">
+              <span>Sunday</span><span>11am</span>
+            </div>
+            <h3 class="font-secondary text-lg mt-12 text-green-600">Clergy</h3>
+            <div class="flex justify-between">
+              <span>Parish Priest</span><span>V. Rev Mark Townsend PP</span>
+            </div>
           </div>
-          <p>
-            Gráig na Manach, meaning "Village of the Monks" is considered to be
-            one of the most beautiful areas in the southeast of Ireland. It is
-            located on the River Barrow at the foot of Brandon Hill. It is home
-            to Duiske Abbey, the largest and perhaps the finest of the
-            thirty-four medieval Cistercian abbeys in Ireland.
-          </p>
-          <p>
-            With its remarkable combination of mountain views, lush rolling
-            hills, forest and river valleys, Graignamanagh offers nature lovers
-            a plentiful feast as well as countless amenities for those keen on
-            outdoor activities. Add to these the rich heritage of historical
-            monuments and an abundance of leisure facilities and Graiguenamanagh
-            presents itself as an enormously attractive venue for tourists.
-          </p>
-        </div>
-        <div class="w-5/12 -mt-32">
-          <img src="~/assets/images/graig-air_x2.jpg" alt />
-        </div>
-      </div>
-      <div class="flex justify-between mt-16">
-        <div class="w-5/12">
-          <!-- Stats -->
-          <stats />
-        </div>
-        <div class="w-1/2 text-gray-600 tracking-tight mt-8">
-          <p>
-            Graignamanagh expanded beyond the Abbey as a market town, aided by
-            the development of the Grand Canal and the navigation of the River
-            Barrow, which ultimately connected the town with Dublin, New Ross,
-            Waterford and Carlow. The production of wool was historically
-            important to the town’s economy and sheep rearing remains a
-            predominant agricultural activity in the hinterland.
-          </p>
         </div>
       </div>
     </div>
@@ -50,50 +92,30 @@
 </template>
 
 <script>
-import AppMasthead from "@/components/AppMasthead.vue";
-import Stats from "@/components/Stats.vue";
-import InstaFeed from "@/components/InstaFeed.vue";
-
 export default {
-  head: {
-    title: "Duiske Abbey"
-  },
   components: {
-    AppMasthead,
-    Stats,
-    InstaFeed
+    AppMasthead: () => import("@/components/AppMasthead.vue"),
+    Stats: () => import("@/components/Stats.vue"),
+    InstaFeed: () => import("@/components/InstaFeed.vue"),
+    PageCard: () => import("@/components/PageCard.vue")
   },
   data() {
-    return {};
+    return {
+      scrollPos: 0
+    };
+  },
+  mounted() {
+    window.addEventListener("scroll", () => {
+      this.scrollPos = window.scrollY;
+    });
   }
 };
 </script>
 
-<style lang="scss">
+<style>
 .duiske-abbey {
   background: url("../assets/images/brush-strokes2.png") center bottom no-repeat,
     url("../assets/images/duiske-abbey-header-large.jpg") center;
   background-size: contain, cover;
-}
-.title {
-  text-align: center;
-  background: url("../assets/images/section-title-brush-4.png") no-repeat center;
-  background-size: contain;
-  font-size: 2.5rem;
-  line-height: 1;
-  position: relative;
-  padding: 30px 10px 10px;
-  font-family: "rukolaregular";
-  color: #354c5f;
-  small {
-    font-family: "festivo";
-    font-size: 1rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    line-height: 1;
-    color: rgba(51, 153, 51, 0.75);
-  }
 }
 </style>

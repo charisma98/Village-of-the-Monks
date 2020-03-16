@@ -33,7 +33,7 @@
             <img
               class="shadow-lg"
               loading="lazy"
-              src="~/assets/images/graig-air_x2.jpg"
+              src="https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304554/graig-air_x2.jpg"
             />
           </div>
         </div>

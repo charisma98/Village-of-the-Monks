@@ -1,31 +1,31 @@
 <template>
   <div
-    class="bg-yellow-500 flex flex-col items-cente justify-between text-yellow-900 shadow-lg p-6"
+    class="flex flex-col justify-between p-6 text-yellow-900 bg-yellow-500 shadow-lg items-cente"
   >
     <div class="flex items-center h-24">
       <div class="w-1/4 text-center">
-        <img class="stat-icon mx-auto" src="~/assets/images/cloudy-outline.svg" />
+        <img class="mx-auto stat-icon" src="~/assets/images/cloudy-outline.svg" />
       </div>
       <div>
-        <p class="text-xl stat-info tracking-wide">{{ tempature }}°C</p>
+        <p class="text-xl tracking-wide stat-info">{{ tempature }}°C</p>
         <p class="text-xs text-yellow-800 uppercase">{{ description }}</p>
       </div>
     </div>
     <div class="flex items-center h-24">
       <div class="w-1/4 text-center">
-        <img class="stat-icon mx-auto" src="~/assets/images/people-outline.svg" />
+        <img class="mx-auto stat-icon" src="~/assets/images/people-outline.svg" />
       </div>
       <div>
-        <p class="text-xl stat-info tracking-wide">1,543</p>
+        <p class="text-xl tracking-wide stat-info">1,543</p>
         <p class="text-xs text-yellow-800 uppercase">Population</p>
       </div>
     </div>
     <div class="flex items-center h-24">
       <div class="w-1/4 text-center">
-        <img class="stat-icon mx-auto" src="~/assets/images/locate-outline.svg" />
+        <img class="mx-auto stat-icon" src="~/assets/images/locate-outline.svg" />
       </div>
       <div>
-        <p class="text-xl stat-info tracking-wide">52.543925 -6.957807</p>
+        <p class="text-xl tracking-wide stat-info">52.543925 -6.957807</p>
         <p class="text-xs text-yellow-800 uppercase">Coordinates</p>
       </div>
     </div>

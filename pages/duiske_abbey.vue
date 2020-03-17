@@ -3,7 +3,7 @@
     <app-masthead class="duiske-abbey"></app-masthead>
     <div class="container">
       <div class="flex flex-wrap justify-between">
-        <div class="w-full md:w-5/12 text-gray-600 tracking-tight">
+        <div class="w-full tracking-tight text-gray-600 md:w-5/12">
           <h2 class="title">
             <small>Est. 1204</small>
             Duiske Abbey
@@ -36,10 +36,10 @@
             alt="Drawing of the clock and bell of the Duskie Abbey"
           />
         </div>
-        <div class="w-full md:w-1/2 md:-mt-32 text-gray-600 tracking-tight">
+        <div class="w-full tracking-tight text-gray-600 md:w-1/2 md:-mt-32">
           <img
             src="https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304548/duiske-abbey-inside_x2.jpg"
-            class=" mobile-dont-move my-4 md:my-0"
+            class="my-4 mobile-dont-move md:my-0"
             alt="The roof of Duiske Abbey from the inside"
             :style="{ transform: `translate3D(0, ${scrollPos * 0.05}px, 0)` }"
           />
@@ -66,22 +66,24 @@
             Currently, it is used as a parish church and music events are held
             there.
           </p>
-          <div class="info mt-12 mb-24">
-            <h3 class="font-secondary text-lg mt-4 text-green-600">
-              Mass Times
-            </h3>
+          <div class="mt-12 mb-24 info">
+            <h3 class="mt-4 text-lg text-green-600 font-secondary">Mass Times</h3>
             <div class="flex justify-between">
-              <span>Monday - Friday</span><span>10am</span>
+              <span>Monday - Friday</span>
+              <span>10am</span>
             </div>
             <div class="flex justify-between">
-              <span>Saturday</span><span>11am, 7.30pm (Winter 7pm)</span>
+              <span>Saturday</span>
+              <span>11am, 7.30pm (Winter 7pm)</span>
             </div>
             <div class="flex justify-between">
-              <span>Sunday</span><span>11am</span>
+              <span>Sunday</span>
+              <span>11am</span>
             </div>
-            <h3 class="font-secondary text-lg mt-12 text-green-600">Clergy</h3>
+            <h3 class="mt-12 text-lg text-green-600 font-secondary">Clergy</h3>
             <div class="flex justify-between">
-              <span>Parish Priest</span><span>V. Rev Mark Townsend PP</span>
+              <span>Parish Priest</span>
+              <span>V. Rev Mark Townsend PP</span>
             </div>
           </div>
         </div>

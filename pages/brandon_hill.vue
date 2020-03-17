@@ -3,7 +3,7 @@
     <app-masthead class="brandon-hill"></app-masthead>
     <div class="container">
       <div class="flex justify-between">
-        <div class="w-1/2 text-gray-600 tracking-tight">
+        <div class="w-1/2 tracking-tight text-gray-600">
           <div class="title">
             <small>Gráig na Manach</small>
             Graiguenamanagh
@@ -33,7 +33,7 @@
           <!-- Stats -->
           <stats />
         </div>
-        <div class="w-1/2 text-gray-600 tracking-tight mt-8">
+        <div class="w-1/2 mt-8 tracking-tight text-gray-600">
           <p>
             Graignamanagh expanded beyond the Abbey as a market town, aided by
             the development of the Grand Canal and the navigation of the River

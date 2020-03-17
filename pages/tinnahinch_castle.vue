@@ -3,7 +3,7 @@
     <app-masthead class="tinnahinch-castle"></app-masthead>
     <div class="container">
       <div class="flex flex-wrap justify-between">
-        <div class="w-full md:w-1/2 text-gray-600 tracking-tight">
+        <div class="w-full tracking-tight text-gray-600 md:w-1/2">
           <h2 class="title">
             <small>Caisleán Tigh na hInse</small>
             Tinnahinch Castle
@@ -24,13 +24,13 @@
             the Confederates in the Cromwellian wars
           </p>
         </div>
-        <div class="w-full md:w-5/12 mt-4 md:-mt-32">
+        <div class="w-full mt-4 md:w-5/12 md:-mt-32">
           <img src="~/assets/images/tinnahinch-castle-sketch_x2.jpg" alt />
         </div>
       </div>
 
       <div class="flex justify-center mt-16">
-        <div class="w-full text-gray-600 tracking-tight mt-8">
+        <div class="w-full mt-8 tracking-tight text-gray-600">
           <h3 class="title">Ancient Castle to be Demolished</h3>
           <p class="mb-2">
             At Tinnahinch (Tighe-na-hinse, the House of the Island or River
@@ -73,10 +73,10 @@
             prediction by this newspaper never came to pass, and Tinnahinch
             Castle remains a picturesque object beside the banks of the Barrow.
           </p>
-          <p class="max-w-sm  text-gray-700">
+          <p class="max-w-sm text-gray-700">
             This article is from an old newspaper found under the floorboards of
-            a local house<br />
-            – Date unknown. *
+            a local house
+            <br />– Date unknown. *
           </p>
         </div>
       </div>

@@ -1,13 +1,11 @@
 <template>
-  <div class="absolute w-full py-8 z-50">
-    <div class="container flex justify-between items-end">
-      <nuxt-link class="logo w-8 flex justify-between items-end" exact to="/">
+  <div class="absolute z-50 w-full py-8">
+    <div class="container flex items-end justify-between">
+      <nuxt-link class="flex items-end justify-between w-8 logo" exact to="/">
         <img src="~/assets/images/logo.min.png" />
         <span>Village of the Monks</span>
       </nuxt-link>
-      <nav
-        class="hidden md:flex leading-tight tracking-tight text-gray-900 font-medium"
-      >
+      <nav class="hidden font-medium leading-tight tracking-tight text-gray-900 md:flex">
         <nuxt-link to="/brandon_hill">Brandon Hill</nuxt-link>
         <nuxt-link to="/duiske_abbey">Duiske Abbey</nuxt-link>
         <nuxt-link to="/tinnahinch_castle">Tinnahinch Castle</nuxt-link>
@@ -22,23 +20,19 @@
         />
       </div>
       <transition name="bounce">
-        <div v-if="mobileMenuIsOpen" class="fixed left-0 top-0 w-full p-6">
-          <div
-            class=" flex items-center bg-white rounded-md shadow-md p-4 relative"
-          >
+        <div v-if="mobileMenuIsOpen" class="fixed top-0 left-0 w-full p-6">
+          <div class="relative flex items-center p-4 bg-white rounded-md shadow-md">
             <img
               @click="mobileMenuIsOpen = false"
               width="48"
               src="~/assets/images/close.svg"
-              class=" absolute right-0 top-0 m-4"
+              class="absolute top-0 right-0 m-4"
             />
             <div @click="mobileMenuIsOpen = false" class="flex flex-col">
               <nuxt-link class="p-2" to="/">Home</nuxt-link>
               <nuxt-link class="p-2" to="/brandon_hill">Brandon Hill</nuxt-link>
               <nuxt-link class="p-2" to="/duiske_abbey">Duiske Abbey</nuxt-link>
-              <nuxt-link class="p-2" to="/tinnahinch_castle"
-                >Tinnahinch Castle</nuxt-link
-              >
+              <nuxt-link class="p-2" to="/tinnahinch_castle">Tinnahinch Castle</nuxt-link>
               <nuxt-link class="p-2" to="/river_barrow">River Barrow</nuxt-link>
             </div>
           </div>

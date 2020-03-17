@@ -1,22 +1,16 @@
 <template>
-  <div class="md:my-20 flex py-16" :id="cardId">
-    <div
-      class="w-full md:w-6/12"
-      :class="{ 'ml-auto': cardPosition === 'right' }"
-    >
-      <div class="bg-white mt-32 md:mt-0 shadow-md rounded p-8 text-center">
+  <div class="flex py-16 md:my-20" :id="cardId">
+    <div class="w-full md:w-6/12" :class="{ 'ml-auto': cardPosition === 'right' }">
+      <div class="p-8 mt-32 text-center bg-white rounded shadow-md md:mt-0">
         <div class="title">
           <small>{{ irishTitle }}</small>
           {{ title }}
         </div>
-        <p class="text-sm">
-          {{ content }}
-        </p>
+        <p class="text-sm">{{ content }}</p>
         <nuxt-link
-          class="bg-yellow-500 mt-4 text-sm text-yellow-900 py-1 px-3 rounded mt-4 block"
+          class="block px-3 py-1 mt-4 text-sm text-yellow-900 bg-yellow-500 rounded"
           :to="link"
-          >Find out more</nuxt-link
-        >
+        >Find out more</nuxt-link>
       </div>
     </div>
   </div>

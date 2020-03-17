@@ -1,5 +1,5 @@
 <template>
-  <ul class="instagram-feed flex flex-wrap">
+  <ul class="instagram-feed flex flex-wrap z-50">
     <div class="background-text">
       <small>#{{ hashtag }}</small
       >Instagram Feed
@@ -87,7 +87,7 @@ export default {
               2000
             )}ms`,
             size: minMax(100, 200),
-            top: minMax(0, 80),
+            top: minMax(15, 60),
             shadow: this.shadows[
               Math.floor(Math.random() * this.shadows.length)
             ]
@@ -115,7 +115,8 @@ export default {
   z-index: 10;
   min-height: 600px;
   max-width: 100%;
-  overflow-x: hidden;
+  overflow: visible;
+  z-index: 100;
 
   .background-text {
     font-family: "rukolaregular";
@@ -149,6 +150,7 @@ export default {
     transform-origin: right;
     border-radius: 3px;
     overflow: hidden;
+    z-index: 101;
 
     img {
       transition: all 300ms ease;
@@ -168,7 +170,7 @@ export default {
     &:hover {
       animation-play-state: paused !important;
       cursor: pointer;
-      z-index: 99999;
+      z-index: 99999999;
       margin-top: -100px;
       //   margin-left: -100px;
       width: auto;

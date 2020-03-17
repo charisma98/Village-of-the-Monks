@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="w-full overflow-x-hidden">
     <app-nav />
     <!-- <transition name="scott" mode> -->
     <nuxt />

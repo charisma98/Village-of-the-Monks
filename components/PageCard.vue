@@ -1,5 +1,5 @@
 <template>
-  <div v-if="fullyLoaded" class="md:my-20 flex py-16" :id="cardId">
+  <div class="md:my-20 flex py-16" :id="cardId">
     <div
       class="w-full md:w-6/12"
       :class="{ 'ml-auto': cardPosition === 'right' }"
@@ -26,14 +26,15 @@
 export default {
   data() {
     return {
-      fullyLoaded: false
+      // fullyLoaded: false
     };
   },
   props: ["cardId", "title", "irishTitle", "content", "link", "cardPosition"],
   mounted() {
-    setTimeout(() => {
-      this.fullyLoaded = true;
-    }, 500);
+    // setTimeout(() => {
+    //   this.fullyLoaded = true;
+    // }, 500);
+    console.log("Loaded " + this.title);
   }
 };
 </script>

@@ -72,7 +72,7 @@
         </div>
       </div>
 
-      <div class="container">
+      <div v-if="scrollPos > 800" class="container">
         <!-- Brandon Hill  -->
         <page-card
           cardId="brandon-splash"

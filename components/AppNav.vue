@@ -1,17 +1,27 @@
 <template>
   <div class="absolute z-50 w-full py-8">
     <div class="container flex items-end justify-between">
+      <!-- Logo  -->
       <nuxt-link class="flex items-end justify-between w-8 logo" exact to="/">
-        <img src="~/assets/images/logo.min.png" />
+        <img
+          src="https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304557/logo.min.png"
+        />
         <span>Village of the Monks</span>
       </nuxt-link>
-      <nav class="hidden font-medium leading-tight tracking-tight text-gray-900 md:flex">
+
+      <!-- Desktop Menu -->
+      <nav
+        v-if="width > 768"
+        class="font-medium leading-tight tracking-tight text-gray-900 md:flex"
+      >
         <nuxt-link to="/brandon_hill">Brandon Hill</nuxt-link>
         <nuxt-link to="/duiske_abbey">Duiske Abbey</nuxt-link>
         <nuxt-link to="/tinnahinch_castle">Tinnahinch Castle</nuxt-link>
         <nuxt-link to="/river_barrow">River Barrow</nuxt-link>
       </nav>
-      <div class="md:hidden">
+
+      <!-- Burger Button -->
+      <div v-if="width < 768">
         <img
           @click="mobileMenuIsOpen = !mobileMenuIsOpen"
           width="48"
@@ -19,6 +29,8 @@
           style="filter: drop-shadow(0 1px 3px rgba(0,0,0,0.5));"
         />
       </div>
+
+      <!-- Mobile Menu Dropdown -->
       <transition name="bounce">
         <div v-if="mobileMenuIsOpen" class="fixed top-0 left-0 w-full p-6">
           <div class="relative flex items-center p-4 bg-white rounded-md shadow-md">
@@ -46,8 +58,22 @@
 export default {
   data() {
     return {
-      mobileMenuIsOpen: false
+      mobileMenuIsOpen: false,
+      width: 0
     };
+  },
+  mounted() {
+    window.addEventListener("resize", this.handleResize);
+    this.handleResize();
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.handleResize);
+  },
+  methods: {
+    handleResize() {
+      console.log("Handle resize");
+      this.width = window.innerWidth;
+    }
   }
 };
 </script>

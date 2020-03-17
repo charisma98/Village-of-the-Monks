@@ -2,7 +2,7 @@
   <div>
     <app-masthead class="river-barrow"></app-masthead>
     <div class="container">
-      <div class="flex justify-between">
+      <div class="flex flex-wrap justify-between">
         <div class="w-full tracking-tight text-gray-600 md:w-9/20">
           <h1 class="title">
             <small>An Bhearú</small>
@@ -31,19 +31,17 @@
           <p class="mt-4">
             Traveling along the Barrow Line of the Grand Canal is a tranquil
             experience, with a wealth of waterway heritage and history to be
-            enjoyed.
+            enjoyed. The Barrow Navigation offers a different experience for the visitor being remarkably picturesque, with short man-made canal cuts by-passing shallow stretches of the river.
           </p>
         </div>
         <div class="w-full md:w-9/20 md:-mt-32">
           <img
             src="https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304554/graig-air_x2.jpg"
             alt="A view of the River Barrow with Graiguenamanagh and Tinniahinch on either side"
-            class="mb-24"
+            class="my-12 md:mb-16"
           />
           <p>
-            The Barrow Navigation offers a different experience for the visitor
-            being remarkably picturesque, with short man-made canal cuts
-            by-passing shallow stretches of the river. It is a bustling river
+            It is a bustling river
             with a wealth of activities for the visitor to enjoy — from walking
             or cycling along the unspoiled Barrow Towpath, to catching the
             regular spotting of herons and kingfishers along its banks and
@@ -62,11 +60,9 @@
         class="my-16 origin-top-right transform scale-110"
       />
 
-      <div class="flex justify-between">
-        <div class="w-9/20">
-          <h2 class="title">
-            George Semple Bridge
-          </h2>
+      <div class="flex flex-wrap justify-between">
+        <div class="w-full md:w-9/20">
+          <h2 class="title">George Semple Bridge</h2>
           <p>
             A stone bridge existed on the site of the present bridge before
             1641. Following their retreat to Graignamanagh after the battle of
@@ -76,7 +72,7 @@
             defending.
           </p>
         </div>
-        <div class="mt-4 w-9/20">
+        <div class="w-full mt-4 md:w-9/20">
           <p>
             Some 120 years later, the “great flood” of 1763 probably destroyed
             the bridge. The present bridge, built in 1767, was built to the

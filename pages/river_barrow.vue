@@ -3,44 +3,93 @@
     <app-masthead class="river-barrow"></app-masthead>
     <div class="container">
       <div class="flex justify-between">
-        <div class="w-1/2 text-gray-600 tracking-tight">
-          <div class="title">
-            <small>Gráig na Manach</small>
-            Graiguenamanagh
-          </div>
+        <div class="w-full tracking-tight text-gray-600 md:w-9/20">
+          <h1 class="title">
+            <small>An Bhearú</small>
+            River Barrow
+          </h1>
           <p>
-            Gráig na Manach, meaning "Village of the Monks" is considered to be
-            one of the most beautiful areas in the southeast of Ireland. It is
-            located on the River Barrow at the foot of Brandon Hill. It is home
-            to Duiske Abbey, the largest and perhaps the finest of the
-            thirty-four medieval Cistercian abbeys in Ireland.
+            The River Barrow, historically a significant highway, was developed
+            as a commercial navigation in the mid seventeen hundred and
+            Graignamanagh served as the main base for commercial barges
+            operating on the river until barge traffic ceased in 1959.
           </p>
-          <p>
-            With its remarkable combination of mountain views, lush rolling
-            hills, forest and river valleys, Graignamanagh offers nature lovers
-            a plentiful feast as well as countless amenities for those keen on
-            outdoor activities. Add to these the rich heritage of historical
-            monuments and an abundance of leisure facilities and Graiguenamanagh
-            presents itself as an enormously attractive venue for tourists.
+          <p class="mt-4">
+            The River Barrow is a bustling, colorful navigation. The river runs
+            for 192 km from its source in Glenbarrow in the Slieve Bloom
+            Mountains in the midlands of Ireland to the sea. The Barrow has long
+            been recognized as a unique area of great natural beauty with high
+            amenity value, traversing the counties of Laois, Kildare, Carlow,
+            Kilkenny and Wexford. The Barrow Navigation is the stretch of the
+            River Barrow between Athy in Co. Kildare and St. Mullins in Co.
+            Carlow. Above Athy, the Barrow Line of the Grand Canal links the
+            Barrow Navigation to the main line of the Grand Canal at Lowtown in
+            Co. Kildare. From there the Grand Canal crosses the country west to
+            the River Shannon, Ireland’s longest waterways network and east to
+            Dublin.
+          </p>
+          <p class="mt-4">
+            Traveling along the Barrow Line of the Grand Canal is a tranquil
+            experience, with a wealth of waterway heritage and history to be
+            enjoyed.
           </p>
         </div>
-        <div class="w-5/12 -mt-32">
-          <img src="~/assets/images/graig-air_x2.jpg" alt />
+        <div class="w-full md:w-9/20 md:-mt-32">
+          <img
+            src="https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304554/graig-air_x2.jpg"
+            alt="A view of the River Barrow with Graiguenamanagh and Tinniahinch on either side"
+            class="mb-24"
+          />
+          <p>
+            The Barrow Navigation offers a different experience for the visitor
+            being remarkably picturesque, with short man-made canal cuts
+            by-passing shallow stretches of the river. It is a bustling river
+            with a wealth of activities for the visitor to enjoy — from walking
+            or cycling along the unspoiled Barrow Towpath, to catching the
+            regular spotting of herons and kingfishers along its banks and
+            fishing, boating and canoeing. The river is navigable south to Saint
+            Mullins where it joins the tidal waters linking with the River Nore
+            and leading to New Ross and the open sea. Northwards its links with
+            the Grand Canal at Lowtown, Co. Kildare.
+          </p>
         </div>
       </div>
-      <div class="flex justify-between mt-16">
-        <div class="w-5/12">
-          <!-- Stats -->
-          <stats />
-        </div>
-        <div class="w-1/2 text-gray-600 tracking-tight mt-8">
+    </div>
+    <div class="container">
+      <img
+        src="https://res.cloudinary.com/odriscolls/image/upload/v1584304558/bridge-line-art.png"
+        alt="Digital drawing of the Graignamangh bridge by Scott Kennedy"
+        class="my-16 origin-top-right transform scale-110"
+      />
+
+      <div class="flex justify-between">
+        <div class="w-9/20">
+          <h2 class="title">
+            George Semple Bridge
+          </h2>
           <p>
-            Graignamanagh expanded beyond the Abbey as a market town, aided by
-            the development of the Grand Canal and the navigation of the River
-            Barrow, which ultimately connected the town with Dublin, New Ross,
-            Waterford and Carlow. The production of wool was historically
-            important to the town’s economy and sheep rearing remains a
-            predominant agricultural activity in the hinterland.
+            A stone bridge existed on the site of the present bridge before
+            1641. Following their retreat to Graignamanagh after the battle of
+            Ballinvegga in 1643, general Thomas Preston’s Confederate troops
+            demolished part of that bridge to prevent the English from crossing
+            the river into Graigue, which the Confederate Army was the
+            defending.
+          </p>
+        </div>
+        <div class="mt-4 w-9/20">
+          <p>
+            Some 120 years later, the “great flood” of 1763 probably destroyed
+            the bridge. The present bridge, built in 1767, was built to the
+            design of George Smith, a pupil of George Semple, though it has
+            traditionally been attributed to the master himself, making it of
+            national architectural importance.
+          </p>
+          <p class="mt-4">
+            During the 1798 Rebellion, the Crown forces blew up the arch of the
+            bridge nearest the County Carlow side of the Barrow to prevent the
+            Wexford rebels from entering County Kilkenny. In this way, they
+            echoed the destruction of the previous bridge by the Confederate
+            army 145 years earlier.
           </p>
         </div>
       </div>
@@ -50,50 +99,23 @@
 </template>
 
 <script>
-import AppMasthead from "@/components/AppMasthead.vue";
-import Stats from "@/components/Stats.vue";
-import InstaFeed from "@/components/InstaFeed.vue";
-
 export default {
   head: {
     title: "River Barrow"
   },
   components: {
-    AppMasthead,
-    Stats,
-    InstaFeed
-  },
-  data() {
-    return {};
+    AppMasthead: () => import("@/components/AppMasthead.vue"),
+    InstaFeed: () => import("@/components/InstaFeed.vue")
   }
 };
 </script>
 
-<style lang="scss">
+<style>
 .river-barrow {
-  background: url("../assets/images/brush-strokes2.png") center bottom no-repeat,
-    url("../assets/images/river-barrow-header-large.jpg") center;
+  background: url("https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304562/brush-strokes2.png")
+      center bottom no-repeat,
+    url("https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304563/river-barrow-header-large.jpg")
+      center;
   background-size: contain, cover;
-}
-.title {
-  text-align: center;
-  background: url("../assets/images/section-title-brush-4.png") no-repeat center;
-  background-size: contain;
-  font-size: 2.5rem;
-  line-height: 1;
-  position: relative;
-  padding: 30px 10px 10px;
-  font-family: "rukolaregular";
-  color: #354c5f;
-  small {
-    font-family: "festivo";
-    font-size: 1rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    line-height: 1;
-    color: rgba(51, 153, 51, 0.75);
-  }
 }
 </style>

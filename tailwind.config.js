@@ -10,6 +10,12 @@ module.exports = {
       center: true,
       padding: '2rem'
     },
+    extend:{
+      width: {
+        '9/20': '45%'
+      }
+    }
+    
   },
   variants: {},
   plugins: []

@@ -17,7 +17,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 @font-face {
   font-family: "rukolaregular";
   src: url("../assets/fonts/rukola-webfont.woff2") format("woff2"),
@@ -45,7 +45,6 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
-
 body {
   background: url("https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304546/body-bg.png");
   background-size: 600px;

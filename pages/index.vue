@@ -4,10 +4,10 @@
       <app-masthead class="graiguenamanagh"></app-masthead>
       <div class="container">
         <div class="flex flex-wrap justify-between">
-          <div class="w-full md:w-1/2 text-gray-600 tracking-tight">
+          <div class="w-full tracking-tight text-gray-600 md:w-1/2">
             <div class="title">
               <small>Gráig na Manach</small>
-              Graiguenamanagh
+              Graignamanagh
             </div>
             <p>
               Gráig na Manach, meaning "Village of the Monks" is considered to
@@ -27,7 +27,7 @@
             </p>
           </div>
           <div
-            class="mobile-dont-move w-full md:w-5/12 mt-8 md:-mt-32 transition-all duration-150 ease"
+            class="w-full mt-8 transition-all duration-150 mobile-dont-move md:w-5/12 md:-mt-32 ease"
             :style="{ transform: `translate3D(0, ${scrollPos * 0.05}px, 0)` }"
           >
             <img
@@ -38,16 +38,16 @@
           </div>
         </div>
         <div
-          class="flex flex-wrap flex-col-reverse md:flex-row justify-between md:mt-16"
+          class="flex flex-col-reverse flex-wrap justify-between md:flex-row md:mt-16"
         >
           <div
-            class="mobile-dont-move w-full mt-8 md:mt-0 md:w-5/12 transition-all duration-150 ease"
+            class="w-full mt-8 transition-all duration-150 mobile-dont-move md:mt-0 md:w-5/12 ease"
             :style="{ transform: `translate3D(0, ${scrollPos * 0.05}px, 0)` }"
           >
             <!-- Stats -->
             <stats />
           </div>
-          <div class="w-full md:w-1/2 text-gray-600 tracking-tight mt-8">
+          <div class="w-full mt-8 tracking-tight text-gray-600 md:w-1/2">
             <p>
               Graignamanagh expanded beyond the Abbey as a market town, aided by
               the development of the Grand Canal and the navigation of the River
@@ -60,10 +60,10 @@
         </div>
       </div>
 
-      <div id="green-river" class="text-white py-24 -mt-24">
+      <div id="green-river" class="py-24 -mt-24 text-white">
         <div class="w-full p-8 mt-16 md:w-1/2 md:ml-auto md:mt-0 md:p-0">
           <p
-            class="text-shadow-green max-w-md font-secondary text-center text-xl text-white"
+            class="max-w-md text-xl text-center text-white text-shadow-green font-secondary"
           >
             It has been called Ireland's best kept secret and is a veritable
             treasure trove of varied scenery, ancient buildings, canal boating,

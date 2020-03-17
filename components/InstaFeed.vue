@@ -87,7 +87,7 @@ export default {
               2000
             )}ms`,
             size: minMax(100, 200),
-            top: minMax(15, 60),
+            top: minMax(10, 80),
             shadow: this.shadows[
               Math.floor(Math.random() * this.shadows.length)
             ]

@@ -75,7 +75,7 @@ export default {
   }
 }
 nav {
-  background: url("../assets/images/nav-bg.png");
+  background: url("https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304562/nav-bg.png");
   background-size: 100% 100%;
   padding: 10px 0 12px 56px;
   min-width: 600px;

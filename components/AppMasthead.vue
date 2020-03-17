@@ -10,7 +10,7 @@ section.masthead {
 @media (min-width: 768px) {
   section.masthead {
     width: 100%;
-    height: 100vh;
+    height: 95vh;
   }
 }
 </style>

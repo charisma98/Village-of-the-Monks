@@ -194,11 +194,11 @@ export default {
   1% {
     // transform: translatex(-250px);
     opacity: 1;
-    transform: translatex(-250px) scale(1);
+    transform: translate3d(-250px, 0, 0) scale(1);
   }
 
   100% {
-    transform: translatex(calc(100vw + 250px));
+    transform: translate3d(calc(100vw + 250px), 0, 0);
     opacity: 1;
   }
 }

@@ -4,7 +4,7 @@
       <app-masthead class="graiguenamanagh"></app-masthead>
       <div class="container">
         <div class="flex flex-wrap justify-between">
-          <div class="w-full tracking-tight text-gray-600 md:w-1/2">
+          <div class="w-full tracking-tight text-gray-600 md:w-9/20">
             <div class="title">
               <small>Gráig na Manach</small>
               Graignamanagh
@@ -27,7 +27,7 @@
             </p>
           </div>
           <div
-            class="w-full mt-8 transition-all duration-150 mobile-dont-move md:w-5/12 md:-mt-32 ease"
+            class="w-full mt-8 transition-all duration-150 mobile-dont-move md:w-9/20 md:-mt-32 ease"
             :style="{ transform: `translate3D(0, ${scrollPos * 0.05}px, 0)` }"
           >
             <img
@@ -48,7 +48,7 @@
             <!-- Stats -->
             <stats />
           </div>
-          <div class="w-full mt-8 tracking-tight text-gray-600 md:w-1/2">
+          <div class="w-full mt-8 tracking-tight text-gray-600 md:w-9/20">
             <p>
               Graignamanagh expanded beyond the Abbey as a market town, aided by
               the development of the Grand Canal and the navigation of the River

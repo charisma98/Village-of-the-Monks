@@ -1,6 +1,9 @@
 <template>
   <div class="flex py-16 md:my-20" :id="cardId">
-    <div class="w-full md:w-6/12" :class="{ 'ml-auto': cardPosition === 'right' }">
+    <div
+      class="w-full md:w-6/12"
+      :class="{ 'ml-auto': cardPosition === 'right' }"
+    >
       <div class="p-8 mt-32 text-center bg-white rounded shadow-md md:mt-0">
         <div class="title">
           <small>{{ irishTitle }}</small>
@@ -8,9 +11,10 @@
         </div>
         <p class="text-sm">{{ content }}</p>
         <nuxt-link
-          class="block px-3 py-1 mt-4 text-sm text-yellow-900 bg-yellow-500 rounded"
+          class="block px-3 py-1 mt-4 text-sm text-yellow-800 bg-yellow-400 rounded font-secondary hover:bg-yellow-500 hover:text-yellow-900"
           :to="link"
-        >Find out more</nuxt-link>
+          >Find out more</nuxt-link
+        >
       </div>
     </div>
   </div>

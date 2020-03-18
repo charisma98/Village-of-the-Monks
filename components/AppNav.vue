@@ -33,9 +33,7 @@
       <!-- Mobile Menu Dropdown -->
       <transition name="bounce">
         <div v-if="mobileMenuIsOpen" class="fixed top-0 left-0 w-full p-6">
-          <div
-            class="relative flex items-center p-4 bg-white rounded-md shadow-md"
-          >
+          <div class="relative flex items-center p-4 bg-white rounded-md shadow-md">
             <img
               @click="mobileMenuIsOpen = false"
               width="48"
@@ -46,9 +44,7 @@
               <nuxt-link class="p-2" to="/">Home</nuxt-link>
               <nuxt-link class="p-2" to="/brandon_hill">Brandon Hill</nuxt-link>
               <nuxt-link class="p-2" to="/duiske_abbey">Duiske Abbey</nuxt-link>
-              <nuxt-link class="p-2" to="/tinnahinch_castle"
-                >Tinnahinch Castle</nuxt-link
-              >
+              <nuxt-link class="p-2" to="/tinnahinch_castle">Tinnahinch Castle</nuxt-link>
               <nuxt-link class="p-2" to="/river_barrow">River Barrow</nuxt-link>
             </div>
           </div>

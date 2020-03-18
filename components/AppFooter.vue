@@ -43,7 +43,6 @@
     <!-- Copyright info -->
     <div id="copyright">
       <div class="container flex justify-end py-4">
-        <!-- <div class="tweet">Tweet</div> -->
         <div class="text-sm text-gray-500">
           © {{ new Date().getFullYear() }} villageofthemonks.com by
           <a

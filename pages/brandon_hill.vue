@@ -2,46 +2,84 @@
   <div>
     <app-masthead class="brandon-hill"></app-masthead>
     <div class="container">
-      <div class="flex justify-between">
-        <div class="w-1/2 tracking-tight text-gray-600">
+      <div class="flex flex-wrap justify-between">
+        <div class="w-full tracking-tight text-gray-600 md:w-9/20">
           <div class="title">
-            <small>Gráig na Manach</small>
-            Graiguenamanagh
+            <small>Cnoc Bhréanail</small>
+            Brandon Hill
           </div>
           <p>
-            Gráig na Manach, meaning "Village of the Monks" is considered to be
-            one of the most beautiful areas in the southeast of Ireland. It is
-            located on the River Barrow at the foot of Brandon Hill. It is home
-            to Duiske Abbey, the largest and perhaps the finest of the
-            thirty-four medieval Cistercian abbeys in Ireland.
+            Brandon Hill is the highest mountain in County Kilkenny. It has an
+            elevation of 515 m (1,690 ft). It is situated 4 kilometers
+            South-South-West of Graignamanagh, 7 kilometers east of Inistioge
+            and 11 kilometers east of Thomastown, in the south of County
+            Kilkenny. Brandon Hill is in the barony of Gowran and in the
+            province of Leinster. The village of Graignamanagh is at the base of
+            the hill.
           </p>
-          <p>
-            With its remarkable combination of mountain views, lush rolling
-            hills, forest and river valleys, Graignamanagh offers nature lovers
-            a plentiful feast as well as countless amenities for those keen on
-            outdoor activities. Add to these the rich heritage of historical
-            monuments and an abundance of leisure facilities and Graiguenamanagh
-            presents itself as an enormously attractive venue for tourists.
+          <p class="mt-4">
+            It is the termination of the chain of granitic mountains that raise
+            from the shores of Dublin bay. The base of Brandon Hill on the side
+            of the River Barrow and the hill running to Graig is composed of
+            schist rock. This blackish siliceous schistus, sometimes containing
+            grains of quartz and when it is broken it has a shivery texture and
+            is hard enough to scratch glass. There are a few beds of marble and
+            limestone gravel near the foot of the mountain.
           </p>
         </div>
-        <div class="w-5/12 -mt-32">
-          <img src="~/assets/images/graig-air_x2.jpg" alt />
+        <div class="w-full mt-8 md:w-9/20 md:-mt-32">
+          <img
+            src="https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304552/first-cross.jpg"
+            alt
+          />
         </div>
       </div>
-      <div class="flex justify-between mt-16">
-        <div class="w-5/12">
-          <!-- Stats -->
-          <stats />
-        </div>
-        <div class="w-1/2 mt-8 tracking-tight text-gray-600">
+    </div>
+    <img
+      src="https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304553/brandon-full-width.png"
+      class="hidden object-cover object-center w-full md:block"
+      alt="Old phone of the cross on Brandon hill being erected"
+    />
+    <div class="container mt-12 md:my-4">
+      <div class="flex flex-wrap justify-between">
+        <div class="w-full mb-8 md:w-1/3 md:pr-8">
+          <h3 class="mb-2 text-lg text-green-500 font-secondary">
+            Trail Details
+          </h3>
           <p>
-            Graignamanagh expanded beyond the Abbey as a market town, aided by
-            the development of the Grand Canal and the navigation of the River
-            Barrow, which ultimately connected the town with Dublin, New Ross,
-            Waterford and Carlow. The production of wool was historically
-            important to the town’s economy and sheep rearing remains a
-            predominant agricultural activity in the hinterland.
+            A challenging walk from Graiguenamanagh along country roadways ,
+            forestry tracks and hillside paths to the highest point in County
+            Kilkenny
           </p>
+        </div>
+        <div class="w-full md:w-3/5">
+          <h3 class="mb-2 text-lg text-green-500 font-secondary">
+            Direction to Trailhead
+          </h3>
+          <p>
+            Brandon Hill loop starts in the town of Graignamanagh. The trailhead
+            is at the junction on Lower Main Street.
+          </p>
+          <div class="flex mt-8">
+            <div class="w-1/3">
+              <h4 class="mb-2 text-lg text-green-500 font-secondary">
+                Distance / Time
+              </h4>
+              <p>18km / 7hrs</p>
+            </div>
+            <div class="w-1/3">
+              <h4 class="mb-2 text-lg text-green-500 font-secondary">
+                High / Ascent
+              </h4>
+              <p>520m / 600m</p>
+            </div>
+            <div class="w-1/3">
+              <h4 class="mb-2 text-lg text-green-500 font-secondary">
+                Difficulty
+              </h4>
+              <p>Hard</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -50,50 +88,21 @@
 </template>
 
 <script>
-import AppMasthead from "@/components/AppMasthead.vue";
-import Stats from "@/components/Stats.vue";
-import InstaFeed from "@/components/InstaFeed.vue";
-
 export default {
   head: {
     title: "Brandon Hill"
   },
   components: {
-    AppMasthead,
-    Stats,
-    InstaFeed
-  },
-  data() {
-    return {};
+    AppMasthead: () => import("@/components/AppMasthead.vue"),
+    InstaFeed: () => import("@/components/InstaFeed.vue")
   }
 };
 </script>
 
-<style lang="scss">
+<style>
 .brandon-hill {
   background: url("../assets/images/brush-strokes2.png") center bottom no-repeat,
     url("../assets/images/brandon-header-large.jpg") center;
   background-size: contain, cover;
-}
-.title {
-  text-align: center;
-  background: url("../assets/images/section-title-brush-4.png") no-repeat center;
-  background-size: contain;
-  font-size: 2.5rem;
-  line-height: 1;
-  position: relative;
-  padding: 30px 10px 10px;
-  font-family: "rukolaregular";
-  color: #354c5f;
-  small {
-    font-family: "festivo";
-    font-size: 1rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    line-height: 1;
-    color: rgba(51, 153, 51, 0.75);
-  }
 }
 </style>

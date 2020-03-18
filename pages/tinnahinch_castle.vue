@@ -25,7 +25,10 @@
           </p>
         </div>
         <div class="w-full mt-4 md:w-5/12 md:-mt-32">
-          <img src="~/assets/images/tinnahinch-castle-sketch_x2.jpg" alt />
+          <img
+            src="https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304566/tinnahinch-castle-sketch_x2.jpg"
+            alt
+          />
         </div>
       </div>
 
@@ -86,47 +89,21 @@
 </template>
 
 <script>
-import AppMasthead from "@/components/AppMasthead.vue";
-import Stats from "@/components/Stats.vue";
-import InstaFeed from "@/components/InstaFeed.vue";
-
 export default {
   head: {
     title: "Tinnahinch"
   },
   components: {
-    AppMasthead,
-    Stats,
-    InstaFeed
+    AppMasthead: () => import("@/components/AppMasthead.vue"),
+    InstaFeed: () => import("@/components/InstaFeed.vue")
   }
 };
 </script>
 
-<style lang="scss">
+<style>
 .tinnahinch-castle {
   background: url("../assets/images/brush-strokes2.png") center bottom no-repeat,
     url("../assets/images/tinnahinch-castle-header-large.jpg") center;
   background-size: contain, cover;
-}
-.title {
-  text-align: center;
-  background: url("../assets/images/section-title-brush-4.png") no-repeat center;
-  background-size: contain;
-  font-size: 2.5rem;
-  line-height: 1;
-  position: relative;
-  padding: 30px 10px 10px;
-  font-family: "rukolaregular";
-  color: #354c5f;
-  small {
-    font-family: "festivo";
-    font-size: 1rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    line-height: 1;
-    color: rgba(51, 153, 51, 0.75);
-  }
 }
 </style>

@@ -33,11 +33,14 @@
             <img
               class="shadow-lg"
               loading="lazy"
+              v-if="width > 768 || scrollPos > 500"
               src="https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304554/graig-air_x2.jpg"
             />
           </div>
         </div>
-        <div class="flex flex-col-reverse flex-wrap justify-between md:flex-row md:mt-16">
+        <div
+          class="flex flex-col-reverse flex-wrap justify-between md:flex-row md:mt-16"
+        >
           <div
             class="w-full mt-8 transition-all duration-150 mobile-dont-move md:mt-0 md:w-5/12 ease"
             :style="{ transform: `translate3D(0, ${scrollPos * 0.05}px, 0)` }"
@@ -60,7 +63,9 @@
 
       <div id="green-river" class="py-24 -mt-24 text-white">
         <div class="w-full p-8 mt-16 md:w-1/2 md:ml-auto md:mt-0 md:p-0">
-          <p class="max-w-md text-xl text-center text-white text-shadow-green font-secondary">
+          <p
+            class="max-w-md text-xl text-center text-white text-shadow-green font-secondary"
+          >
             It has been called Ireland's best kept secret and is a veritable
             treasure trove of varied scenery, ancient buildings, canal boating,
             river and hill walks, crafts, traditional pubs and much more.
@@ -141,13 +146,26 @@ export default {
   },
   data() {
     return {
-      scrollPos: 0
+      scrollPos: 0,
+      width: 0
     };
   },
   mounted() {
-    window.addEventListener("scroll", () => {
+    window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener("resize", this.handleResize);
+    this.handleResize();
+  },
+  methods: {
+    handleScroll() {
       this.scrollPos = window.scrollY;
-    });
+    },
+    handleResize() {
+      this.width = window.innerWidth;
+    }
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.handleResize);
+    window.removeEventListener("resize", this.handleResize);
   }
 };
 </script>

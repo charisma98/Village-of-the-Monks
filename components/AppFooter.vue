@@ -68,6 +68,7 @@
           <a
             href="https://scottyzen.com"
             target="_blank"
+            rel="noopener"
             class="text-yellow-500"
             >Scott Kennedy</a
           >

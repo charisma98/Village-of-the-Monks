@@ -5,10 +5,10 @@
       <div class="container">
         <div class="flex flex-wrap justify-between">
           <div class="w-full tracking-tight text-gray-600 md:w-9/20">
-            <div class="title">
+            <h1 class="title">
               <small>Graig na Manach</small>
               Graignamanagh
-            </div>
+            </h1>
             <p>
               Gráig na Manach, meaning "Village of the Monks" is considered to
               be one of the most beautiful areas in the southeast of Ireland. It
@@ -33,6 +33,7 @@
             <img
               class="shadow-lg"
               loading="lazy"
+              alt="View of Graignamanagh from the Air"
               v-if="width > 768 || scrollPos > 500"
               src="https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304554/graig-air_x2.jpg"
             />
@@ -61,7 +62,11 @@
         </div>
       </div>
 
-      <div id="green-river" class="py-24 -mt-24 text-white">
+      <div
+        id="green-river"
+        :class="{ lazybg: !fullyLoaded }"
+        class="py-24 -mt-24 text-white"
+      >
         <div class="w-full p-8 mt-16 md:w-1/2 md:ml-auto md:mt-0 md:p-0">
           <p
             class="max-w-md text-xl text-center text-white text-shadow-green font-secondary"
@@ -147,13 +152,17 @@ export default {
   data() {
     return {
       scrollPos: 0,
-      width: 0
+      width: 0,
+      fullyLoaded: false
     };
   },
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
     window.addEventListener("resize", this.handleResize);
     this.handleResize();
+    setTimeout(() => {
+      this.fullyLoaded = true;
+    }, 50);
   },
   methods: {
     handleScroll() {
@@ -171,6 +180,9 @@ export default {
 </script>
 
 <style lang="postcss">
+.lazybg {
+  background: url("../assets/images/lazybg.jpg") repeat !important;
+}
 .graiguenamanagh {
   background: url("https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304562/brush-strokes2.png")
       center bottom no-repeat,

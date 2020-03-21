@@ -1,32 +1,48 @@
 <template>
   <div
-    class="flex flex-col justify-between p-6 text-yellow-900 bg-yellow-500 shadow-lg items-cente"
+    class="flex flex-col justify-between p-5 text-yellow-900 bg-yellow-500 rounded-sm shadow-lg"
   >
     <div class="flex items-center h-24">
       <div class="w-1/4 text-center">
-        <img class="mx-auto stat-icon" src="~/assets/images/cloudy-outline.svg" />
+        <img
+          class="mx-auto stat-icon"
+          src="~/assets/images/cloudy-outline.svg"
+          alt="Weather Icon for Graignamanagh"
+        />
       </div>
       <div>
-        <p class="text-xl tracking-wide stat-info">{{ tempature }}°C</p>
-        <p class="text-xs text-yellow-800 uppercase">{{ description }}</p>
+        <p class="text-lg font-medium tracking-wide stat-info">
+          {{ tempature }}°C
+        </p>
+        <p class="text-xs text-yellow-900 uppercase">{{ description }}</p>
       </div>
     </div>
     <div class="flex items-center h-24">
       <div class="w-1/4 text-center">
-        <img class="mx-auto stat-icon" src="~/assets/images/people-outline.svg" />
+        <img
+          class="mx-auto stat-icon"
+          src="~/assets/images/people-outline.svg"
+          alt="Population of Graignamanagh"
+        />
       </div>
       <div>
-        <p class="text-xl tracking-wide stat-info">1,543</p>
-        <p class="text-xs text-yellow-800 uppercase">Population</p>
+        <p class="text-lg font-medium tracking-wide stat-info">1,543</p>
+        <p class="text-xs text-yellow-900 uppercase">Population</p>
       </div>
     </div>
     <div class="flex items-center h-24">
       <div class="w-1/4 text-center">
-        <img class="mx-auto stat-icon" src="~/assets/images/locate-outline.svg" />
+        <img
+          class="mx-auto stat-icon"
+          src="~/assets/images/locate-outline.svg"
+          alt="Location of Graignamanagh"
+        />
       </div>
       <div>
-        <p class="text-xl tracking-wide stat-info">52.543925 -6.957807</p>
-        <p class="text-xs text-yellow-800 uppercase">Coordinates</p>
+        <p class="text-lg font-medium tracking-wide stat-info">
+          52.543925 -6.957807
+        </p>
+        <p class="text-xs text-yellow-900 uppercase">Coordinates</p>
       </div>
     </div>
   </div>
@@ -58,7 +74,7 @@ export default {
 .stat-icon {
   width: 42px;
   height: 42px;
-  filter: drop-shadow(0 1px 1px rgb(155, 113, 41, 0.5));
+  filter: drop-shadow(0 1px 0.5px rgb(155, 113, 41, 0.5));
 }
 .stat-info {
   color: #fff;

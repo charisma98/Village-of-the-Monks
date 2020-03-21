@@ -5,6 +5,8 @@
       <nuxt-link class="flex items-end justify-between w-8 logo" exact to="/">
         <img
           src="https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304557/logo.min.png"
+          width="57"
+          height="108"
         />
         <span>Village of the Monks</span>
       </nuxt-link>
@@ -26,14 +28,16 @@
           @click="mobileMenuIsOpen = !mobileMenuIsOpen"
           width="48"
           src="~/assets/images/menu.svg"
-          style="filter: drop-shadow(0 1px 3px rgba(0,0,0,0.5));"
+          style="filter: drop-shadow(0 1px 3px rgba(0,0,0,0.25));"
         />
       </div>
 
       <!-- Mobile Menu Dropdown -->
       <transition name="bounce">
         <div v-if="mobileMenuIsOpen" class="fixed top-0 left-0 w-full p-6">
-          <div class="relative flex items-center p-4 bg-white rounded-md shadow-md">
+          <div
+            class="relative flex items-center p-4 bg-white rounded-md shadow-md"
+          >
             <img
               @click="mobileMenuIsOpen = false"
               width="48"
@@ -44,7 +48,9 @@
               <nuxt-link class="p-2" to="/">Home</nuxt-link>
               <nuxt-link class="p-2" to="/brandon_hill">Brandon Hill</nuxt-link>
               <nuxt-link class="p-2" to="/duiske_abbey">Duiske Abbey</nuxt-link>
-              <nuxt-link class="p-2" to="/tinnahinch_castle">Tinnahinch Castle</nuxt-link>
+              <nuxt-link class="p-2" to="/tinnahinch_castle"
+                >Tinnahinch Castle</nuxt-link
+              >
               <nuxt-link class="p-2" to="/river_barrow">River Barrow</nuxt-link>
             </div>
           </div>

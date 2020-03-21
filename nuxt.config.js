@@ -55,6 +55,7 @@ export default {
   ],
   modules: [
     '@nuxtjs/pwa',
+    '@nuxtjs/sitemap'
     // 'nuxt-responsive-loader'
   ],
   pageTransition: {

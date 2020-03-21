@@ -81,7 +81,9 @@
 <script>
 export default {
   head: {
-    title: "The Desereted Village"
+    title: "The Desereted Village",
+    description:
+      "The Deserted Village is a poem about Tinnahinch. Written by Eddie Power."
   },
   components: {
     AppMasthead: () => import("@/components/AppMasthead.vue"),

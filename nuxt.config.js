@@ -61,8 +61,6 @@ export default {
   sitemap: {
     hostname: 'https://villageofthemonks.com',
     path: '/sitemap.xml',
-    cacheTime: 1000 * 60 * 60 * 2,
-    trailingSlash: true,
     gzip: true
 },
   pageTransition: {

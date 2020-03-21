@@ -1,7 +1,9 @@
 <template>
   <div class="w-full overflow-x-hidden">
     <app-nav />
+    <!-- <transition name="scott" mode> -->
     <nuxt />
+    <!-- </transition> -->
     <app-footer />
   </div>
 </template>
@@ -18,20 +20,20 @@ export default {
 <style lang="postcss">
 @font-face {
   font-family: "rukolaregular";
+  src: url("../assets/fonts/Rukola.woff2") format("woff2"),
+    url("../assets/fonts/Rukola.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
-  font-weight: normal;
-  unicode-range: U+0020-007F; /* The bare minimum for the English Language */
-  src: url("../assets/fonts/rukola-webfont.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "festivo";
+  src: url("../assets/fonts/festivolettersno.6.woff2") format("woff2"),
+    url("../assets/fonts/festivolettersno.6.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  unicode-range: U+0020-007F; /* The bare minimum for the English Language */
-  src: url("../assets/fonts/festivolettersno.6-webfont.woff2") format("woff2");
 }
 html {
   font-size: 18px;

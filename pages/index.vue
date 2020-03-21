@@ -6,7 +6,7 @@
         <div class="flex flex-wrap justify-between">
           <div class="w-full tracking-tight text-gray-600 md:w-9/20">
             <div class="title">
-              <small>Gráig na Manach</small>
+              <small>Graig na Manach</small>
               Graignamanagh
             </div>
             <p>
@@ -77,7 +77,7 @@
         <!-- Brandon Hill  -->
         <page-card
           cardId="brandon-splash"
-          irishTitle="Cnoc Bhréanail"
+          irishTitle="Cnoc Bhreanail"
           title="Brandon Hill"
           content="Brandon Hill is the highest mountain in County Kilkenny. It has
                 an elevation of 515 m (1,690 ft). It is situated 4 kilometers
@@ -105,7 +105,7 @@
         <!-- Tinnahinch Castle  -->
         <page-card
           cardId="tinnahinch-castle-splash"
-          irishTitle="Caisleán Tigh na hInse"
+          irishTitle="Caislean Tigh na hInse"
           title="Tinnahinch Castle"
           content="Tinnahinch Castle was constructed in 1615 by the Duke of Ormonde. It
           was built to control a crossing where a wooden bridge once spanned the
@@ -119,7 +119,7 @@
         <!-- River Barrow -->
         <page-card
           cardId="river-barrow-splash"
-          irishTitle="An Bhearú"
+          irishTitle="An Bhearu"
           title="River Barrow"
           content="The River Barrow, historically a significant highway, was
                 developed as a commercial navigation in the mid seventeen

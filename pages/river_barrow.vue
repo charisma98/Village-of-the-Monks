@@ -5,7 +5,7 @@
       <div class="flex flex-wrap justify-between">
         <div class="w-full tracking-tight text-gray-600 md:w-9/20">
           <h1 class="title">
-            <small>An Bhearú</small>
+            <small>An Bhearu</small>
             River Barrow
           </h1>
           <p>
@@ -31,7 +31,9 @@
           <p class="mt-4">
             Traveling along the Barrow Line of the Grand Canal is a tranquil
             experience, with a wealth of waterway heritage and history to be
-            enjoyed. The Barrow Navigation offers a different experience for the visitor being remarkably picturesque, with short man-made canal cuts by-passing shallow stretches of the river.
+            enjoyed. The Barrow Navigation offers a different experience for the
+            visitor being remarkably picturesque, with short man-made canal cuts
+            by-passing shallow stretches of the river.
           </p>
         </div>
         <div class="w-full md:w-9/20 md:-mt-32">
@@ -41,14 +43,14 @@
             class="my-12 md:mb-16"
           />
           <p>
-            It is a bustling river
-            with a wealth of activities for the visitor to enjoy — from walking
-            or cycling along the unspoiled Barrow Towpath, to catching the
-            regular spotting of herons and kingfishers along its banks and
-            fishing, boating and canoeing. The river is navigable south to Saint
-            Mullins where it joins the tidal waters linking with the River Nore
-            and leading to New Ross and the open sea. Northwards its links with
-            the Grand Canal at Lowtown, Co. Kildare.
+            It is a bustling river with a wealth of activities for the visitor
+            to enjoy — from walking or cycling along the unspoiled Barrow
+            Towpath, to catching the regular spotting of herons and kingfishers
+            along its banks and fishing, boating and canoeing. The river is
+            navigable south to Saint Mullins where it joins the tidal waters
+            linking with the River Nore and leading to New Ross and the open
+            sea. Northwards its links with the Grand Canal at Lowtown, Co.
+            Kildare.
           </p>
         </div>
       </div>

@@ -5,7 +5,7 @@
       <div class="flex flex-wrap justify-between">
         <div class="w-full tracking-tight text-gray-600 md:w-9/20">
           <div class="title">
-            <small>Cnoc Bhréanail</small>
+            <small>Cnoc Bhreanail</small>
             Brandon Hill
           </div>
           <p>

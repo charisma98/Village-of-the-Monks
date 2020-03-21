@@ -5,7 +5,7 @@
       <div class="flex flex-wrap justify-between">
         <div class="w-full tracking-tight text-gray-600 md:w-1/2">
           <h2 class="title">
-            <small>Caisleán Tigh na hInse</small>
+            <small>Caislean Tigh na hInse</small>
             Tinnahinch Castle
           </h2>
           <p class="mb-4">

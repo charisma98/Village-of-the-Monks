@@ -22,9 +22,7 @@ export default {
   font-display: swap;
   font-weight: normal;
   unicode-range: U+0020-007F; /* The bare minimum for the English Language */
-  src: local("rukola-webfont"),
-    url("../assets/fonts/rukola-webfont.woff2") format("woff2"),
-    url("../assets/fonts/rukola-webfont.woff") format("woff");
+  src: url("../assets/fonts/rukola-webfont.woff2") format("woff2");
 }
 
 @font-face {
@@ -33,9 +31,7 @@ export default {
   font-style: normal;
   font-display: swap;
   unicode-range: U+0020-007F; /* The bare minimum for the English Language */
-  src: local("festivolettersno"),
-    url("../assets/fonts/festivolettersno.6-webfont.woff2") format("woff2"),
-    url("../assets/fonts/festivolettersno.6-webfont.woff") format("woff");
+  src: url("../assets/fonts/festivolettersno.6-webfont.woff2") format("woff2");
 }
 html {
   font-size: 18px;

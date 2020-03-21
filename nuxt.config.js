@@ -31,7 +31,7 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: "gold" },
+  // loading: { color: "gold" },
   /*
    ** Global CSS
    */
@@ -39,11 +39,11 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
-    // "~/plugins/posts.server.js",
-    // "~/plugins/tags.server.js",
-    // "~/plugins/dateformat.js"
-  ],
+  // plugins: [
+  //   "~/plugins/posts.server.js",
+  //   "~/plugins/tags.server.js",
+  //   "~/plugins/dateformat.js"
+  // ],
   // generate: {
   //   routes: dynamicRoutes
   // },

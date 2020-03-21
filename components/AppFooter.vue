@@ -17,12 +17,12 @@
         <nuxt-link class="text-sm text-gray-400" to="/duiske_abbey">Duiske Abbey</nuxt-link>
         <nuxt-link class="text-sm text-gray-400" to="/tinnahinch_castle">Tinnahinch Castle</nuxt-link>
         <nuxt-link class="text-sm text-gray-400" to="/river_barrow">River Barrow</nuxt-link>
-        <nuxt-link class="text-sm text-gray-400" to="/contact">Contact</nuxt-link>
+        <!-- <nuxt-link class="text-sm text-gray-400" to="/contact">Contact</nuxt-link> -->
       </div>
 
       <div class="flex flex-col mt-8 mr-10 md:mt-0">
         <div class="mb-2 text-lg font-secondary">Poems, Articals & Stories</div>
-        <nuxt-link class="text-sm text-gray-400" to="/">The Deserted Village</nuxt-link>
+        <nuxt-link class="text-sm text-gray-400" to="/the_deserted_village">The Deserted Village</nuxt-link>
       </div>
 
       <div class="flex flex-col mt-8 md:mt-0">

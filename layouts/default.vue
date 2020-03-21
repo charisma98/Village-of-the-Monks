@@ -20,8 +20,7 @@ export default {
 <style lang="postcss">
 @font-face {
   font-family: "rukolaregular";
-  src: url("../assets/fonts/Rukola.woff2") format("woff2"),
-    url("../assets/fonts/Rukola.woff") format("woff");
+  src: url("../assets/fonts/Rukola.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -29,8 +28,7 @@ export default {
 
 @font-face {
   font-family: "festivo";
-  src: url("../assets/fonts/festivolettersno.6.woff2") format("woff2"),
-    url("../assets/fonts/festivolettersno.6.woff") format("woff");
+  src: url("../assets/fonts/festivolettersno.6.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;

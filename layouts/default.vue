@@ -1,9 +1,7 @@
 <template>
   <div class="w-full overflow-x-hidden">
     <app-nav />
-    <!-- <transition name="scott" mode> -->
     <nuxt />
-    <!-- </transition> -->
     <app-footer />
   </div>
 </template>
@@ -20,23 +18,26 @@ export default {
 <style lang="postcss">
 @font-face {
   font-family: "rukolaregular";
-  src: url("../assets/fonts/rukola-webfont.woff2") format("woff2"),
-    url("../assets/fonts/rukola-webfont.woff") format("woff");
-  font-weight: normal;
   font-style: normal;
   font-display: swap;
+  font-weight: normal;
+  unicode-range: U+000-5FF; /* Download only latin glyphs */
+  src: local("rukola-webfont"),
+    url("../assets/fonts/rukola-webfont.woff2") format("woff2"),
+    url("../assets/fonts/rukola-webfont.woff") format("woff");
 }
 
 @font-face {
   font-family: "festivo";
-  src: url("../assets/fonts/festivolettersno.6-webfont.woff2") format("woff2"),
-    url("../assets/fonts/festivolettersno.6-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+  unicode-range: U+000-5FF; /* Download only latin glyphs */
+  src: local("festivolettersno"),
+    url("../assets/fonts/festivolettersno.6-webfont.woff2") format("woff2"),
+    url("../assets/fonts/festivolettersno.6-webfont.woff") format("woff");
 }
 html {
-  font-family: "Proxima Nova Bold", sans-serif;
   font-size: 18px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;

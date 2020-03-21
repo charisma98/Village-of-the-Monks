@@ -162,7 +162,7 @@ export default {
     this.handleResize();
     setTimeout(() => {
       this.fullyLoaded = true;
-    }, 50);
+    }, 0);
   },
   methods: {
     handleScroll() {

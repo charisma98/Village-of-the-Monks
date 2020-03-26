@@ -88,12 +88,13 @@
 </template>
 
 <script>
+import AppMasthead from "../components/AppMasthead.vue";
 export default {
   head: {
     title: "Brandon Hill"
   },
   components: {
-    AppMasthead: () => import("@/components/AppMasthead.vue"),
+    AppMasthead,
     InstaFeed: () => import("@/components/InstaFeed.vue")
   }
 };

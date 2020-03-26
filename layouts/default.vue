@@ -9,9 +9,10 @@
 </template>
 
 <script>
+import AppNav from "../components/AppNav";
 export default {
   components: {
-    AppNav: () => import("@/components/AppNav.vue"),
+    AppNav,
     AppFooter: () => import("@/components/AppFooter.vue")
   }
 };

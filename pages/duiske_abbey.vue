@@ -67,7 +67,9 @@
             there.
           </p>
           <div class="mt-12 mb-24 info">
-            <h3 class="mt-4 text-lg text-green-600 font-secondary">Mass Times</h3>
+            <h3 class="mt-4 text-lg text-green-600 font-secondary">
+              Mass Times
+            </h3>
             <div class="flex justify-between">
               <span>Monday - Friday</span>
               <span>10am</span>
@@ -94,9 +96,10 @@
 </template>
 
 <script>
+import AppMasthead from "../components/AppMasthead.vue";
 export default {
   components: {
-    AppMasthead: () => import("@/components/AppMasthead.vue"),
+    AppMasthead,
     Stats: () => import("@/components/Stats.vue"),
     InstaFeed: () => import("@/components/InstaFeed.vue"),
     PageCard: () => import("@/components/PageCard.vue")

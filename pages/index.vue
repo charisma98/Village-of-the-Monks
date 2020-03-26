@@ -142,9 +142,10 @@
 </template>
 
 <script>
+import AppMasthead from "../components/AppMasthead.vue";
 export default {
   components: {
-    AppMasthead: () => import("@/components/AppMasthead.vue"),
+    AppMasthead,
     Stats: () => import("@/components/Stats.vue"),
     InstaFeed: () => import("@/components/InstaFeed.vue"),
     PageCard: () => import("@/components/PageCard.vue")

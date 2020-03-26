@@ -97,12 +97,13 @@
 </template>
 
 <script>
+import AppMasthead from "../components/AppMasthead.vue";
 export default {
   head: {
     title: "River Barrow"
   },
   components: {
-    AppMasthead: () => import("@/components/AppMasthead.vue"),
+    AppMasthead,
     InstaFeed: () => import("@/components/InstaFeed.vue")
   }
 };

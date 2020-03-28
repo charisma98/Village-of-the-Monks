@@ -7,6 +7,8 @@
 //   console.log(routes)
 //   return routes
 // }
+console.log('process.env.NODE_ENV')
+console.log(process.env.NODE_ENV)
 
 export default {
   mode: "universal",
@@ -25,13 +27,9 @@ export default {
       }
     ],
     link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel: "icon", type: "image/x-icon", href: (process.env.NODE_ENV !== 'production') ? "/favicon-dev.ico" : "/favicon.ico" },
     ]
   },
-  /*
-   ** Customize the progress-bar color
-   */
-  // loading: { color: "gold" },
   /*
    ** Global CSS
    */

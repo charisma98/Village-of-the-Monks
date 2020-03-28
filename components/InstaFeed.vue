@@ -1,7 +1,8 @@
 <template>
   <ul class="z-50 flex flex-wrap instagram-feed">
     <div class="background-text">
-      <small>#{{ hashtag }}</small>Instagram Feed
+      <small>#{{ hashtag }}</small
+      >Instagram Feed
     </div>
     <li
       class="absolute"
@@ -9,10 +10,19 @@
       v-for="media in instaImages"
       v-bind:key="media.node.id"
     >
-      <a :href="'https://www.instagram.com/p/' + media.node.shortcode" target="_blank">
-        <img :style="{ width: media.size + 'px' }" :src="media.node.thumbnail_src" alt />
+      <a
+        :href="'https://www.instagram.com/p/' + media.node.shortcode"
+        target="_blank"
+      >
+        <img
+          :style="{ width: media.size + 'px' }"
+          :src="media.node.thumbnail_src"
+          alt
+        />
       </a>
-      <div class="flex justify-between text-xs leading-tight tracking-tight text-gray-600 details">
+      <div
+        class="flex justify-between text-xs leading-tight tracking-tight text-gray-600 details"
+      >
         <span>{{ media.node.edge_media_to_caption.edges[0].node.text }}</span>
         <!-- <span>15 links</span>
         <span>1 comment</span>-->
@@ -62,13 +72,13 @@ export default {
           numberOfImagesAdded >= this.numberOfImages ||
           i >= shuffedInstaAPI.length - 1
         ) {
-          console.log("I want to break free");
+          // console.log("I want to break free");
           clearInterval(interval);
         }
 
         // Check and Skip user if they are on the Banned list
         if (bannedUsers.indexOf(shuffedInstaAPI[i].node.owner.id) > -1) {
-          console.log("Banned user found.");
+          // console.log("Banned user found.");
         } else {
           this.instaImages.push({
             node: shuffedInstaAPI[i].node,

@@ -1,34 +1,36 @@
 <template>
-  <ul class="z-50 flex flex-wrap instagram-feed">
-    <div class="background-text">
+  <div class="relative ">
+    <div class="absolute w-full background-text">
       <small>#{{ hashtag }}</small
       >Instagram Feed
     </div>
-    <li
-      class="absolute"
-      :style="{ animation: media.animation, top: media.top + '%' }"
-      v-for="media in instaImages"
-      v-bind:key="media.node.id"
-    >
-      <a
-        :href="'https://www.instagram.com/p/' + media.node.shortcode"
-        target="_blank"
+    <ul class="z-50 flex flex-wrap instagram-feed">
+      <li
+        class="absolute"
+        :style="{ animation: media.animation, top: media.top + '%' }"
+        v-for="media in instaImages"
+        v-bind:key="media.node.id"
       >
-        <img
-          :style="{ width: media.size + 'px' }"
-          :src="media.node.thumbnail_src"
-          alt
-        />
-      </a>
-      <div
-        class="flex justify-between text-xs leading-tight tracking-tight text-gray-600 details"
-      >
-        <span>{{ media.node.edge_media_to_caption.edges[0].node.text }}</span>
-        <!-- <span>15 links</span>
+        <a
+          :href="'https://www.instagram.com/p/' + media.node.shortcode"
+          target="_blank"
+        >
+          <img
+            :style="{ width: media.size + 'px' }"
+            :src="media.node.thumbnail_src"
+            :alt="media.node.accessibility_caption"
+          />
+        </a>
+        <div
+          class="flex justify-between text-xs leading-tight tracking-tight text-gray-600 details"
+        >
+          <span>{{ media.node.edge_media_to_caption.edges[0].node.text }}</span>
+          <!-- <span>15 links</span>
         <span>1 comment</span>-->
-      </div>
-    </li>
-  </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
@@ -103,6 +105,7 @@ export default {
       .get(`https://www.instagram.com/explore/tags/${this.hashtag}/?__a=1`)
       .then(res => {
         this.instaAPI = res.data.graphql.hashtag.edge_hashtag_to_media.edges;
+        console.log(res.data.graphql.hashtag.edge_hashtag_to_media.edges);
         this.startedAddingImages();
       });
   }
@@ -117,30 +120,6 @@ export default {
   max-width: 100%;
   overflow: visible;
   z-index: 100;
-
-  .background-text {
-    font-family: "rukolaregular";
-    font-size: 80px;
-    color: #344c5e;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 1.25;
-    opacity: 0.15;
-    small {
-      font-size: 32px;
-      color: #6db369;
-      font-family: festivo;
-      letter-spacing: -1px;
-    }
-  }
 
   li {
     transform: translatex(-250px) scale(0);
@@ -189,6 +168,29 @@ export default {
         padding: 10px 12px;
       }
     }
+  }
+}
+.background-text {
+  font-family: "rukolaregular";
+  font-size: 80px;
+  color: #344c5e;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.25;
+  opacity: 0.15;
+  small {
+    font-size: 32px;
+    color: #6db369;
+    font-family: festivo;
+    letter-spacing: -1px;
   }
 }
 

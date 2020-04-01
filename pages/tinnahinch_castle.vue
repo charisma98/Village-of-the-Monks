@@ -27,7 +27,7 @@
         <div class="w-full mt-4 md:w-5/12 md:-mt-32">
           <img
             src="https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304566/tinnahinch-castle-sketch_x2.jpg"
-            alt
+            alt="An old drawing of Tinnahinch Castle"
           />
         </div>
       </div>

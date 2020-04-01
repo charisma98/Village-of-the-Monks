@@ -9,7 +9,7 @@
           loading="lazy"
           class="opacity-75"
           src="https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304558/logo.png"
-          alt
+          alt="Graignamanagh Logo"
         />
       </div>
 

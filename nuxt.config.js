@@ -7,8 +7,6 @@
 //   console.log(routes)
 //   return routes
 // }
-console.log('process.env.NODE_ENV')
-console.log(process.env.NODE_ENV)
 
 export default {
   mode: "universal",

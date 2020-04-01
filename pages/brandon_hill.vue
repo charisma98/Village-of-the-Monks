@@ -30,7 +30,7 @@
         <div class="w-full mt-8 md:w-9/20 md:-mt-32">
           <img
             src="https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304552/first-cross.jpg"
-            alt
+            alt="One of the first crossed being erected on Brandon Hill"
           />
         </div>
       </div>

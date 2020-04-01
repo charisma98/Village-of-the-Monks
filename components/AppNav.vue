@@ -7,6 +7,7 @@
           src="https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304557/logo.min.png"
           width="57"
           height="108"
+          alt="Village of the Monks logo"
         />
         <span>Village of the Monks</span>
       </nuxt-link>
@@ -27,6 +28,7 @@
         <img
           @click="mobileMenuIsOpen = !mobileMenuIsOpen"
           width="48"
+          alt="menu"
           src="~/assets/images/menu.svg"
           style="filter: drop-shadow(0 1px 3px rgba(0,0,0,0.25));"
         />
@@ -41,6 +43,7 @@
             <img
               @click="mobileMenuIsOpen = false"
               width="48"
+              alt="close menu"
               src="~/assets/images/close.svg"
               class="absolute top-0 right-0 m-4"
             />

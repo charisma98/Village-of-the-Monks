@@ -17,10 +17,10 @@
         v-if="width > 768"
         class="font-medium leading-tight tracking-tight text-gray-900 md:flex"
       >
-        <nuxt-link to="/brandon_hill">Brandon Hill</nuxt-link>
-        <nuxt-link to="/duiske_abbey">Duiske Abbey</nuxt-link>
-        <nuxt-link to="/tinnahinch_castle">Tinnahinch Castle</nuxt-link>
-        <nuxt-link to="/river_barrow">River Barrow</nuxt-link>
+        <nuxt-link to="/brandonhill">Brandon Hill</nuxt-link>
+        <nuxt-link to="/duiskeabbey">Duiske Abbey</nuxt-link>
+        <nuxt-link to="/tinnahinchcastle">Tinnahinch Castle</nuxt-link>
+        <nuxt-link to="/riverbarrow">River Barrow</nuxt-link>
       </nav>
 
       <!-- Burger Button -->
@@ -30,7 +30,7 @@
           width="48"
           alt="menu"
           src="~/assets/images/menu.svg"
-          style="filter: drop-shadow(0 1px 3px rgba(0,0,0,0.25));"
+          style="filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.25));"
         />
       </div>
 
@@ -49,12 +49,12 @@
             />
             <div @click="mobileMenuIsOpen = false" class="flex flex-col">
               <nuxt-link class="p-2" to="/">Home</nuxt-link>
-              <nuxt-link class="p-2" to="/brandon_hill">Brandon Hill</nuxt-link>
-              <nuxt-link class="p-2" to="/duiske_abbey">Duiske Abbey</nuxt-link>
-              <nuxt-link class="p-2" to="/tinnahinch_castle"
+              <nuxt-link class="p-2" to="/brandonhill">Brandon Hill</nuxt-link>
+              <nuxt-link class="p-2" to="/duiskeabbey">Duiske Abbey</nuxt-link>
+              <nuxt-link class="p-2" to="/tinnahinchcastle"
                 >Tinnahinch Castle</nuxt-link
               >
-              <nuxt-link class="p-2" to="/river_barrow">River Barrow</nuxt-link>
+              <nuxt-link class="p-2" to="/riverbarrow">River Barrow</nuxt-link>
             </div>
           </div>
         </div>
@@ -68,7 +68,7 @@ export default {
   data() {
     return {
       mobileMenuIsOpen: false,
-      width: 0
+      width: 0,
     };
   },
   mounted() {
@@ -81,8 +81,8 @@ export default {
   methods: {
     handleResize() {
       this.width = window.innerWidth;
-    }
-  }
+    },
+  },
 };
 </script>
 

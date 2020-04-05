@@ -39,7 +39,9 @@
             />
           </div>
         </div>
-        <div class="flex flex-col-reverse flex-wrap justify-between md:flex-row md:mt-16">
+        <div
+          class="flex flex-col-reverse flex-wrap justify-between md:flex-row md:mt-16"
+        >
           <div
             class="w-full mt-8 transition-all duration-150 mobile-dont-move md:mt-0 md:w-5/12 ease"
             :style="{ transform: `translate3D(0, ${scrollPos * 0.05}px, 0)` }"
@@ -60,9 +62,15 @@
         </div>
       </div>
 
-      <div id="green-river" :class="{ lazybg: !fullyLoaded }" class="py-24 -mt-24 text-white">
+      <div
+        id="green-river"
+        :class="{ lazybg: !fullyLoaded }"
+        class="py-24 -mt-24 text-white"
+      >
         <div class="w-full p-8 mt-16 md:w-1/2 md:ml-auto md:mt-0 md:p-0">
-          <p class="max-w-md text-xl text-center text-white text-shadow-green font-secondary">
+          <p
+            class="max-w-md text-xl text-center text-white text-shadow-green font-secondary"
+          >
             It has been called Ireland's best kept secret and is a veritable
             treasure trove of varied scenery, ancient buildings, canal boating,
             river and hill walks, crafts, traditional pubs and much more.
@@ -81,7 +89,7 @@
                 South-South West of Graignamanagh, 7 kilometers east of
                 Inistioge and 11 kilometers east of Thomastown, in the south of
                 County Kilkenny."
-          link="/brandon_hill"
+          link="/brandonhill"
           cardPosition="right"
         />
 
@@ -95,7 +103,7 @@
                 medieval Cistercian monasteries in Ireland. The Abbey is the
                 parish church of Graignamanagh town and beautifully dominates
                 the town centre."
-          link="/duiske_abbey"
+          link="/duiskeabbey"
           cardPosition="left"
         />
 
@@ -109,7 +117,7 @@
           Barrow. The bridge linking the two settlements was originally
           constructed in 1797. The castle was burnt around the year 1700 and has
           lain that way ever since."
-          link="/tinnahinch_castle"
+          link="/tinnahinchcastle"
           cardPosition="right"
         />
 
@@ -123,7 +131,7 @@
                 hundreds and Graiguenamanagh served as the main base for
                 commercial barges operating on the river until barge traffic
                 ceased in 1959."
-          link="/river_barrow"
+          link="/riverbarrow"
           cardPosition="left"
         />
       </div>
@@ -143,27 +151,27 @@ export default {
         {
           name: "description",
           content:
-            "Graiguenamanagh or Graignamanagh is a town in Kilkenny. Considered to be one of the most beautiful areas in the southeast of Ireland."
+            "Graiguenamanagh or Graignamanagh is a town in Kilkenny. Considered to be one of the most beautiful areas in the southeast of Ireland.",
         },
         {
           name: "keywords",
           content:
-            "Graiguenamanagh, Graignamanagh, river, barrow, abbey, Village, Monks, South-east, Kilkenny, Carlow, Tinnahinch, Castle, Brandon, Hill, Town, Books, Pubs, Ireland, Duiske."
-        }
-      ]
+            "Graiguenamanagh, Graignamanagh, river, barrow, abbey, Village, Monks, South-east, Kilkenny, Carlow, Tinnahinch, Castle, Brandon, Hill, Town, Books, Pubs, Ireland, Duiske.",
+        },
+      ],
     };
   },
   components: {
     AppMasthead,
     Stats: () => import("@/components/Stats.vue"),
     InstaFeed: () => import("@/components/InstaFeed.vue"),
-    PageCard: () => import("@/components/PageCard.vue")
+    PageCard: () => import("@/components/PageCard.vue"),
   },
   data() {
     return {
       scrollPos: 0,
       width: 0,
-      fullyLoaded: false
+      fullyLoaded: false,
     };
   },
   mounted() {
@@ -180,12 +188,12 @@ export default {
     },
     handleResize() {
       this.width = window.innerWidth;
-    }
+    },
   },
   destroyed() {
     window.removeEventListener("scroll", this.handleResize);
     window.removeEventListener("resize", this.handleResize);
-  }
+  },
 };
 </script>
 

@@ -99,8 +99,22 @@
 <script>
 import AppMasthead from "../components/AppMasthead.vue";
 export default {
-  head: {
-    title: "River Barrow"
+  head() {
+    return {
+      title: "River Barrow | Village of the Monks",
+      meta: [
+        {
+          name: "description",
+          content:
+            "The River Barrow is a bustling, colorful navigation. The river runs for 192 km from its source in Glenbarrow in the Slieve Bloom Mountains in the midlands of Ireland to the sea. The Barrow has long been recognized as a unique area of great natural beauty with high amenity value, traversing the counties of Laois, Kildare, Carlow, Kilkenny and Wexford."
+        },
+        {
+          name: "keywords",
+          content:
+            "Graiguenamanagh, Graignamanagh, river, barrow, abbey, Village, Monks, Wexford, Kilkenny, Carlow, Kildare, navigation, Town, Books, Pubs, Ireland, Duiske, Slieve, Bloom, Mountains"
+        }
+      ]
+    };
   },
   components: {
     AppMasthead,

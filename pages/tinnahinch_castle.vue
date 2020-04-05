@@ -91,8 +91,22 @@
 <script>
 import AppMasthead from "../components/AppMasthead.vue";
 export default {
-  head: {
-    title: "Tinnahinch"
+  head() {
+    return {
+      title: "Tinnahinch Castle | Village of the Monks",
+      meta: [
+        {
+          name: "description",
+          content:
+            "Tinnahinch Castle was constructed in 1615 by James Butler the Duke of Ormonde. It was built to control a crossing where a wooden bridge once spanned the Barrow. Today the castle stands in ruins on the Carlow side of the river Barrow"
+        },
+        {
+          name: "keywords",
+          content:
+            "Graiguenamanagh, Graignamanagh, river, barrow, abbey, Village, bridge, Butler, Ormonde, Carlow, Tinnahinch, Castle, Brandon, Hill, ruins, Books, Pubs, Ireland, Duiske."
+        }
+      ]
+    };
   },
   components: {
     AppMasthead,

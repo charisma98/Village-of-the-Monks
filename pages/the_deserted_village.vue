@@ -78,11 +78,3 @@ export default {
   }
 };
 </script>
-
-<style>
-.tinnahinch-castle {
-  background: url("../assets/images/brush-strokes2.png") center bottom no-repeat,
-    url("../assets/images/tinnahinch-castle-header-large.jpg") center;
-  background-size: contain, cover;
-}
-</style>

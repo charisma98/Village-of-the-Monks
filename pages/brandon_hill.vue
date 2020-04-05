@@ -43,9 +43,7 @@
     <div class="container mt-12 md:my-4">
       <div class="flex flex-wrap justify-between">
         <div class="w-full mb-8 md:w-1/3 md:pr-8">
-          <h3 class="mb-2 text-lg text-green-500 font-secondary">
-            Trail Details
-          </h3>
+          <h3 class="mb-2 text-lg text-green-500 font-secondary">Trail Details</h3>
           <p>
             A challenging walk from Graiguenamanagh along country roadways ,
             forestry tracks and hillside paths to the highest point in County
@@ -53,30 +51,22 @@
           </p>
         </div>
         <div class="w-full md:w-3/5">
-          <h3 class="mb-2 text-lg text-green-500 font-secondary">
-            Direction to Trailhead
-          </h3>
+          <h3 class="mb-2 text-lg text-green-500 font-secondary">Direction to Trailhead</h3>
           <p>
             Brandon Hill loop starts in the town of Graignamanagh. The trailhead
             is at the junction on Lower Main Street.
           </p>
           <div class="flex mt-8">
             <div class="w-1/3">
-              <h4 class="mb-2 text-lg text-green-500 font-secondary">
-                Distance / Time
-              </h4>
+              <h4 class="mb-2 text-lg text-green-500 font-secondary">Distance / Time</h4>
               <p>18km / 7hrs</p>
             </div>
             <div class="w-1/3">
-              <h4 class="mb-2 text-lg text-green-500 font-secondary">
-                High / Ascent
-              </h4>
+              <h4 class="mb-2 text-lg text-green-500 font-secondary">High / Ascent</h4>
               <p>520m / 600m</p>
             </div>
             <div class="w-1/3">
-              <h4 class="mb-2 text-lg text-green-500 font-secondary">
-                Difficulty
-              </h4>
+              <h4 class="mb-2 text-lg text-green-500 font-secondary">Difficulty</h4>
               <p>Hard</p>
             </div>
           </div>
@@ -90,8 +80,22 @@
 <script>
 import AppMasthead from "../components/AppMasthead.vue";
 export default {
-  head: {
-    title: "Brandon Hill"
+  head() {
+    return {
+      title: "Brandon Hill | Village of the Monks",
+      meta: [
+        {
+          name: "description",
+          content:
+            "Brandon Hill is the highest mountain in County Kilkenny.It is the termination of the chain of granitic mountains that raise from the shores of Dublin bay. The base of Brandon Hill on the side of the River Barrow and the hill running to Graig is composed of schist rock."
+        },
+        {
+          name: "keywords",
+          content:
+            "Graiguenamanagh, Graignamanagh, abbey, Village, Monks, South-east, Kilkenny, Carlow, Tinnahinch, Castle, Brandon, Hill, Town, Books, Pubs, Ireland, schist, rock, forestry, tracks, hillside, trailhead"
+        }
+      ]
+    };
   },
   components: {
     AppMasthead,

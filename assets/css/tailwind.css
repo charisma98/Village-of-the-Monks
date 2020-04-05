@@ -3,5 +3,5 @@
 @import 'tailwindcss/utilities';
 
 .container {
-    max-width: 960px;
+    max-width: 1080px;
 }

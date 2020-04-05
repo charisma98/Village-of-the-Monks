@@ -67,9 +67,7 @@
             there.
           </p>
           <div class="mt-12 mb-24 info">
-            <h3 class="mt-4 text-lg text-green-600 font-secondary">
-              Mass Times
-            </h3>
+            <h3 class="mt-4 text-lg text-green-600 font-secondary">Mass Times</h3>
             <div class="flex justify-between">
               <span>Monday - Friday</span>
               <span>10am</span>
@@ -98,6 +96,23 @@
 <script>
 import AppMasthead from "../components/AppMasthead.vue";
 export default {
+  head() {
+    return {
+      title: "Duiske Abbey | Village of the Monks",
+      meta: [
+        {
+          name: "description",
+          content:
+            "Duiske Abbey originated in the 13th century as the church of a Cistercian monastery, but today it is a Catholic parish church in the town of Graiguenamanagh, County Kilkenny. Where Father Gerry Byrne is the local priest."
+        },
+        {
+          name: "keywords",
+          content:
+            "Graiguenamanagh, Graignamanagh, abbey, Village, Monks, South-east, Kilkenny, Carlow, Catholic, Castle, Brandon, Hill, Town, Books, Church, parish, Ireland, Duiske, monastery"
+        }
+      ]
+    };
+  },
   components: {
     AppMasthead,
     Stats: () => import("@/components/Stats.vue"),

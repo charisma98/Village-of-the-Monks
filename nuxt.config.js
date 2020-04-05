@@ -22,7 +22,31 @@ export default {
         hid: "description",
         name: "description",
         content: process.env.npm_package_description || ""
-      }
+      },
+      // OpenGraph data (Most widely used)
+      {property: 'og:title', content: 'Graiguenamanagh | Village of the Monks'},
+      {property: 'og:site_name', content: 'Graiguenamanagh | Village of the Monks'},
+      // The list of types is available here: http://ogp.me/#types
+      {property: 'og:type', content: 'website'},
+      // Should the the same as your canonical link, see below.
+      {property: 'og:url', content: 'https://villageofthemonks.com'},
+      {property: 'og:image', content: 'https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304561/main-header-medium.jpg'},
+      // Often the same as your meta description, but not always.
+      {property: 'og:description', content: 'Graiguenamanagh or Graignamanagh is a town in Kilkenny. Considered to be one of the most beautiful areas in the southeast of Ireland.'},
+
+      // Twitter card
+      {name: 'twitter:card', content: 'Website about Graignamanagh, A town in the South-East of Kilkenny'},
+      {name: 'twitter:site', content: 'https://villageofthemonks.com'},
+      {name: 'twitter:title', content: 'Graiguenamanagh | Village of the Monks'},
+      {name: 'twitter:description', content: 'Graiguenamanagh or Graignamanagh is a town in Kilkenny. Considered to be one of the most beautiful areas in the southeast of Ireland.'},
+      // Your twitter handle, if you have one.
+      {name: 'twitter:creator', content: '@scottyzen'},
+      {name: 'twitter:image:src', content: 'https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304561/main-header-medium.jpg'},
+
+      // Google / Schema.org markup:
+      {itemprop: 'name', content: 'Graiguenamanagh | Village of the Monks'},
+      {itemprop: 'description', content: 'Graiguenamanagh or Graignamanagh is a town in Kilkenny. Considered to be one of the most beautiful areas in the southeast of Ireland.'},
+      {itemprop: 'image', content: 'https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304561/main-header-medium.jpg'}
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: (process.env.NODE_ENV !== 'production') ? "/favicon-dev.ico" : "/favicon.ico" },

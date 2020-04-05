@@ -39,9 +39,7 @@
             />
           </div>
         </div>
-        <div
-          class="flex flex-col-reverse flex-wrap justify-between md:flex-row md:mt-16"
-        >
+        <div class="flex flex-col-reverse flex-wrap justify-between md:flex-row md:mt-16">
           <div
             class="w-full mt-8 transition-all duration-150 mobile-dont-move md:mt-0 md:w-5/12 ease"
             :style="{ transform: `translate3D(0, ${scrollPos * 0.05}px, 0)` }"
@@ -62,15 +60,9 @@
         </div>
       </div>
 
-      <div
-        id="green-river"
-        :class="{ lazybg: !fullyLoaded }"
-        class="py-24 -mt-24 text-white"
-      >
+      <div id="green-river" :class="{ lazybg: !fullyLoaded }" class="py-24 -mt-24 text-white">
         <div class="w-full p-8 mt-16 md:w-1/2 md:ml-auto md:mt-0 md:p-0">
-          <p
-            class="max-w-md text-xl text-center text-white text-shadow-green font-secondary"
-          >
+          <p class="max-w-md text-xl text-center text-white text-shadow-green font-secondary">
             It has been called Ireland's best kept secret and is a veritable
             treasure trove of varied scenery, ancient buildings, canal boating,
             river and hill walks, crafts, traditional pubs and much more.
@@ -144,6 +136,23 @@
 <script>
 import AppMasthead from "../components/AppMasthead.vue";
 export default {
+  head() {
+    return {
+      title: "Graiguenamanagh | Village of the Monks",
+      meta: [
+        {
+          name: "description",
+          content:
+            "Graiguenamanagh or Graignamanagh is a town in Kilkenny. Considered to be one of the most beautiful areas in the southeast of Ireland."
+        },
+        {
+          name: "keywords",
+          content:
+            "Graiguenamanagh, Graignamanagh, river, barrow, abbey, Village, Monks, South-east, Kilkenny, Carlow, Tinnahinch, Castle, Brandon, Hill, Town, Books, Pubs, Ireland, Duiske."
+        }
+      ]
+    };
+  },
   components: {
     AppMasthead,
     Stats: () => import("@/components/Stats.vue"),

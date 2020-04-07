@@ -85,6 +85,7 @@ export default {
       title: "Brandon Hill | Village of the Monks",
       meta: [
         {
+          hid: "description",
           name: "description",
           content:
             "Brandon Hill is the highest mountain in County Kilkenny.It is the termination of the chain of granitic mountains that raise from the shores of Dublin bay. The base of Brandon Hill on the side of the River Barrow and the hill running to Graig is composed of schist rock."

@@ -69,8 +69,14 @@ import AppMasthead from "../components/AppMasthead.vue";
 export default {
   head: {
     title: "The Desereted Village",
-    description:
-      "The Deserted Village is a poem about Tinnahinch. Written by Eddie Power."
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "The Deserted Village is a poem about Tinnahinch. Written by Eddie Power."
+      }
+    ]
   },
   components: {
     AppMasthead,

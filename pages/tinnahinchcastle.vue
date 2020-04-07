@@ -96,6 +96,7 @@ export default {
       title: "Tinnahinch Castle | Village of the Monks",
       meta: [
         {
+          hid: "description",
           name: "description",
           content:
             "Tinnahinch Castle was constructed in 1615 by James Butler the Duke of Ormonde. It was built to control a crossing where a wooden bridge once spanned the Barrow. Today the castle stands in ruins on the Carlow side of the river Barrow"

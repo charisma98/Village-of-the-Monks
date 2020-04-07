@@ -67,7 +67,13 @@ import AppMasthead from "../components/AppMasthead.vue";
 export default {
   head: {
     title: "I once was lost - now Im found | Village of the Monks",
-    description: "I once was lost - now Im found. by Arminta Wallace"
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content: "I once was lost - now Im found. by Arminta Wallace"
+      }
+    ]
   },
   components: {
     AppMasthead,

@@ -4,10 +4,10 @@
     <div class="container">
       <div class="flex flex-wrap justify-between">
         <div class="w-full tracking-tight text-gray-600 md:w-1/2">
-          <h2 class="title">
+          <h1 class="title">
             <small>Caislean Tigh na hInse</small>
             Tinnahinch Castle
-          </h2>
+          </h1>
           <p class="mb-4">
             Tinnahinch Castle was constructed in 1615 by James Butler the Duke
             of Ormonde. It was built to control a crossing where a wooden bridge

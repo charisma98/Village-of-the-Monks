@@ -4,10 +4,10 @@
     <div class="container">
       <div class="flex flex-wrap justify-between">
         <div class="w-full tracking-tight text-gray-600 md:w-9/20">
-          <div class="title">
+          <h1 class="title">
             <small>Cnoc Bhreanail</small>
             Brandon Hill
-          </div>
+          </h1>
           <p>
             Brandon Hill is the highest mountain in County Kilkenny. It has an
             elevation of 515 m (1,690 ft). It is situated 4 kilometers

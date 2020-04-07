@@ -4,10 +4,10 @@
     <div class="container">
       <div class="flex flex-wrap justify-between">
         <div class="w-full tracking-tight text-gray-600 md:w-5/12">
-          <h2 class="title">
+          <h1 class="title">
             <small>Est. 1204</small>
             Duiske Abbey
-          </h2>
+          </h1>
           <p>
             A National Monument, Duiske Abbey originated in the 13th century as
             the church of a Cistercian monastery, but today it is a Catholic

@@ -30,9 +30,9 @@
         <nuxt-link class="text-sm text-gray-400" to="/riverbarrow"
           >River Barrow</nuxt-link
         >
-        <nuxt-link class="text-sm text-gray-400" to="article/pegwashingtonslane"
+        <!-- <nuxt-link class="text-sm text-gray-400" to="article/pegwashingtonslane"
           >Peg Washingtons Lane</nuxt-link
-        >
+        > -->
         <!-- <nuxt-link class="text-sm text-gray-400" to="/contact">Contact</nuxt-link> -->
       </div>
 

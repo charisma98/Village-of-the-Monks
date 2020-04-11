@@ -7,7 +7,7 @@
           <small>{{ post.sub_title }}</small>
           {{ post.title }}
         </h1>
-        <slices class="max-w-2xl mx-auto" :slices="slices" />
+        <slices class="max-w-2xl mx-auto" :slices="post.body" />
       </div>
     </div>
   </div>
@@ -32,18 +32,10 @@ export default {
     Slices
   },
   async asyncData({ $prismic, params, error }) {
-    try {
-      // Query to get post content
-      const post = (await $prismic.api.getByUID("articles", params.uid)).data;
-      // Returns data to be used in template
-      return {
-        post: post,
-        slices: post.body
-      };
-    } catch (e) {
-      // Returns error page
-      error({ statusCode: 404, message: "Page not found" });
-    }
+    // Query to get post content
+    const post = (await $prismic.api.getByUID("articles", params.uid)).data;
+    // Returns data to be used in template
+    return { post };
   }
 };
 </script>

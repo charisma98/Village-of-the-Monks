@@ -76,7 +76,9 @@ export default {
   modules: [
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
-    '@nuxtjs/prismic'
+    '@nuxtjs/prismic',
+    '@/modules/static',
+    '@/modules/crawler',
     // 'nuxt-responsive-loader'
   ],
   prismic: {

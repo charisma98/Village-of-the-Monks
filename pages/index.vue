@@ -1,7 +1,9 @@
 <template>
   <transition name="layout" mode="out-in">
     <div>
-      <app-masthead class="graiguenamanagh"></app-masthead>
+      <app-masthead
+        featuredImage="https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304561/main-header-large.jpg"
+      ></app-masthead>
       <div class="container">
         <div class="flex flex-wrap justify-between">
           <div class="w-full tracking-tight text-gray-600 md:w-9/20">
@@ -39,9 +41,7 @@
             />
           </div>
         </div>
-        <div
-          class="flex flex-col-reverse flex-wrap justify-between md:flex-row md:mt-16"
-        >
+        <div class="flex flex-col-reverse flex-wrap justify-between md:flex-row md:mt-16">
           <div
             class="w-full mt-8 transition-all duration-150 mobile-dont-move md:mt-0 md:w-5/12 ease"
             :style="{ transform: `translate3D(0, ${scrollPos * 0.05}px, 0)` }"
@@ -62,15 +62,9 @@
         </div>
       </div>
 
-      <div
-        id="green-river"
-        :class="{ lazybg: !fullyLoaded }"
-        class="py-24 -mt-24 text-white"
-      >
+      <div id="green-river" :class="{ lazybg: !fullyLoaded }" class="py-24 -mt-24 text-white">
         <div class="w-full p-8 mt-16 md:w-1/2 md:ml-auto md:mt-0 md:p-0">
-          <p
-            class="max-w-md text-xl text-center text-white text-shadow-green font-secondary"
-          >
+          <p class="max-w-md text-xl text-center text-white text-shadow-green font-secondary">
             It has been called Ireland's best kept secret and is a veritable
             treasure trove of varied scenery, ancient buildings, canal boating,
             river and hill walks, crafts, traditional pubs and much more.
@@ -142,36 +136,35 @@
 </template>
 
 <script>
-import AppMasthead from "../components/AppMasthead.vue";
 export default {
   head() {
     return {
       title: "Graiguenamanagh | Village of the Monks",
       meta: [
         {
+          hid: "description",
           name: "description",
           content:
-            "Graiguenamanagh or Graignamanagh is a town in Kilkenny. Considered to be one of the most beautiful areas in the southeast of Ireland.",
+            "Graiguenamanagh or Graignamanagh is a town in Kilkenny. Considered to be one of the most beautiful areas in the southeast of Ireland."
         },
         {
           name: "keywords",
           content:
-            "Graiguenamanagh, Graignamanagh, river, barrow, abbey, Village, Monks, South-east, Kilkenny, Carlow, Tinnahinch, Castle, Brandon, Hill, Town, Books, Pubs, Ireland, Duiske.",
-        },
-      ],
+            "Graiguenamanagh, Graignamanagh, river, barrow, abbey, Village, Monks, South-east, Kilkenny, Carlow, Tinnahinch, Castle, Brandon, Hill, Town, Books, Pubs, Ireland, Duiske."
+        }
+      ]
     };
   },
   components: {
-    AppMasthead,
     Stats: () => import("@/components/Stats.vue"),
     InstaFeed: () => import("@/components/InstaFeed.vue"),
-    PageCard: () => import("@/components/PageCard.vue"),
+    PageCard: () => import("@/components/PageCard.vue")
   },
   data() {
     return {
       scrollPos: 0,
       width: 0,
-      fullyLoaded: false,
+      fullyLoaded: false
     };
   },
   mounted() {
@@ -188,25 +181,18 @@ export default {
     },
     handleResize() {
       this.width = window.innerWidth;
-    },
+    }
   },
   destroyed() {
     window.removeEventListener("scroll", this.handleResize);
     window.removeEventListener("resize", this.handleResize);
-  },
+  }
 };
 </script>
 
 <style lang="postcss">
 .lazybg {
   background: url("../assets/images/lazybg.jpg") repeat !important;
-}
-.graiguenamanagh {
-  background: url("https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304562/brush-strokes2.png")
-      center bottom no-repeat,
-    url("https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304561/main-header-large.jpg")
-      center;
-  background-size: contain, cover;
 }
 .title {
   text-align: center;

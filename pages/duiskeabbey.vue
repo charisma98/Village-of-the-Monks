@@ -1,6 +1,8 @@
 <template>
   <div>
-    <app-masthead class="duiske-abbey"></app-masthead>
+    <app-masthead
+      featuredImage="https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304548/duiske-abbey-header-large.jpg"
+    ></app-masthead>
     <div class="container">
       <div class="flex flex-wrap justify-between">
         <div class="w-full tracking-tight text-gray-600 md:w-5/12">
@@ -94,7 +96,6 @@
 </template>
 
 <script>
-import AppMasthead from "../components/AppMasthead.vue";
 export default {
   head() {
     return {
@@ -115,7 +116,6 @@ export default {
     };
   },
   components: {
-    AppMasthead,
     Stats: () => import("@/components/Stats.vue"),
     InstaFeed: () => import("@/components/InstaFeed.vue"),
     PageCard: () => import("@/components/PageCard.vue")
@@ -132,11 +132,3 @@ export default {
   }
 };
 </script>
-
-<style>
-.duiske-abbey {
-  background: url("../assets/images/brush-strokes2.png") center bottom no-repeat,
-    url("../assets/images/duiske-abbey-header-large.jpg") center;
-  background-size: contain, cover;
-}
-</style>

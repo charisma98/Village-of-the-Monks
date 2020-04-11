@@ -1,6 +1,8 @@
 <template>
   <div>
-    <app-masthead class="brandon-hill"></app-masthead>
+    <app-masthead
+      featuredImage="https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304556/brandon-header-large.jpg"
+    ></app-masthead>
     <div class="container">
       <div class="flex flex-wrap justify-between">
         <div class="w-full tracking-tight text-gray-600 md:w-9/20">
@@ -78,7 +80,6 @@
 </template>
 
 <script>
-import AppMasthead from "../components/AppMasthead.vue";
 export default {
   head() {
     return {
@@ -99,16 +100,7 @@ export default {
     };
   },
   components: {
-    AppMasthead,
     InstaFeed: () => import("@/components/InstaFeed.vue")
   }
 };
 </script>
-
-<style>
-.brandon-hill {
-  background: url("../assets/images/brush-strokes2.png") center bottom no-repeat,
-    url("../assets/images/brandon-header-large.jpg") center;
-  background-size: contain, cover;
-}
-</style>

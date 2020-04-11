@@ -75,9 +75,15 @@ export default {
   ],
   modules: [
     '@nuxtjs/pwa',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxtjs/prismic'
     // 'nuxt-responsive-loader'
   ],
+  prismic: {
+    endpoint: 'https://villageofthemonks.prismic.io/api/v2',
+    // linkResolver: '@/plugins/link-resolver',
+    // htmlSerializer: '@/plugins/html-serializer',
+  },
   sitemap: {
     hostname: 'https://villageofthemonks.com',
     path: '/sitemap.xml',
@@ -87,6 +93,7 @@ export default {
     name: 'fade',
     mode: 'out-in'
   },
+  plugins: ['~/plugins/globalComponents.js'],
   /*
    ** Build configuration
    */

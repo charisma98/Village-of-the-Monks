@@ -1,6 +1,8 @@
 <template>
   <div>
-    <app-masthead class="tinnahinch-castle"></app-masthead>
+    <app-masthead
+      featuredImage="https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304567/tinnahinch-castle-header-large.jpg"
+    ></app-masthead>
     <div class="container">
       <div class="flex flex-wrap justify-center">
         <div class="w-full max-w-lg tracking-tight text-gray-600">
@@ -65,7 +67,6 @@
 </template>
 
 <script>
-import AppMasthead from "../components/AppMasthead.vue";
 export default {
   head: {
     title: "The Desereted Village",
@@ -77,10 +78,6 @@ export default {
           "The Deserted Village is a poem about Tinnahinch. Written by Eddie Power."
       }
     ]
-  },
-  components: {
-    AppMasthead,
-    InstaFeed: () => import("@/components/InstaFeed.vue")
   }
 };
 </script>

@@ -1,6 +1,8 @@
 <template>
   <div>
-    <app-masthead class="river-barrow"></app-masthead>
+    <app-masthead
+      featuredImage="https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304563/river-barrow-header-large.jpg"
+    ></app-masthead>
     <div class="container">
       <div class="flex flex-wrap justify-center">
         <div class="w-full max-w-xl tracking-tight text-gray-600">
@@ -63,7 +65,6 @@
 </template>
 
 <script>
-import AppMasthead from "../components/AppMasthead.vue";
 export default {
   head: {
     title: "I once was lost - now Im found | Village of the Monks",
@@ -74,10 +75,6 @@ export default {
         content: "I once was lost - now Im found. by Arminta Wallace"
       }
     ]
-  },
-  components: {
-    AppMasthead,
-    InstaFeed: () => import("@/components/InstaFeed.vue")
   }
 };
 </script>

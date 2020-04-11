@@ -32,10 +32,12 @@ export default {
     Slices
   },
   async asyncData({ $prismic, params, error }) {
-    // Query to get post content
-    const post = (await $prismic.api.getByUID("articles", params.uid)).data;
-    // Returns data to be used in template
-    return { post };
+    try {
+      const post = (await $prismic.api.getByUID("articles", params.uid)).data;
+      return { post };
+    } catch (e) {
+      error({ statusCode: 404, message: "Page not found" });
+    }
   }
 };
 </script>

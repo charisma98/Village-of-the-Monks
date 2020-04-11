@@ -3,7 +3,7 @@ import Middleware from './middleware'
 
 const hasStaticAsyncData = (Component) => Boolean(Component.options.asyncData) && Component.options.static !== false
 
-Middleware.nuxt_static = async ({ route, error }) => {
+Middleware.nuxt_static = async ({ app, route }) => {
   // Ignore on server
   if (process.server) return
   // Ignore if not generated
@@ -26,11 +26,7 @@ Middleware.nuxt_static = async ({ route, error }) => {
     if (!res.ok) return null
     return res.json()
   })
-  if (!pageDatas) {
-    error({ statusCode: 404, message: 'Page not found' })
-    console.error(`[@nuxt/static] Could not fetch ${payloadPath}`)
-    return
-  }
+  if (!pageDatas) return console.error(`[@nuxt/static] Could not fetch ${payloadPath}`)
 
   Components.forEach((Component, index) => {
     if (hasStaticAsyncData(Component)) {

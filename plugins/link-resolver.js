@@ -3,10 +3,6 @@ export default function (doc) {
       return '/not-found'
     }
   
-    if (doc.type === 'blog_home') {
-      return '/'
-    }
-  
     if (doc.type === 'articles') {
       return '/article/' + doc.uid
     }

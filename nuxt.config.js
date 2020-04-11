@@ -81,7 +81,7 @@ export default {
   ],
   prismic: {
     endpoint: 'https://villageofthemonks.prismic.io/api/v2',
-    linkResolver: require('./app/prismic/link-resolver'),
+    linkResolver: '@/plugins/link-resolver',
     preview: '/preview/' // because we use nuxt generate
     // linkResolver: '@/plugins/link-resolver',
     // htmlSerializer: '@/plugins/html-serializer',

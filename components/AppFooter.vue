@@ -20,7 +20,10 @@
         <nuxt-link class="text-sm text-gray-400" to="/duiskeabbey">Duiske Abbey</nuxt-link>
         <nuxt-link class="text-sm text-gray-400" to="/tinnahinchcastle">Tinnahinch Castle</nuxt-link>
         <nuxt-link class="text-sm text-gray-400" to="/riverbarrow">River Barrow</nuxt-link>
-        <nuxt-link class="text-sm text-gray-400" to="/pegwashingtonslane">Peg Washingtons Lane</nuxt-link>
+        <nuxt-link
+          class="text-sm text-gray-400"
+          to="article/pegwashingtonslane"
+        >Peg Washingtons Lane</nuxt-link>
         <!-- <nuxt-link class="text-sm text-gray-400" to="/contact">Contact</nuxt-link> -->
       </div>
 

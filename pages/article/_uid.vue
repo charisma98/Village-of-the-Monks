@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import Slices from "../components/Slices";
+import Slices from "../../components/Slices";
 export default {
   head() {
     return {

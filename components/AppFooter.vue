@@ -38,34 +38,82 @@
 
       <div class="flex flex-col mt-8 mr-10 md:mt-0">
         <div class="mb-2 text-lg font-secondary">Poems and Articals</div>
+
         <nuxt-link class="text-sm text-gray-400" to="/thedesertedvillage"
           >The Deserted Village</nuxt-link
         >
-        <nuxt-link class="text-sm text-gray-400" to="/ioncewaslostnowimfound"
+        <nuxt-link
+          class="text-sm text-gray-400 capitalize"
+          to="/ioncewaslostnowimfound"
           >I once was lost - now Im found</nuxt-link
+        >
+        <a class="text-sm text-gray-400" href="/article/pegwashingtonslane"
+          >Peg Washingtons Lane</a
         >
       </div>
 
       <div class="flex flex-col mt-8 md:mt-0">
         <div class="mb-2 text-lg font-secondary">Community Links</div>
-        <a href class="text-sm text-gray-400" target="_blank">Angling Club</a>
-        <a href class="text-sm text-gray-400" target="_blank"
+        <a
+          href="https://www.facebook.com/profile.php?id=100007286447440&fref=ts"
+          class="text-sm text-gray-400"
+          target="_blank"
+          >Angling Club</a
+        >
+        <a
+          href="https://www.facebook.com/brandonhillcross"
+          class="text-sm text-gray-400"
+          target="_blank"
           >Brandon Hill Cross Committee</a
         >
-        <a href class="text-sm text-gray-400" target="_blank">Cosy Inn</a>
-        <a href class="text-sm text-gray-400" target="_blank">G.A.A Club</a>
-        <a href class="text-sm text-gray-400" target="_blank"
+        <a
+          href="https://www.facebook.com/franciesbar/"
+          class="text-sm text-gray-400"
+          target="_blank"
+          >Cosy Inn</a
+        >
+        <a
+          href="https://www.facebook.com/Graiguenamanagh-GAA-Club-500349973410896"
+          class="text-sm text-gray-400"
+          target="_blank"
+          >G.A.A Club</a
+        >
+        <a
+          href="https://www.facebook.com/Highview-Athletic-FC-205142806201352/"
+          class="text-sm text-gray-400"
+          target="_blank"
           >Highview Athletic F.C.</a
         >
-        <a href class="text-sm text-gray-400" target="_blank">Love Graig</a>
-        <a href class="text-sm text-gray-400" target="_blank"
+        <a
+          href="https://www.facebook.com/Love-Graig-1314414091927931/"
+          class="text-sm text-gray-400"
+          target="_blank"
+          >Love Graig</a
+        >
+        <a
+          href="https://www.facebook.com/pages/Mick-Doyles-Pub/776116279118114"
+          class="text-sm text-gray-400"
+          target="_blank"
           >Mick Doyle's Pub</a
         >
-        <a href class="text-sm text-gray-400" target="_blank"
+        <a
+          href="https://www.facebook.com/ODriscollsBarBeerGarden"
+          class="text-sm text-gray-400"
+          target="_blank"
           >O'Driscolls Bar & Beer Garden</a
         >
-        <a href class="text-sm text-gray-400" target="_blank">Regatta</a>
-        <a href class="text-sm text-gray-400" target="_blank">Tidy Towns</a>
+        <a
+          href="https://www.facebook.com/Graignamanagh-Regatta-402147136571713/?fref=ts"
+          class="text-sm text-gray-400"
+          target="_blank"
+          >Regatta</a
+        >
+        <a
+          href="https://www.facebook.com/graiguenamanagh.tidytowns?fref=ts"
+          class="text-sm text-gray-400"
+          target="_blank"
+          >Tidy Towns</a
+        >
       </div>
     </div>
 

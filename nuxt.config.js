@@ -1,18 +1,6 @@
-// let dynamicRoutes = () => {
-//   const routes = axios
-//     .get("http://2cubed.2cubedtest.com/wp-json/wp/v2/posts?page=1&per_page=20")
-//     .then(res => {
-//       return res.data.map(post => `/blog/${post.slug}`)
-//     })
-//   console.log(routes)
-//   return routes
-// }
-
 export default {
   mode: "universal",
-  /*
-   ** Headers of the page
-   */
+  // Headers of the page
   head: {
     title: "Graiguenamanagh | Village of the Monks",
     meta: [
@@ -52,21 +40,8 @@ export default {
       { rel: "icon", type: "image/x-icon", href: (process.env.NODE_ENV !== 'production') ? "/favicon-dev.ico" : "/favicon.ico" },
     ]
   },
-  /*
-   ** Global CSS
-   */
+  // Global CSS
   css: ["~/assets/mixins.scss"],
-  /*
-   ** Plugins to load before mounting the App
-   */
-  // plugins: [
-  //   "~/plugins/posts.server.js",
-  //   "~/plugins/tags.server.js",
-  //   "~/plugins/dateformat.js"
-  // ],
-  // generate: {
-  //   routes: dynamicRoutes
-  // },
   /*
    ** Nuxt.js dev-modules
    */
@@ -97,14 +72,5 @@ export default {
     name: 'fade',
     mode: 'out-in'
   },
-  plugins: ['~/plugins/globalComponents.js'],
-  /*
-   ** Build configuration
-   */
-  build: {
-    /*
-     ** You can extend webpack config here
-     */
-    extend(config, ctx) {}
-  }
+  plugins: ['~/plugins/globalComponents.js']
 }

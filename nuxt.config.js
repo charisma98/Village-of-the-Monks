@@ -47,19 +47,19 @@ export default {
    */
   buildModules: [
     "@nuxtjs/tailwindcss",
-    '@nuxtjs/prismic'
   ],
   modules: [
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
     '~/modules/crawler',
     '~/modules/static',
+    '@nuxtjs/prismic'
     // 'nuxt-responsive-loader'
   ],
   prismic: {
     endpoint: 'https://villageofthemonks.prismic.io/api/v2',
     linkResolver: '@/plugins/link-resolver',
-    preview: '/preview/' // because we use nuxt generate
+    preview: (process.env.NODE_ENV !== 'production') ? true : false 
     // htmlSerializer: '@/plugins/html-serializer',
   },
   sitemap: {

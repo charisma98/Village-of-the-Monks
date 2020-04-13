@@ -46,12 +46,12 @@ export default {
    ** Nuxt.js dev-modules
    */
   buildModules: [
-    "@nuxtjs/tailwindcss"
+    "@nuxtjs/tailwindcss",
+    '@nuxtjs/prismic'
   ],
   modules: [
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
-    '@nuxtjs/prismic',
     '~/modules/crawler',
     '~/modules/static',
     // 'nuxt-responsive-loader'

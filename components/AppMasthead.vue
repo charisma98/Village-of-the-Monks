@@ -14,12 +14,16 @@ export default {
 section.masthead {
   width: 100%;
   height: 75vh;
-  max-height: 80vw;
   background-size: cover;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
+}
+@media screen and (min-width: 768px) {
+  section.masthead {
+    max-height: 60vw;
+  }
 }
 .brush-stroke {
   position: absolute;

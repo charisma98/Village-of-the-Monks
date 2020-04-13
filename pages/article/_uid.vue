@@ -5,7 +5,7 @@
       <div class="mb-8">
         <h1 class="title">
           <small>{{ post.sub_title }}</small>
-          {{ post.title }}
+          {{ post.title[0].text }}
         </h1>
         <slices class="max-w-2xl mx-auto" :slices="post.body" />
       </div>
@@ -18,12 +18,17 @@ import Slices from "../../components/Slices";
 export default {
   head() {
     return {
-      title: this.post.title + " | Village of the Monks",
+      title: this.post.title[0].text + " | Village of the Monks",
       meta: [
         {
           hid: "description",
           name: "description",
-          content: this.post.sub_title
+          content: this.post.discription
+        },
+        {
+          hid: "keywords",
+          name: "keywords",
+          content: this.post.keywords
         }
       ]
     };

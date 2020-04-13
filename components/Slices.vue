@@ -28,6 +28,14 @@
           </div>
         </div>
       </template>
+
+      <template v-if="slice.slice_type === 'gallery'">
+        <ul class="grid my-8 gallery">
+          <li v-for="(item, i) in slice.items" :key="'para-' + i">
+            <img :src="item.image.thumbnail.url" :alt="item.image.alt" />
+          </li>
+        </ul>
+      </template>
     </section>
   </section>
 </template>
@@ -39,5 +47,8 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.gallery {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
 </style>

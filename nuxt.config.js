@@ -60,7 +60,6 @@ export default {
     endpoint: 'https://villageofthemonks.prismic.io/api/v2',
     linkResolver: '@/plugins/link-resolver',
     preview: '/preview/' // because we use nuxt generate
-    // linkResolver: '@/plugins/link-resolver',
     // htmlSerializer: '@/plugins/html-serializer',
   },
   sitemap: {

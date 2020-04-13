@@ -14,6 +14,7 @@ export default {
 section.masthead {
   width: 100%;
   height: 75vh;
+  max-height: 80vw;
   background-size: cover;
   position: relative;
   background-position: center;

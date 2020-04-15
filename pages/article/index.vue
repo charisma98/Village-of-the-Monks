@@ -10,7 +10,7 @@
 export default {
   async asyncData({ $prismic }) {
     const posts = await $prismic.api.query(
-      $prismic.predicates.at("document.type", "articles"),
+      $prismic.predicates.at("document.type", "page"),
       { pageSize: 50 }
     );
     return {

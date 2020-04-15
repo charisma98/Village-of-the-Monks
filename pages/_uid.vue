@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import Slices from "../../components/Slices";
+import Slices from "../components/Slices";
 export default {
   head() {
     return {
@@ -38,7 +38,7 @@ export default {
   },
   async asyncData({ $prismic, params, error }) {
     try {
-      const post = (await $prismic.api.getByUID("articles", params.uid)).data;
+      const post = (await $prismic.api.getByUID("page", params.uid)).data;
       return { post };
     } catch (e) {
       error({ statusCode: 404, message: "Page not found" });

@@ -21,10 +21,6 @@
         <nuxt-link class="text-sm text-gray-400" to="/tinnahinchcastle">Tinnahinch Castle</nuxt-link>
         <nuxt-link class="text-sm text-gray-400" to="/riverbarrow">River Barrow</nuxt-link>
         <a class="text-sm text-gray-400" href="/pegwashingtonslane">Peg Washingtons Lane</a>
-        <!-- <nuxt-link class="text-sm text-gray-400" to="article/pegwashingtonslane"
-          >Peg Washingtons Lane</nuxt-link
-        >-->
-        <!-- <nuxt-link class="text-sm text-gray-400" to="/contact">Contact</nuxt-link> -->
       </div>
 
       <div class="flex flex-col mt-8 mr-10 md:mt-0">
@@ -108,6 +104,7 @@
     </div>
   </div>
 </template>
+
 
 <style lang="postcss">
 #footer {

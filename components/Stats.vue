@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="flex flex-col justify-between p-5 text-yellow-900 bg-yellow-500 rounded-sm shadow-lg"
-  >
+  <div class="flex flex-col justify-between p-5 text-yellow-900 rounded-sm shadow-lg bg-yellow">
     <div class="flex items-center h-24">
       <div class="w-1/4 text-center">
         <img
@@ -11,9 +9,7 @@
         />
       </div>
       <div>
-        <p class="text-lg font-medium tracking-wide stat-info">
-          {{ tempature }}°C
-        </p>
+        <p class="text-lg font-medium tracking-wide stat-info">{{ tempature }}°C</p>
         <p class="text-xs text-yellow-900 uppercase">{{ description }}</p>
       </div>
     </div>
@@ -39,9 +35,7 @@
         />
       </div>
       <div>
-        <p class="text-lg font-medium tracking-wide stat-info">
-          52.543925 -6.957807
-        </p>
+        <p class="text-lg font-medium tracking-wide stat-info">52.543925 -6.957807</p>
         <p class="text-xs text-yellow-900 uppercase">Coordinates</p>
       </div>
     </div>
@@ -71,6 +65,9 @@ export default {
 </script>
 
 <style>
+.bg-yellow {
+  background-color: #e0ba2f;
+}
 .stat-icon {
   width: 42px;
   height: 42px;

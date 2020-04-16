@@ -58,6 +58,9 @@ body {
 .fade-enter-active {
   animation: fadein 600ms ease-in-out;
 }
+.text-green {
+  color: #7db070;
+}
 
 @keyframes fadeout {
   0% {

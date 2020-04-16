@@ -39,51 +39,61 @@
           href="https://www.facebook.com/profile.php?id=100007286447440&fref=ts"
           class="text-sm text-gray-400"
           target="_blank"
+          rel="noopener noreferrer"
         >Angling Club</a>
         <a
           href="https://www.facebook.com/brandonhillcross"
           class="text-sm text-gray-400"
           target="_blank"
+          rel="noopener noreferrer"
         >Brandon Hill Cross Committee</a>
         <a
           href="https://www.facebook.com/franciesbar/"
           class="text-sm text-gray-400"
           target="_blank"
+          rel="noopener noreferrer"
         >Cosy Inn</a>
         <a
           href="https://www.facebook.com/Graiguenamanagh-GAA-Club-500349973410896"
           class="text-sm text-gray-400"
           target="_blank"
+          rel="noopener noreferrer"
         >G.A.A Club</a>
         <a
           href="https://www.facebook.com/Highview-Athletic-FC-205142806201352/"
           class="text-sm text-gray-400"
           target="_blank"
+          rel="noopener noreferrer"
         >Highview Athletic F.C.</a>
         <a
           href="https://www.facebook.com/Love-Graig-1314414091927931/"
           class="text-sm text-gray-400"
           target="_blank"
+          rel="noopener noreferrer"
         >Love Graig</a>
         <a
           href="https://www.facebook.com/pages/Mick-Doyles-Pub/776116279118114"
           class="text-sm text-gray-400"
           target="_blank"
+          rel="noopener noreferrer"
         >Mick Doyle's Pub</a>
         <a
           href="https://www.facebook.com/ODriscollsBarBeerGarden"
           class="text-sm text-gray-400"
           target="_blank"
+          rel="noopener noreferrer"
         >O'Driscolls Bar & Beer Garden</a>
         <a
           href="https://www.facebook.com/Graignamanagh-Regatta-402147136571713/?fref=ts"
           class="text-sm text-gray-400"
           target="_blank"
+          rel="noopener noreferrer"
         >Regatta</a>
         <a
           href="https://www.facebook.com/graiguenamanagh.tidytowns?fref=ts"
           class="text-sm text-gray-400"
           target="_blank"
+          rel="noopener noreferrer"
         >Tidy Towns</a>
       </div>
     </div>

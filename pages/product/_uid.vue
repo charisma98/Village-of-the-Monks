@@ -43,10 +43,3 @@ export default {
 };
 </script>
 
-<style scoped>
-.title {
-  /* text-align: left; */
-  /* margin-left: -12px; */
-  /* padding-left: 0; */
-}
-</style>

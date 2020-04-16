@@ -64,9 +64,12 @@ export default {
 };
 </script>
 
-<style>
+<style  scoped>
+.text-yellow-darkest {
+  color: #5d3207;
+}
 .bg-yellow {
-  background-color: #e0ba2f;
+  background-color: #dcb629;
 }
 .stat-icon {
   width: 42px;

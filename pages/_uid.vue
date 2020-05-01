@@ -14,7 +14,6 @@
 </template>
 
 <script>
-import Slices from "../components/Slices";
 export default {
   head() {
     return {
@@ -23,18 +22,15 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: this.post.discription
+          content: this.post.discription,
         },
         {
           hid: "keywords",
           name: "keywords",
-          content: this.post.keywords
-        }
-      ]
+          content: this.post.keywords,
+        },
+      ],
     };
-  },
-  components: {
-    Slices
   },
   async asyncData({ $prismic, params, error }) {
     try {
@@ -43,6 +39,6 @@ export default {
     } catch (e) {
       error({ statusCode: 404, message: "Page not found" });
     }
-  }
+  },
 };
 </script>

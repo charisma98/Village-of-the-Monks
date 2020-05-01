@@ -11,7 +11,8 @@
             <nuxt-link
               class="text-xl text-gray-700 font-secondary hover:text-green-500"
               :to="`/product/${uid}`"
-            >{{ data.title[0].text }}</nuxt-link>
+              >{{ data.title[0].text }}</nuxt-link
+            >
           </article>
         </div>
       </div>
@@ -23,15 +24,14 @@
 export default {
   async asyncData({ $prismic }) {
     const posts = await $prismic.api.query(
-      $prismic.predicates.at("document.type", "product"),
-      { pageSize: 50 }
+      $prismic.predicates.at("document.type", "product")
     );
     return {
-      posts: posts.results
+      posts: posts.results,
     };
   },
   head: {
-    title: "Blog"
-  }
+    title: "Blog",
+  },
 };
 </script>

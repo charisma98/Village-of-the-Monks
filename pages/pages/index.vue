@@ -23,7 +23,7 @@
 export default {
   async asyncData({ $prismic }) {
     const posts = await $prismic.api.query(
-      $prismic.predicates.at("document.type", "product")
+      $prismic.predicates.at("document.type", "page")
     );
     return {
       posts: posts.results,

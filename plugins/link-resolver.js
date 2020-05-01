@@ -7,8 +7,8 @@ export default function (doc) {
     return '/';
   }
  
-  if (doc.type === 'articles') {
-    return '/article/' + doc.uid
+  if (doc.type === 'page') {
+    return `/${doc.uid}`
   }
  
   return '/not-found';

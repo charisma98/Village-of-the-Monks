@@ -6,13 +6,13 @@
     <div class="container">
       <div class="flex">
         <div class="w-full p-12">
-          <article v-for="{ uid, data, id } in posts" :key="id">
+          <!-- <article v-for="{ uid, data, id } in posts" :key="id">
             <nuxt-link
               class="text-xl text-gray-700 font-secondary hover:text-green-500"
               :to="`/product/${uid}`"
               >{{ data.title[0].text }}</nuxt-link
             >
-          </article>
+          </article> -->
         </div>
       </div>
     </div>

@@ -50,7 +50,7 @@ const bannedUsers = [
   "11118289788", // graiguenamanaghbikehire
   "2161117248", // Devils Menu
   "11689623970", // Killvarra B&B
-  "3991828910" // Hazel Power
+  "3991828910", // Hazel Power
 ];
 
 export default {
@@ -58,7 +58,7 @@ export default {
     return {
       instaAPI: [{ node: 1 }],
       instaImages: [],
-      shadows: ["shadow", "shadow-md", "shadow-lg", "shadow-xl"]
+      shadows: ["shadow", "shadow-md", "shadow-lg", "shadow-xl"],
     };
   },
   props: ["hashtag", "numberOfImages"],
@@ -92,23 +92,23 @@ export default {
             top: minMax(10, 80),
             shadow: this.shadows[
               Math.floor(Math.random() * this.shadows.length)
-            ]
+            ],
           });
           numberOfImagesAdded++;
         }
         i++;
       }, 2500);
-    }
+    },
   },
   beforeMount() {
     axios
       .get(`https://www.instagram.com/explore/tags/${this.hashtag}/?__a=1`)
-      .then(res => {
+      .then((res) => {
         this.instaAPI = res.data.graphql.hashtag.edge_hashtag_to_media.edges;
-        console.log(res.data.graphql.hashtag.edge_hashtag_to_media.edges);
+        // console.log(res.data.graphql.hashtag.edge_hashtag_to_media.edges);
         this.startedAddingImages();
       });
-  }
+  },
 };
 </script>
 

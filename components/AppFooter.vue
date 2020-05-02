@@ -30,8 +30,13 @@
         <nuxt-link class="text-sm text-gray-400" to="/riverbarrow"
           >River Barrow</nuxt-link
         >
-        <a class="text-sm text-gray-400" href="/pages/pegwashingtonslane"
-          >Peg Washingtons Lane</a
+        <!-- Get the rest of the pages from Prismic -->
+        <nuxt-link
+          class="text-sm text-gray-400"
+          :to="`/${page.uid}`"
+          v-for="page in this.$store.state.pages"
+          :key="page.id"
+          >{{ page.data.title[0].text }}</nuxt-link
         >
       </div>
 
@@ -140,6 +145,14 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  created() {
+    this.$store.dispatch("getPages");
+  },
+};
+</script>
 
 <style lang="postcss">
 #footer {

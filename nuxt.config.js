@@ -1,3 +1,5 @@
+const prismic = `https://villageofthemonks.cdn.prismic.io/api/v2/documents/search?q=[[at(document.type,"page")]]&ref=XqWbaRAAACIAWlTC&access_token=MC5YcG9VQVJFQUFDSUFpS2hh.Rxnvv70k77-9BX_vv73vv73vv73vv73vv73vv73vv70vZu-_vTLvv73vv73vv71q77-9BiLvv73vv71L77-977-977-9FA`;
+
 export default {
   mode: "universal",
   // Headers of the page
@@ -73,8 +75,12 @@ export default {
   },
   plugins: ['~/plugins/globalComponents.js'],
   generate: {
-    routes: [
-      '/pegwashingtonslane',
-    ]
+    routes () {
+      return axios.get(prismic).then(res => {
+          return res.results.map((page) => {
+            return '/' + page.uid
+          })
+        })
+    }  
   }
 }

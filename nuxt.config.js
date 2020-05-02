@@ -60,6 +60,10 @@ export default {
   buildModules: [
     "@nuxtjs/tailwindcss",
   ],
+  tailwindcss: {
+    // add '~tailwind.config` alias
+    exposeConfig: true
+  },
   modules: [
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',

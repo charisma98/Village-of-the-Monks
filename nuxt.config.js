@@ -1,4 +1,14 @@
-const prismic = `https://villageofthemonks.cdn.prismic.io/api/v2/documents/search?q=[[at(document.type,"page")]]&ref=XqWbaRAAACIAWlTC&access_token=MC5YcG9VQVJFQUFDSUFpS2hh.Rxnvv70k77-9BX_vv73vv73vv73vv73vv73vv73vv70vZu-_vTLvv73vv73vv71q77-9BiLvv73vv71L77-977-977-9FA`;
+import axios from "axios";
+const prismicPages = `https://villageofthemonks.cdn.prismic.io/api/v2/documents/search?q=[[at(document.type,"page")]]&ref=XqWbaRAAACIAWlTC&access_token=${process.env.PRISMICTOKEN}`;
+
+let dynamicRoutes = async () => {
+	const routes = await axios.get(prismicPages).then((res) => {
+			return res.data.results.map(page => `/${page.uid}`);
+	})
+	console.log(routes)
+	return routes;
+};
+
 
 export default {
   mode: "universal",
@@ -75,12 +85,6 @@ export default {
   },
   plugins: ['~/plugins/globalComponents.js'],
   generate: {
-    routes () {
-      return axios.get(prismic).then(res => {
-          return res.results.map((page) => {
-            return '/' + page.uid
-          })
-        })
-    }  
-  }
+    routes: dynamicRoutes
+  },
 }

@@ -146,6 +146,14 @@
   </div>
 </template>
 
+<script>
+export default {
+  created() {
+    this.$store.dispatch("getPages");
+  },
+};
+</script>
+
 <style lang="postcss">
 #footer {
   background: url("https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304560/brush-strokes-dark.png")

@@ -15,9 +15,6 @@ export default {
     AppNav,
     AppFooter: () => import("@/components/AppFooter.vue"),
   },
-  created() {
-    this.$store.dispatch("getPages");
-  },
 };
 </script>
 

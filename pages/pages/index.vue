@@ -7,10 +7,10 @@
       <div class="flex">
         <div class="w-full p-12">
           <article v-for="{ uid, data, id } in posts" :key="id">
-            <nuxt-link
+            <a
               class="text-xl text-gray-700 font-secondary hover:text-green-500"
-              :to="`/product/${uid}`"
-              >{{ data.title[0].text }}</nuxt-link
+              :href="`/product/${uid}`"
+              >{{ data.title[0].text }}</a
             >
           </article>
         </div>

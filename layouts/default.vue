@@ -13,8 +13,11 @@ import AppNav from "../components/AppNav";
 export default {
   components: {
     AppNav,
-    AppFooter: () => import("@/components/AppFooter.vue")
-  }
+    AppFooter: () => import("@/components/AppFooter.vue"),
+  },
+  created() {
+    this.$store.dispatch("getPages");
+  },
 };
 </script>
 

@@ -71,5 +71,10 @@ export default {
     name: 'fade',
     mode: 'out-in'
   },
-  plugins: ['~/plugins/globalComponents.js']
+  plugins: ['~/plugins/globalComponents.js'],
+  generate: {
+    routes: [
+      '/pegwashingtonslane',
+    ]
+  }
 }

@@ -59,6 +59,7 @@ export default {
    */
   buildModules: [
     "@nuxtjs/tailwindcss",
+    ['@nuxtjs/google-analytics', { id: 'UA-78738454-1' }]
   ],
   tailwindcss: {
     // add '~tailwind.config` alias
@@ -69,7 +70,8 @@ export default {
     '@nuxtjs/sitemap',
     '~/modules/crawler',
     '~/modules/static',
-    '@nuxtjs/prismic'
+    '@nuxtjs/prismic',
+    ['nuxt-vitals', { trackingID: 'UA-78738454-1' }]
     // 'nuxt-responsive-loader'
   ],
   prismic: {

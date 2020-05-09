@@ -70,8 +70,7 @@ export default {
     '@nuxtjs/sitemap',
     '~/modules/crawler',
     '~/modules/static',
-    '@nuxtjs/prismic',
-    ['nuxt-vitals', { trackingID: 'UA-78738454-1' }]
+    '@nuxtjs/prismic'
     // 'nuxt-responsive-loader'
   ],
   prismic: {

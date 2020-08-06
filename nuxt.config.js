@@ -12,6 +12,7 @@ let dynamicRoutes = async () => {
 
 export default {
   mode: "universal",
+  target: "static",
   // Headers of the page
   head: {
     title: "Graiguenamanagh | Village of the Monks",

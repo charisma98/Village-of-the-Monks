@@ -5,13 +5,11 @@ let dynamicRoutes = async () => {
 	const routes = await axios.get(prismicPages).then((res) => {
 			return res.data.results.map(page => `/${page.uid}`);
 	})
-	console.log(routes)
 	return routes;
 };
 
-
 export default {
-  mode: "universal",
+  mode: 'universal',
   
   // Headers of the page
   head: {
@@ -54,31 +52,23 @@ export default {
     ]
   },
   // Global CSS
-  css: ["~/assets/mixins.scss"],
+  css: ['~/assets/mixins.scss'],
   /*
    ** Nuxt.js dev-modules
    */
   buildModules: [
-    "@nuxtjs/tailwindcss",
+    '@nuxtjs/tailwindcss',
     ['@nuxtjs/google-analytics', { id: 'UA-78738454-1' }]
   ],
-  tailwindcss: {
-    // add '~tailwind.config` alias
-    exposeConfig: true
-  },
   modules: [
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
-    '~/modules/crawler',
-    '~/modules/static',
     '@nuxtjs/prismic'
-    // 'nuxt-responsive-loader'
   ],
   prismic: {
     endpoint: 'https://villageofthemonks.prismic.io/api/v2',
     linkResolver: '@/plugins/link-resolver',
-    preview: (process.env.NODE_ENV !== 'production') ? true : false 
-    // htmlSerializer: '@/plugins/html-serializer',
+    preview: (process.env.NODE_ENV !== 'production') ? true : false
   },
   sitemap: {
     hostname: 'https://villageofthemonks.com',
@@ -93,4 +83,5 @@ export default {
   generate: {
     routes: dynamicRoutes
   },
+  components: true
 }

@@ -36,16 +36,22 @@ exports.handler = function(event, context, callback) {
 //     return;
 //   }
 
-console.log('AXIOS URL: ', `https://${CLOUDINARY_API_KEY}:${CLOUDINARY_API_SECRET}@api.cloudinary.com/v1_1/odriscolls/resources/image/tags/${data.tag}`);
+console.log();
 
-  axios.get(`https://${CLOUDINARY_API_KEY}:${CLOUDINARY_API_SECRET}@api.cloudinary.com/v1_1/odriscolls/resources/image/tags/${data.tag}`).then(res => {
-      callback(null, {
-        statusCode,
-        headers,
-        body: JSON.stringify({res})
-      });
-    }
-  )
+axios({ method: 'get',
+        url: `https://${CLOUDINARY_API_KEY}:${CLOUDINARY_API_SECRET}@api.cloudinary.com/v1_1/odriscolls/resources/image/tags/${data.tag}`,
+        headers: { }
+    }).then(function (response) {
+          console.log(JSON.stringify(response.data));
+          callback(null, {
+              statusCode,
+              headers,
+              body: JSON.stringify(response.data)
+            });
+        }).catch(function (error) {
+            console.log(error);
+        });
+
 
   
 

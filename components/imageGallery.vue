@@ -5,21 +5,26 @@
       @click="openCloudinaryWidget"
       >Upload you own</a
     >
-    <ul class="grid grid-cols-4"></ul>
+    <ul class="grid grid-cols-4 gap-4">
+      <li v-for="image in galleryImages" :key="image.asset_id">
+        <img :src="image.url" alt="" />
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
-export default {
-  props: ["name"],
-};
-</script>
-
-<script>
+import axios from "axios";
 export default {
   head() {
     return {
       script: [{ src: "https://widget.cloudinary.com/v2.0/global/all.js" }],
+    };
+  },
+  props: ["name", "tag"],
+  data() {
+    return {
+      galleryImages: [],
     };
   },
   methods: {
@@ -32,7 +37,8 @@ export default {
           cropping: true,
           clientAllowedFormats: ["png", "jpeg"],
           folder: "riverbarrow",
-          tags: ["river", "barrow"],
+          sources: ["local", "instagram", "facebook"],
+          tags: [this.tag],
         },
         (error, result) => {
           if (!error && result && result.event === "sucess") {
@@ -46,6 +52,21 @@ export default {
       const widget = this.createCloudinaryWidget();
       widget.open();
     },
+    getImages() {
+      axios
+        .post(
+          "https://villageofthemonks.com/.netlify/functions/cloundinaryGallery",
+          { tag: this.tag },
+          { headers: { "Content-Type": "application/json" } }
+        )
+        .then((res) => {
+          console.log(res.data);
+          this.galleryImages = res.data.resources;
+        });
+    },
+  },
+  mounted() {
+    this.getImages();
   },
 };
 </script>

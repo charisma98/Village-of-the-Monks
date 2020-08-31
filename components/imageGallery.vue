@@ -21,7 +21,7 @@
         <img
           @click="openImageOn(i)"
           class="w-full h-full object-cover cursor-pointer"
-          :src="image.url"
+          :src="image.secure_url"
           alt=""
         />
       </li>
@@ -101,8 +101,8 @@ export default {
           this.galleryImages = res.data.resources;
           var final = [];
           res.data.resources.forEach((el) => {
-            // final.push(el.url);
-            final.push({ src: el.url });
+            // final.push(el.secure_url);
+            final.push({ src: el.secure_url });
           });
           this.imageUrls = final;
         });

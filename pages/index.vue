@@ -165,7 +165,6 @@ export default {
   },
   components: {
     Stats: () => import("@/components/Stats.vue"),
-    InstaFeed: () => import("@/components/InstaFeed.vue"),
     PageCard: () => import("@/components/PageCard.vue"),
   },
   data() {

@@ -119,8 +119,5 @@ export default {
       ],
     };
   },
-  components: {
-    InstaFeed: () => import("@/components/InstaFeed.vue"),
-  },
 };
 </script>

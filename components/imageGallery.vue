@@ -1,13 +1,13 @@
 <template>
   <div class="text-center ">
     <a
-      class="inline-block px-3 py-1 mt-4 text-sm text-yellow-800 bg-yellow-400 rounded font-secondary hover:bg-yellow-500 hover:text-yellow-900 m-auto"
+      class="inline-block px-3 py-1 mt-4 text-sm text-yellow-800 bg-yellow-400 rounded font-secondary hover:bg-yellow-500 hover:text-yellow-900 m-auto mb-4"
       @click="openCloudinaryWidget"
       >Upload you own</a
     >
-    <ul class="grid grid-cols-4 gap-4">
+    <ul class="grid grid-cols-4 gap-4 p-8">
       <li v-for="image in galleryImages" :key="image.asset_id">
-        <img :src="image.url" alt="" />
+        <img class="w-full h-full object-cover" :src="image.url" alt="" />
       </li>
     </ul>
   </div>

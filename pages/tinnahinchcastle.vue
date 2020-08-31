@@ -100,18 +100,15 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "Tinnahinch Castle was constructed in 1615 by James Butler the Duke of Ormonde. It was built to control a crossing where a wooden bridge once spanned the Barrow. Today the castle stands in ruins on the Carlow side of the river Barrow"
+            "Tinnahinch Castle was constructed in 1615 by James Butler the Duke of Ormonde. It was built to control a crossing where a wooden bridge once spanned the Barrow. Today the castle stands in ruins on the Carlow side of the river Barrow",
         },
         {
           name: "keywords",
           content:
-            "Graiguenamanagh, Graignamanagh, river, barrow, abbey, Village, bridge, Butler, Ormonde, Carlow, Tinnahinch, Castle, Brandon, Hill, ruins, Books, Pubs, Ireland, Duiske."
-        }
-      ]
+            "Graiguenamanagh, Graignamanagh, river, barrow, abbey, Village, bridge, Butler, Ormonde, Carlow, Tinnahinch, Castle, Brandon, Hill, ruins, Books, Pubs, Ireland, Duiske.",
+        },
+      ],
     };
   },
-  components: {
-    InstaFeed: () => import("@/components/InstaFeed.vue")
-  }
 };
 </script>

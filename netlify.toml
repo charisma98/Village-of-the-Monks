@@ -1,6 +1,7 @@
 [build]
   publish = "dist"
   command = "npm run generate"
+  functions = "functions"
 
 [[headers]]
   for = "*.js" # js files should be set this way

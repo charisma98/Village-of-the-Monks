@@ -100,6 +100,7 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   head() {
     return {
@@ -121,6 +122,17 @@ export default {
   },
   components: {
     InstaFeed: () => import("@/components/InstaFeed.vue"),
+  },
+  mounted() {
+    axios
+      .post(
+        "https://villageofthemonks.com/.netlify/functions/cloundinaryGallery",
+        { tag: "river" },
+        { headers: { "Content-Type": "application/json" } }
+      )
+      .then((res) => {
+        console.log(res);
+      });
   },
 };
 </script>

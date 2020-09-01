@@ -94,7 +94,7 @@
         </div>
       </div>
     </div>
-    <image-gallery name="River Barrow" tag="riverbarrow" />
+    <!-- <image-gallery name="River Barrow" tag="riverbarrow" /> -->
     <insta-feed hashtag="riverbarrow" numberOfImages="32" />
   </div>
 </template>

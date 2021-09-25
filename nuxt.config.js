@@ -9,7 +9,7 @@ let dynamicRoutes = async () => {
 };
 
 export default {
-  mode: 'universal',
+  target: 'static',
   
   // Headers of the page
   head: {
@@ -79,7 +79,6 @@ export default {
     name: 'fade',
     mode: 'out-in'
   },
-  plugins: ['~/plugins/globalComponents.js'],
   generate: {
     routes: dynamicRoutes
   },

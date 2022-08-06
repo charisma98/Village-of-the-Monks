@@ -30,13 +30,13 @@
             and 9th centuries. Built into the wall of the Abbey is a Cross Slab,
             also in the abbey grounds is the base of a third cross.
           </p>
-          <img class="hidden md:block" src="https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304556/duiske-abbey-bell.png" alt="Drawing of the clock and bell of the Duskie Abbey" />
+          <img class="hidden w-full md:block" src="https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304556/duiske-abbey-bell.png" alt="Drawing of the clock and bell of the Duskie Abbey" />
         </div>
         <div class="w-full tracking-tight text-gray-600 md:w-1/2 md:-mt-32">
           <img src="https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304548/duiske-abbey-inside_x2.jpg" class="my-4 mobile-dont-move md:my-0" alt="The roof of Duiske Abbey from the inside"
             :style="{ transform: `translate3D(0, ${scrollPos * 0.05}px, 0)` }" />
           <h2 class="title md:mt-24">A Breif History</h2>
-          <p>
+          <p class="mb-2">
             The Abbey was founded in 1204 by William Marshall the elder, earl of
             Pembroke, and was colonized with monks from Stanley in Wiltshire.
             The monks may not have arrived at Graiguenamanagh until 1207, but it
@@ -58,7 +58,7 @@
             Currently, it is used as a parish church and music events are held
             there.
           </p>
-          <div class="mt-12 mb-24 info">
+          <div class="max-w-md mt-12 mb-24 info">
             <h3 class="mt-4 text-lg text-green-600 font-secondary">
               Mass Times
             </h3>

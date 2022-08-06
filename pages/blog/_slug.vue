@@ -27,7 +27,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 main.post {
   margin: 60px auto 50px;
   max-width: 800px;

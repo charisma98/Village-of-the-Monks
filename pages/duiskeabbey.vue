@@ -92,19 +92,16 @@ export default {
   head() {
     return {
       title: "Duiske Abbey | Village of the Monks",
-      meta: [
-        {
-          hid: "description",
-          name: "description",
-          content:
-            "Duiske Abbey originated in the 13th century as the church of a Cistercian monastery, but today it is a Catholic parish church in the town of Graiguenamanagh, County Kilkenny. Where Father Gerry Byrne is the local priest.",
-        },
-        {
-          name: "keywords",
-          content:
-            "Graiguenamanagh, Graignamanagh, abbey, Village, Monks, South-east, Kilkenny, Carlow, Catholic, Castle, Brandon, Hill, Town, Books, Church, parish, Ireland, Duiske, monastery",
-        },
-      ],
+      meta: [{
+        hid: "description",
+        name: "description",
+        content:
+          "Duiske Abbey originated in the 13th century as the church of a Cistercian monastery, but today it is a Catholic parish church in the town of Graiguenamanagh, County Kilkenny. Where Father Gerry Byrne is the local priest.",
+      }, {
+        name: "keywords",
+        content:
+          "Graiguenamanagh, Graignamanagh, abbey, Village, Monks, South-east, Kilkenny, Carlow, Catholic, Castle, Brandon, Hill, Town, Books, Church, parish, Ireland, Duiske, monastery",
+      }],
     };
   },
   data() {

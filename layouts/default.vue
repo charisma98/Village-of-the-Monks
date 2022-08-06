@@ -19,6 +19,12 @@ export default {
 </script>
 
 <style lang="postcss">
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
 @font-face {
   font-family: "rukolaregular";
   src: url("../assets/fonts/Rukola.woff2") format("woff2"),
@@ -36,6 +42,7 @@ export default {
   font-style: normal;
   font-display: swap;
 }
+
 html {
   font-size: 18px;
   word-spacing: 1px;
@@ -45,6 +52,7 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
+
 body {
   background: url("https://res.cloudinary.com/odriscolls/image/upload/q_auto,f_auto/v1584304546/body-bg.png");
   background-size: 600px;
@@ -55,9 +63,11 @@ body {
 .fade-leave-active {
   animation: fadeout 600ms ease-in-out;
 }
+
 .fade-enter-active {
   animation: fadein 600ms ease-in-out;
 }
+
 .text-green {
   color: #7db070;
 }
@@ -67,16 +77,19 @@ body {
     opacity: 1;
     transform: scale(1);
   }
+
   100% {
     opacity: 0;
     transform: scale(1.01);
   }
 }
+
 @keyframes fadein {
   0% {
     opacity: 0;
     transform: scale(1.01);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);
